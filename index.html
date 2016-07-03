@@ -6,7 +6,7 @@ layout: default
 
   <script>
     d3.select("body").select("div.home").append("span").text("Hello, world! from d3");
-    d3.tsv({{ site.url }}/_assets/summarizeData.txt, function(data) {
+    d3.tsv("{{ site.url }}/_assets/summarizeData.txt", function(data) {
       console.log(data[5].Name);
     });
   </script>
