@@ -6,11 +6,11 @@ layout: default
 
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-      d3.select("body").select("div.home").append("span").text(data[20].Name);
+      d3.select("body").select("div.page-heading").append("span").text(data[20].Name);
     });
   </script>
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading"></h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
