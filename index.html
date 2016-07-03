@@ -4,12 +4,18 @@ layout: default
 
 <div class="home">
 
-  <div class="chart">
+  <div class="restName">
   </div>
-
+  <div class="ratingTotal">
+  </div>
+  <div class="ratingCount">
+  </div>
+  
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-      d3.select("body").select("div.home").select("div.chart").append("span").text(data[10].Name + " " + data[10].Value);
+      d3.select("body").select("div.home").select("div.restName").append("span").text(data[10].Name);
+      d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(data[10].Value);
+      d3.select("body").select("div.home").select("div.ratingCount").append("span").text(data[10].Count);
     });
   </script>
 
