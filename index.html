@@ -5,20 +5,22 @@ layout: default
 <div class="home">
 
   <div class="restName">
-    <h2>Name</h2>
+    Name
   </div>
   <div class="ratingTotal">
-    <h2>Rating</h2>
+    Rating
   </div>
   <div class="ratingCount">
-    <h2>Count</h2>
+    Count
   </div>
   
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-      d3.select("body").select("div.home").select("div.restName").append("span").text(data[10].Name);
-      d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(data[10].Value);
-      d3.select("body").select("div.home").select("div.ratingCount").append("span").text(data[10].Count);
+      data.forEach(function(d) {
+        d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name);
+        d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(d.Value);
+        d3.select("body").select("div.home").select("div.ratingCount").append("span").text(d.Count);
+      });
     });
   </script>
 
