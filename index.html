@@ -4,6 +4,10 @@ layout: default
 
 <div class="home">
 
+  <script>
+    d3.select("body").select("div.home").append("span").text("Hello, world! from d3");
+  </script>
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
@@ -18,10 +22,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  
-  <script>
-    d3.select("body").select("div.home").append("span").text("Hello, world! from d3");
-  </script>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
