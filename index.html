@@ -17,9 +17,12 @@ layout: default
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
       data.forEach(function(d) {
-        d3.select("body").select("div.home").select("div.restName").append("span").html(d.Name + "<br/>");
-        d3.select("body").select("div.home").select("div.ratingTotal").append("span").html(d.Value + "<br/>");
-        d3.select("body").select("div.home").select("div.ratingCount").append("span").html(d.Count + "<br/>");
+        d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name);
+        d3.select("body").select("div.home").select("div.restName").append("span").html("<br/>");    
+        d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(d.Value);
+        d3.select("body").select("div.home").select("div.ratingTotal").append("span").html("<br/>");   
+        d3.select("body").select("div.home").select("div.ratingCount").append("span").text(d.Count);
+        d3.select("body").select("div.home").select("div.ratingCount").append("span").html("<br/>");   
       });
     });
   </script>
