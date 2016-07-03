@@ -5,21 +5,21 @@ layout: default
 <div class="home">
 
   <div class="restName">
-    Name
+    Name<br>
   </div>
   <div class="ratingTotal">
-    Rating
+    Rating<br>
   </div>
   <div class="ratingCount">
-    Count
+    Count<br>
   </div>
   
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
       data.forEach(function(d) {
-        d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name);
-        d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(d.Value);
-        d3.select("body").select("div.home").select("div.ratingCount").append("span").text(d.Count);
+        d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name + "<br>");
+        d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(d.Value + "<br>");
+        d3.select("body").select("div.home").select("div.ratingCount").append("span").text(d.Count + "<br>");
       });
     });
   </script>
