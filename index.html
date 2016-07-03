@@ -9,7 +9,7 @@ layout: default
 
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-      d3.select("body").select("div.home").select("div.chart").append("span").text(data.top(10));
+      d3.select("body").select("div.home").select("div.chart").append("span").text(data[10].Name data[10].Value data[10].Count);
     });
   </script>
 
