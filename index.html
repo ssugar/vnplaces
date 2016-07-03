@@ -18,8 +18,9 @@ layout: default
     {% endfor %}
   </ul>
 
+  
   <script>
-    d3.select("body").append("span").text("Hello, world! from d3");
+    d3.select("body").select("div.home").append("span").text("Hello, world! from d3");
   </script>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
