@@ -106,62 +106,23 @@ layout: default
             .attr("transform", function (d, i){
               return "translate(0," + (i+1) * (fieldHeight+1) + ")";
             });
+        }
+      }
+    });
+
+    function sort(a,b){
+      if(typeof a == "string"){
+        return a.localeCompare(b);
+      }
+      else if(typeof a == "number"){
+        return a > b ? 1 : a == b ? 0 : -1;
+      }
+      else if(typeof a == "boolean"){
+        return b ? 1 : a ? -1 : 0;
       }
     }
-  });
-
-  function sort(a,b){
-    if(typeof a == "string"){
-      return a.localeCompare(b);
-    }
-    else if(typeof a == "number"){
-      return a > b ? 1 : a == b ? 0 : -1;
-    }
-    else if(typeof a == "boolean"){
-      return b ? 1 : a ? -1 : 0;
-    }
-  }
-</script>
-
-  <div class="restName">
-    Name<br>
-  </div>
-  <div class="ratingTotal">
-    Rating<br>
-  </div>
-  <div class="ratingCount">
-    Count<br>
-  </div>
-  <div class="ratingAvg">
-    AvgRating<br>
-  </div>
-  
-  <script>
-    d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-      var filteredData = data.filter(function(d)
-      {
-        if(d["Count"] > 1000)
-        {
-          return d;
-        }
-      });
-      
-      var formatDecimal = d3.format(".2f");
-
-      filteredData.forEach(function(d) {
-        var avgRating = d.Value / d.Count;
-        d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name);
-        d3.select("body").select("div.home").select("div.restName").append("span").html("<br/>");    
-        d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(d.Value);
-        d3.select("body").select("div.home").select("div.ratingTotal").append("span").html("<br/>");   
-        d3.select("body").select("div.home").select("div.ratingCount").append("span").text(d.Count);
-        d3.select("body").select("div.home").select("div.ratingCount").append("span").html("<br/>");   
-        d3.select("body").select("div.home").select("div.ratingAvg").append("span").text(function() { return formatDecimal(avgRating); });
-        d3.select("body").select("div.home").select("div.ratingAvg").append("span").html("<br/>");   
-      });
-    });
   </script>
-  
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
