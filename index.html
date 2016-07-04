@@ -18,7 +18,7 @@ layout: default
     });
     
     var fieldHeight = 30;
-    var fieldWidth = 195;
+    var fieldWidth = 125;
 
     //using total data rows + 1 for header time height + 1 for padding
     var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
@@ -82,18 +82,39 @@ layout: default
       var cellsEnter = cells.enter().append("svg:g")
         .attr("class", "cell")
         .attr("transform", function (d, i){
-          return "translate(" + i * fieldWidth + ",0)";
+          if(i == 0)
+          {
+            return "translate(" + i * (fieldWidth * 2) + ",0)";            
+          }
+          else
+          {
+            return "translate(" + i * (fieldWidth * 2) + ",0)";
+          }
         });
         
       cellsEnter.append("rect")
         .attr("width", function (d, i){
-          return (fieldWidth-1); 
+          if(i == 0)
+          {
+            return ((fieldWidth*2)-1); 
+          }
+          else
+          {
+            return (fieldWidth-1); 
+          }
         })
         .attr("height", fieldHeight);	
         
       cellsEnter.append("text")
         .attr("x", function (d, i){
-          return (fieldWidth / 2);
+          if(i == 0)
+          {
+            return (fieldWidth);
+          }
+          else
+          {
+            return (fieldWidth / 2);
+          }
         })
         .attr("y", fieldHeight / 2)
         .attr("dy", ".35em")
