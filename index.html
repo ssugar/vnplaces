@@ -24,7 +24,6 @@ layout: default
   var fieldWidth = 90;
 
   var previousSort = null;
-  var format = d3.time.format("%a %b %d %Y");
 
   d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
     var jsonData = data.filter(function(d)
@@ -34,7 +33,7 @@ layout: default
         return d;
       }
     });
- 
+
     refreshTable(null);
 
     function refreshTable(sortOn){
@@ -107,9 +106,6 @@ layout: default
             .attr("transform", function (d, i){
               return "translate(0," + (i+1) * (fieldHeight+1) + ")";
             });
-            
-          //update cells
-          // rows.selectAll("g.cell").select("text").text(String);
       }
     }
   });
