@@ -241,19 +241,9 @@
     }
 }
 
-.restName {
-    float: left;
-    width: 70%;   
-}
-.ratingTotal {
-    float: left;
-    width: 10%;   
-}
-.ratingCount {
-    float: left;
-    width: 10%;   
-}
-.ratingAvg {
-    float: left;
-    width: 10%;   
+.container {
+    height: 225px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;   
 }
