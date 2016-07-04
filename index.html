@@ -16,7 +16,14 @@ layout: default
   
   <script>
     d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-      data.forEach(function(d) {
+      var filteredData = data.filter(function(d)
+      {
+        if(d["Count"] > 50)
+        {
+          return d;
+        }
+      });
+      filteredData.forEach(function(d) {
         d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name);
         d3.select("body").select("div.home").select("div.restName").append("span").html("<br/>");    
         d3.select("body").select("div.home").select("div.ratingTotal").append("span").text(d.Value);
