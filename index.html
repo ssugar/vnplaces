@@ -11,14 +11,14 @@ layout: default
   d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
     var jsonData = data.filter(function(d)
     {
-      if(d["Count"] > 1000)
+      if(d["Count"] > 2000)
       {
         return d;
       }
     });
     
     var fieldHeight = 30;
-    var fieldWidth = 150;
+    var fieldWidth = 190;
 
     //using total data rows + 1 for header time height + 1 for padding
     var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
