@@ -26,6 +26,9 @@ layout: default
           return d;
         }
       });
+      
+      var formatDecimal = d3.format(".2f");
+
       filteredData.forEach(function(d) {
         var avgRating = d.Value / d.Count;
         d3.select("body").select("div.home").select("div.restName").append("span").text(d.Name);
@@ -34,7 +37,7 @@ layout: default
         d3.select("body").select("div.home").select("div.ratingTotal").append("span").html("<br/>");   
         d3.select("body").select("div.home").select("div.ratingCount").append("span").text(d.Count);
         d3.select("body").select("div.home").select("div.ratingCount").append("span").html("<br/>");   
-        d3.select("body").select("div.home").select("div.ratingAvg").append("span").text(avgRating);
+        d3.select("body").select("div.home").select("div.ratingAvg").append("span").text(function() { return formatDecimal(avgRating); });
         d3.select("body").select("div.home").select("div.ratingAvg").append("span").html("<br/>");   
       });
     });
