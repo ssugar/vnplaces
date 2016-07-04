@@ -12,7 +12,6 @@ layout: default
       height = 500 - margin.top - margin.bottom;
 
   var canvas = d3.select(".canvas")
-      .attr("viewBox", "0,0,150,420")
       .attr("width", "100%")
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -22,7 +21,7 @@ layout: default
   var rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
   var fieldHeight = 30;
-  var fieldWidth = 90;
+  var fieldWidth = 120;
 
   var previousSort = null;
 
