@@ -25,16 +25,15 @@ layout: default
 
   var previousSort = null;
   var format = d3.time.format("%a %b %d %Y");
-  //var dateFn = function(date) { return format.parse(d.created_at) };
 
-
-  var jsonData = [
-  { "id": 3, "name": "Richy", "male": true, "born": "Sun May 05 2013", "amount": 12000},
-  { "id": 1, "name": "Susi", "male": false, "born": "Mon May 13 2013", "amount": 2000},
-  { "id": 2, "name": "Patrick", "male": true, "born": "Thu Jun 06 2013", "amount": 17000},
-  { "id": 4, "name": "Lorenz", "male": true, "born": "Thu May 09 2013", "amount": 15000},
-  { "id": 5, "name": "Christina", "male": false, "born": "Mon Jul 01 2013", "amount": 16000}
-  ];
+  d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
+    var jsonData = data.filter(function(d)
+    {
+      if(d["Count"] > 3000)
+      {
+        return d;
+      }
+    });
 
   refreshTable(null);
 
@@ -63,7 +62,7 @@ layout: default
     // fill the table	
     // select rows
       var rows = rowsGrp.selectAll("g.row").data(jsonData, 
-      function(d){ return d.id; });
+      function(d){ return d.Name; });
     
     // create rows	
     var rowsEnter = rows.enter().append("svg:g")
@@ -116,14 +115,7 @@ layout: default
 
   function sort(a,b){
     if(typeof a == "string"){
-      var parseA = format.parse(a);
-      if(parseA){
-        var timeA = parseA.getTime();
-        var timeB = format.parse(b).getTime();
-        return timeA > timeB ? 1 : timeA == timeB ? 0 : -1;
-      }
-      else 
-        return a.localeCompare(b);
+      return a.localeCompare(b);
     }
     else if(typeof a == "number"){
       return a > b ? 1 : a == b ? 0 : -1;
