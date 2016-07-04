@@ -10,11 +10,12 @@ layout: default
 <script>
   var margin = {top: 20, right: 30, bottom: 30, left: 0},
       width = 960 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      height = 5000 - margin.top - margin.bottom;
 
   var canvas = d3.select(".container").append("svg")
       .attr("class", "canvas")
       .attr("width", "100%")
+      .attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -22,7 +23,7 @@ layout: default
   var rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
   var fieldHeight = 30;
-  var fieldWidth = 120;
+  var fieldWidth = 150;
 
   var previousSort = null;
 
