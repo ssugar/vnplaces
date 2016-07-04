@@ -88,13 +88,13 @@ layout: default
       cellsEnter.append("rect")
         .attr("width", function (d, i){
           return (fieldWidth-1); 
-        });
+        })
         .attr("height", fieldHeight);	
         
       cellsEnter.append("text")
         .attr("x", function (d, i){
           return (fieldWidth / 2);
-        });
+        })
         .attr("y", fieldHeight / 2)
         .attr("dy", ".35em")
         .text(String);
