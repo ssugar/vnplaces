@@ -11,7 +11,7 @@ layout: default
   d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
     var jsonData = data.filter(function(d)
     {
-      if(d["Count"] > 2000)
+      if(d["Count"] > 1000)
       {
         return d;
       }
