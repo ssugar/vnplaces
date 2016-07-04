@@ -26,16 +26,17 @@ layout: default
   var previousSort = null;
   var format = d3.time.format("%a %b %d %Y");
 
-  d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
-    var jsonData = data.filter(function(d)
+  var jsonData = d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
+    var filteredData = data.filter(function(d)
     {
       if(d["Count"] > 3000)
       {
         return d;
       }
     });
+    return filteredData;
   });
-
+ 
   refreshTable(null);
 
   function refreshTable(sortOn){
