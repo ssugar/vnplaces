@@ -4,14 +4,13 @@ layout: default
 
 <div class="home">
 
-<svg class="canvas"></svg>
-
 <script>
   var margin = {top: 20, right: 30, bottom: 30, left: 0},
       width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
-  var canvas = d3.select(".canvas")
+  var canvas = d3.select(".home").append("svg")
+      .attr("class", "canvas")
       .attr("width", "100%")
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
