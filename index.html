@@ -8,25 +8,6 @@ layout: default
 </div>
 
 <script>
-  var margin = {top: 20, right: 30, bottom: 30, left: 0},
-      width = 960 - margin.left - margin.right,
-      height = 5000 - margin.top - margin.bottom;
-
-  var canvas = d3.select(".container").append("svg")
-      .attr("class", "canvas")
-      .attr("width", "100%")
-      .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-  var headerGrp = canvas.append("g").attr("class", "headerGrp");
-  var rowsGrp = canvas.append("g").attr("class","rowsGrp");
-
-  var fieldHeight = 30;
-  var fieldWidth = 150;
-
-  var previousSort = null;
-
   d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
     var jsonData = data.filter(function(d)
     {
@@ -35,6 +16,27 @@ layout: default
         return d;
       }
     });
+    
+    console.log(jsonData.length);
+
+    var margin = {top: 20, right: 30, bottom: 30, left: 0},
+        width = 960 - margin.left - margin.right,
+        height = 5000 - margin.top - margin.bottom;
+
+    var canvas = d3.select(".container").append("svg")
+        .attr("class", "canvas")
+        .attr("width", "100%")
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var headerGrp = canvas.append("g").attr("class", "headerGrp");
+    var rowsGrp = canvas.append("g").attr("class","rowsGrp");
+
+    var fieldHeight = 30;
+    var fieldWidth = 150;
+
+    var previousSort = null;
 
     refreshTable(null);
 
