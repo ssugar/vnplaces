@@ -18,10 +18,14 @@ layout: default
     });
     
     console.log(jsonData.length);
+    var fieldHeight = 30;
+    var fieldWidth = 150;
+    var tableHeight = (jsonData.length + 1) * fieldHeight; 
+    console.log(tableHeight);
 
     var margin = {top: 20, right: 30, bottom: 30, left: 0},
         width = 960 - margin.left - margin.right,
-        height = 5000 - margin.top - margin.bottom;
+        height = tableHeight - margin.top - margin.bottom;
 
     var canvas = d3.select(".container").append("svg")
         .attr("class", "canvas")
@@ -32,9 +36,6 @@ layout: default
 
     var headerGrp = canvas.append("g").attr("class", "headerGrp");
     var rowsGrp = canvas.append("g").attr("class","rowsGrp");
-
-    var fieldHeight = 30;
-    var fieldWidth = 150;
 
     var previousSort = null;
 
