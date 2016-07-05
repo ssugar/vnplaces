@@ -226,18 +226,16 @@ svg {
   text-anchor: middle;
 }
 
-.cell rect{
-  fill: $brand-color;
+.rowsGrp g.row:nth-child(even){
+  fill: $grey-color-light; 
 }
 
-.rowsGrp{
-  g:nth-child(2){
-      fill: yellow
-  }
+.rowsGrp g.row:nth-child(odd){
+  fill: $background-color;
 }
 
 .cell text{
-  fill: black;
+  fill: $text-color;
   font: 10px sans-serif;
   text-anchor: middle;
 }
