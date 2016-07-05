@@ -93,7 +93,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .attr("transform", function (d, i){
             return "translate(0," + (i) * (fieldHeight+1) + ")";
         })
-       .on("click", function(d){ console.log( encodeUriComponent(d.Name));});
+       .on("click", function(d){ console.log( encodeURIComponent(d.Name));});
 
         // select cells
         var cells = rows.selectAll("g.cell").data(function(d){return d3.values(d);});
