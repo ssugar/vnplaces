@@ -230,6 +230,12 @@ svg {
   fill: $brand-color;
 }
 
+.row{
+  g: nth-child(2){
+      fill: yellow
+  }
+}
+
 .cell text{
   fill: black;
   font: 10px sans-serif;
