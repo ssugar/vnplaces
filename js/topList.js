@@ -151,9 +151,11 @@ d3.tsv("assets/summarizeData.txt", function(data)
 function sort(a,b){
     if(typeof a == "string"){
         if(+a){
-            return a > b ? 1 : a == b ? 0 : -1;            
+            console.log("compare by number");
+            return +a > +b ? 1 : +a == +b ? 0 : -1;            
         }
         else{
+            console.log("compare by string");
             return a.localeCompare(b);
         }
     }
