@@ -1,4 +1,4 @@
-d3.tsv("{{ "/assets/summarizeData.txt" | prepend: site.baseurl }}", function(data) {
+d3.tsv("assets/summarizeData.txt", function(data) {
 var jsonData = data.filter(function(d)
 {
     if(d["Count"] > 2000)
