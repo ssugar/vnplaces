@@ -132,11 +132,11 @@ d3.tsv("assets/summarizeData.txt", function(data)
         if(sortOn !== null) {
             // update rows
             if(sortOn != previousSort){
-                rows.sort(function(a,b){return sort(a[sortOn], b[sortOn]);});			
+                rows.sort(function(a,b){return sort(b[sortOn], a[sortOn]);});
                 previousSort = sortOn;
             }
             else{
-                rows.sort(function(a,b){return sort(b[sortOn], a[sortOn]);});
+                rows.sort(function(a,b){return sort(a[sortOn], b[sortOn]);});			
                 previousSort = null;
             }
             rows.transition()
@@ -154,7 +154,7 @@ function sort(a,b){
             return +a > +b ? 1 : +a == +b ? 0 : -1;            
         }
         else{
-            return a.localeCompare(b);
+            return b.localeCompare(a);
         }
     }
     else if(typeof a == "number"){
