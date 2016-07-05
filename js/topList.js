@@ -14,7 +14,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
     //using total data rows + 1 for header time height + 1 for padding
     var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
 
-    var margin = {top: 20, right: 30, bottom: 30, left: 0},
+    var margin = {top: 0, right: 30, bottom: 30, left: 0},
         width = 960 - margin.left - margin.right,
         height = tableHeight - margin.top - margin.bottom;
 
