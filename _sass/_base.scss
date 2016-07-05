@@ -239,3 +239,11 @@ svg {
 .site-title{
     color: $header-color;
 }
+
+.footer-heading{
+   color: $header-color;   
+
+    h2 {
+        color: $header-color;
+    }
+}
