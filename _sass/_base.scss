@@ -221,8 +221,7 @@ svg {
 }
 
 .header text{
-  fill: white;
-  font: 10px sans-serif;
+  fill: $background-color;
   text-anchor: middle;
 }
 
@@ -236,8 +235,7 @@ svg {
 
 .cell text{
   fill: $text-color;
-  font: 10px sans-serif;
-  text-anchor: middle;
+  text-anchor: left;
 }
 
 .site-title{
