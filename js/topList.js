@@ -63,7 +63,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         header.append("text")
         .attr("x", function(d, i){
             if(i == 0){
-                return (1);
+                return (fieldWidth / 2 * firstColMultiplier);
             }
             else{
                 return (fieldWidth / 2);
@@ -114,7 +114,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         cellsEnter.append("text")
         .attr("x", function (d, i){
             if(i == 0){
-                return (1);
+                return (fieldWidth / 2 * firstColMultiplier);
             }
             else{
                 return (fieldWidth / 2);
