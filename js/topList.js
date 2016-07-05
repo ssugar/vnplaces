@@ -94,8 +94,9 @@ d3.tsv("assets/summarizeData.txt", function(data)
             return "translate(0," + (i) * (fieldHeight+1) + ")";
         })
        .on("click", function(d){
-           console.log( encodeURIComponent("ho chi minh " + d.Name));
-           //window.open('url', 'window name', 'window settings');
+           var url = "http://www.google.com/search?q=" + encodeURIComponent("ho chi minh " + d.Name);
+           console.log(url);
+           //window.open(url, 'windowname', 'windowsettings');
         });
 
         // select cells
