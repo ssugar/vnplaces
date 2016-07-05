@@ -149,7 +149,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
             rows.transition()
             .duration(500)
             .attr("transform", function (d, i){
-                return "translate(0," + (i+1) * (fieldHeight+1) + ")";
+                return "translate(0," + (i) * (fieldHeight+1) + ")";
             });
         }
     }
