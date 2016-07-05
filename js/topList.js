@@ -98,6 +98,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
            console.log(url);
            window.open(url, 'windowname', 'windowsettings');
         });
+        //google places api key - AIzaSyCYsh37uRWE9kcH_Yc-5lpo14Yx_fSz1do 
 
         // select cells
         var cells = rows.selectAll("g.cell").data(function(d){return d3.values(d);});
