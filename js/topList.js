@@ -58,8 +58,8 @@ d3.tsv("assets/summarizeData.txt", function(data)
                 return (fieldWidth-1); 
             }
         })
-        .attr("rx", 10)
-        .attr("ry", 10)
+        .attr("rx", 5)
+        .attr("ry", 5)
         .attr("height", fieldHeight);
         
         header.append("text")
@@ -111,8 +111,8 @@ d3.tsv("assets/summarizeData.txt", function(data)
                 return (fieldWidth-1); 
             }
         })
-        .attr("rx", 10)
-        .attr("ry", 10)
+        .attr("rx", 2)
+        .attr("ry", 2)
         .attr("height", fieldHeight);	
         
         cellsEnter.append("text")
