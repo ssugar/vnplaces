@@ -217,7 +217,7 @@ svg {
 }
 
 .header rect{
-  fill: $text-color;
+  fill: $header-color;
 }
 
 .header text{
@@ -237,5 +237,5 @@ svg {
 }
 
 .site-title{
-    color: $text-color;
+    color: $header-color;
 }
