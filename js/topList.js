@@ -91,7 +91,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         var rowsEnter = rows.enter().append("svg:g")
         .attr("class","row")
         .attr("transform", function (d, i){
-            return "translate(0," + (i+1) * (fieldHeight+1) + ")";
+            return "translate(0," + (i) * (fieldHeight+1) + ")";
         });
 
         // select cells
