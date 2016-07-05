@@ -206,13 +206,18 @@ pre {
     }
 }
 
+
+/**
+ * SVG Table
+ */
+
 svg {
   vertical-align: middle;
-  background: #000;
+  background: $background-color;
 }
 
 .header rect{
-  fill: #3F21E8;
+  fill: $text-color;
 }
 
 .header text{
@@ -222,7 +227,7 @@ svg {
 }
 
 .cell rect{
-  fill: #8DC9FF;
+  fill: $brand-color;
 }
 
 .cell text{
