@@ -259,3 +259,20 @@
     height: 345px;
     width: 775px;
 }
+
+#results {
+    z-index:9999;
+    position:absolute;
+    width:200px;
+    height:388px;
+    background:#222;
+    top:0;
+    bottom:0;
+    left:60px;
+    right:0px;
+    color:#ccc;
+    overflow-y:scroll;
+    font-size:.82em;
+    padding:12px 5px;
+    line-height:1.333;
+}
