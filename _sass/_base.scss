@@ -83,7 +83,6 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
-    color: $brand-color;
 }
 
 
@@ -230,4 +229,8 @@ svg {
   fill: black;
   font: 10px sans-serif;
   text-anchor: middle;
+}
+
+.site-title{
+    color: $brand-color;
 }
