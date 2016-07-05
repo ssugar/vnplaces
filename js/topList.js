@@ -154,7 +154,7 @@ function sort(a,b){
             return +a > +b ? 1 : +a == +b ? 0 : -1;            
         }
         else{
-            return b.localeCompare(a);
+            return a.localeCompare(b);
         }
     }
     else if(typeof a == "number"){
