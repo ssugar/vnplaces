@@ -241,6 +241,13 @@
     }
 }
 
+.containerHeader {
+    height: 31px;
+    width: 800px;
+    overflow-y: hidden;
+    overflow-x: hidden;   
+}
+
 .container {
     height: 500px;
     width: 800px;

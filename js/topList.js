@@ -18,6 +18,13 @@ d3.tsv("assets/summarizeData.txt", function(data)
         width = 960 - margin.left - margin.right,
         height = tableHeight - margin.top - margin.bottom;
 
+    var canvasHeader = d3.select(".containerHeader").append("svg")
+        .attr("class", "canvas")
+        .attr("width", "100%")
+        .attr("height", "31")
+        .append("g")
+        .attr("transform", "translate(0,0)");
+
     var canvas = d3.select(".container").append("svg")
         .attr("class", "canvas")
         .attr("width", "100%")
@@ -25,7 +32,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var headerGrp = canvas.append("g").attr("class", "headerGrp");
+    var headerGrp = canvasHeader.append("g").attr("class", "headerGrp");
     var rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
     var previousSort = null;
