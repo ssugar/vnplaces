@@ -9,6 +9,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
 
     var fieldHeight = 30;
     var fieldWidth = 125;
+    var firstColMultiplier = 2;
 
     //using total data rows + 1 for header time height + 1 for padding
     var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
@@ -40,10 +41,10 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .attr("class", "header")
         .attr("transform", function (d, i){
             if(i == 0){
-                return "translate(" + i * (fieldWidth * 2) + ",0)";            
+                return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
             }
             else{
-                return "translate(" + (i + 1) * fieldWidth + ",0)";
+                return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
             }
         })
         .on("click", function(d){ return refreshTable(d);});
@@ -51,7 +52,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         header.append("rect")
         .attr("width", function (d, i){
             if(i == 0){
-                return ((fieldWidth*2)-1); 
+                return ((fieldWidth*firstColMultiplier)-1); 
             }
             else{
                 return (fieldWidth-1); 
@@ -62,7 +63,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         header.append("text")
         .attr("x", function(d, i){
             if(i == 0){
-                return (fieldWidth);
+                return (1);
             }
             else{
                 return (fieldWidth / 2);
@@ -92,17 +93,17 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .attr("class", "cell")
         .attr("transform", function (d, i){
             if(i == 0){
-                return "translate(" + i * (fieldWidth * 2) + ",0)";            
+                return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
             }
             else{
-                return "translate(" + (i + 1) * fieldWidth + ",0)";
+                return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
             }
         });
         
         cellsEnter.append("rect")
         .attr("width", function (d, i){
             if(i == 0){
-                return ((fieldWidth*2)-1); 
+                return ((fieldWidth * firstColMultiplier)-1); 
             }
             else{
                 return (fieldWidth-1); 
@@ -113,7 +114,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         cellsEnter.append("text")
         .attr("x", function (d, i){
             if(i == 0){
-                return (fieldWidth);
+                return (1);
             }
             else{
                 return (fieldWidth / 2);
