@@ -19,15 +19,15 @@ layout: default
     var infowindow;
 
     function initialize() {
-      var pyrmont = new google.maps.LatLng(-33.8665433,151.1956316);
+      var hcmc = new google.maps.LatLng(10.773599,106.694420);
 
       map = new google.maps.Map(document.getElementById('map'), {
-          center: pyrmont,
+          center: hcmc,
           zoom: 15
         });
 
       var request = {
-        location: pyrmont,
+        location: hcmc,
         radius: '500',
         query: 'restaurant'
       };
