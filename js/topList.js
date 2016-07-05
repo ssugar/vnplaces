@@ -96,7 +96,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
        .on("click", function(d){
            var url = "http://www.google.com/search?q=" + encodeURIComponent("ho chi minh " + d.Name);
            console.log(url);
-           //window.open(url, 'windowname', 'windowsettings');
+           window.open(url, 'windowname', 'windowsettings');
         });
 
         // select cells
