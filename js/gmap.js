@@ -108,6 +108,8 @@ function createMarker(place) {
 
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.formatted_address + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.opening_hours + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.html_attributions + '</p>';
     
 
 
