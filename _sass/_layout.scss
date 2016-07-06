@@ -276,7 +276,8 @@
     float: left;
     background: $header-color;
     color: $background-color;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
     font-size:.82em;
     line-height:1.333;
