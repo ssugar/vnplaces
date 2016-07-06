@@ -41,7 +41,7 @@ function initialize() {
     map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     center: center,
-    zoom: 12,
+    zoom: 14,
     streetViewControl: false,
     panControl: false,
     zoomControlOptions: {
