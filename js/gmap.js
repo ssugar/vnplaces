@@ -78,28 +78,17 @@ function callback(results, status) {
 }
 
 function createMarker(place) {
-    var specific_icon;
-    var school_icon = 'https://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png';
-    var food_icon = 'https://www.google.com/intl/en_us/mapfiles/ms/micons/yellow-dot.png';
-    var park_icon = 'https://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png';
-
-    switch (true) {
-    case (place.types.indexOf('school') != -1):
-        specific_icon = school_icon;
-        break;
-    case (place.types.indexOf('restaurant') != -1):
-        specific_icon = food_icon;
-        break;
-    case (place.types.indexOf('park') != -1):
-        specific_icon = park_icon;
-        break;
+    var photos = place.photos;
+    if (!photos) {
+        return;
     }
 
     var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        icon: specific_icon
+        title: place.name,
+        icon: photos[0].getUrl({'maxWidth': 35, 'maxHeight': 35})
     });
 
     map.setCenter(marker.getPosition());
@@ -121,13 +110,6 @@ function createMarker(place) {
             placesList.innerHTML += '<p class="' + deetplace.types[0] + '">' + deetplace.formatted_phone_number + '</p>';
         }
     }
-
-    totalSchool = $('.school').size();
-    $('#school').text('Schools: ' + totalSchool);
-    totalFood = $('.restaurants').size();
-    $('#food').text('Restaurants: ' + totalFood);
-    totalParks = $('.park').size();
-    $('#park').text('Parks: ' + totalParks);
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(place.name);
