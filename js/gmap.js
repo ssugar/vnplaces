@@ -86,9 +86,9 @@ function callback(results, status) {
 
 function createMarker(place) {
     var specific_icon;
-    var school_icon = 'http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png';
-    var food_icon = 'http://www.google.com/intl/en_us/mapfiles/ms/micons/yellow-dot.png';
-    var park_icon = 'http://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png';
+    var school_icon = 'https://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png';
+    var food_icon = 'https://www.google.com/intl/en_us/mapfiles/ms/micons/yellow-dot.png';
+    var park_icon = 'https://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png';
 
     switch (true) {
     case (place.types.indexOf('school') != -1):
