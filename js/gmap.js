@@ -75,7 +75,6 @@ function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
         createMarker(results[i]);
-        console.log(results[i]);
     }
     }
 }
@@ -108,6 +107,7 @@ function createMarker(place) {
     placesList = document.getElementById('results');
 
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.formatted_address + '</p>';
     
 
 
