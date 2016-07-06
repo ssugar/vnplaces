@@ -94,9 +94,10 @@ d3.tsv("assets/summarizeData.txt", function(data)
             return "translate(0," + (i) * (fieldHeight+1) + ")";
         })
        .on("click", function(d){
-           var url = "http://www.google.com/search?q=" + encodeURIComponent("ho chi minh " + d.Name);
-           console.log(url);
-           window.open(url, 'windowname', 'windowsettings');
+           initialize("ho chi minh " + d.Name);
+           //var url = "http://www.google.com/search?q=" + encodeURIComponent("ho chi minh " + d.Name);
+           //console.log(url);
+           //window.open(url, 'windowname', 'windowsettings');
         });
         //google places api key - AIzaSyCYsh37uRWE9kcH_Yc-5lpo14Yx_fSz1do 
 
