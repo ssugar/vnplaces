@@ -104,7 +104,7 @@ function createMarker(place) {
 
     placesList = document.getElementById('results');
 
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
+    placesList.innerHTML = '<p class="' + place.types[0] + '">' + place.name + '</p>';
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.formatted_address + '</p>';
 
     totalSchool = $('.school').size();
