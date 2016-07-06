@@ -15,7 +15,6 @@ d3.tsv("assets/summarizeData.txt", function(data)
     else{
         var fieldWidth = 124;
     }
-    console.log(w.innerWidth);
 
     var firstColMultiplier = 3;
 
@@ -69,7 +68,10 @@ d3.tsv("assets/summarizeData.txt", function(data)
             }
         })
         .on("click", function(d){ return refreshTable(d);});
-        
+
+        var w = window;
+        w.onresize=function(d){ return refreshTable(d);};
+
         header.append("rect")
         //.attr("width", "100%")
         .attr("width", function (d, i){
