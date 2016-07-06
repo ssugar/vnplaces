@@ -258,13 +258,14 @@
 #map {
     height: 345px;
     width: 575px;
+    float: left;
 }
 
 #results {
     z-index:9999;
     float: left;
     width:200px;
-    height:388px;
+    height:345px;
     background:#222;
     top:0;
     bottom:0;
