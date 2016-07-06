@@ -15,6 +15,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
     else{
         var fieldWidth = 124;
     }
+    console.log(w);
 
     var firstColMultiplier = 3;
 
