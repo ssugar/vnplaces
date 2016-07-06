@@ -8,8 +8,8 @@ d3.tsv("assets/summarizeData.txt", function(data)
     });
 
     var fieldHeight = 30;
-
-    if($(window).width() < 400){
+    var w = window;
+    if(w.width < 400){
         var fieldWidth = 50;
     }
     else{
