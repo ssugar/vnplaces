@@ -102,6 +102,8 @@ function createMarker(place) {
     icon: specific_icon
     });
 
+    map.setCenter(marker.getPosition());
+
     placesList = document.getElementById('results');
 
     placesList.innerHTML = '<p class="' + place.types[0] + '">' + place.name + '</p>';
