@@ -97,9 +97,9 @@ function createMarker(place) {
 
     var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
-    map: map,
-    position: place.geometry.location,
-    icon: specific_icon
+        map: map,
+        position: place.geometry.location,
+        icon: specific_icon
     });
 
     map.setCenter(marker.getPosition());
@@ -109,6 +109,19 @@ function createMarker(place) {
     placesList.innerHTML = '<p class="' + place.types[0] + '">' + place.name + '</p>';
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.formatted_address + '</p>';
 
+    var deetrequest = {
+        placeId: place.place_id
+    };
+
+    deetservice = new google.maps.places.PlacesService(map);
+    deetservice.getDetails(deetrequest, deetcallback);
+
+    function deetcallback(deetplace, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            placesList.innerHTML += '<p class="' + deetplace.types[0] + '">' + deetplace.formatted_phone_number + '</p>';
+        }
+    }
+
     totalSchool = $('.school').size();
     $('#school').text('Schools: ' + totalSchool);
     totalFood = $('.restaurants').size();
@@ -117,9 +130,8 @@ function createMarker(place) {
     $('#park').text('Parks: ' + totalParks);
 
     google.maps.event.addListener(marker, 'click', function () {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
-
+        infowindow.setContent(place.name);
+        infowindow.open(map, this);
     });
 }
 
