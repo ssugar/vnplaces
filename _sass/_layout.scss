@@ -283,7 +283,6 @@
     text-align: center;
     font-size:.82em;
     line-height:1;
-    img{
-        vertical-align: bottom;
-    }
+    overflow-y: scroll;
+    overflow-x: hidden;   
 }
