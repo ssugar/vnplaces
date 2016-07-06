@@ -107,9 +107,11 @@ function createMarker(place) {
 
     function deetcallback(deetplace, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
-            placesList.innerHTML += '<p class="' + deetplace.types[0] + '">' + deetplace.formatted_phone_number + '</p>';
+            placesList.innerHTML += '<p class="' + place.types[0] + '">' + deetplace.formatted_phone_number + '</p>';
         }
     }
+
+    placesList.innerHTML += '<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '">' + place.name + '</img>';
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(placesList.innerHTML);
