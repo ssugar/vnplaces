@@ -88,7 +88,6 @@ function createMarker(place) {
         map: map,
         position: place.geometry.location,
         title: place.name,
-        icon: photos[0].getUrl({'maxWidth': 35, 'maxHeight': 35})
     });
 
     map.setCenter(marker.getPosition());
