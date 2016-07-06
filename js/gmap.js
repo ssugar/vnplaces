@@ -87,7 +87,7 @@ function createMarker(place) {
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        title: place.name,
+        title: place.name
     });
 
     map.setCenter(marker.getPosition());
