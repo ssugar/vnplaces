@@ -121,4 +121,4 @@ function createMarker(place) {
     });
 }
 
-initialize('ho chi minh chucks burgers');
+initialize('ho chi minh au parc');
