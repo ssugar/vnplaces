@@ -10,7 +10,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
     var fieldHeight = 30;
     var w = window;
     if(w.innerWidth < 400){
-        var fieldWidth = 50;
+        var fieldWidth = 49;
     }
     else{
         var fieldWidth = 124;
@@ -55,10 +55,6 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .data(d3.keys(jsonData[0]))
         .enter().append("g")
         .attr("class", "header")
-        //.attr("transform", "translate(0,0)")
-        //.append("svg")
-        //.attr("x", "100%")
-        //.attr("y", "20%")
         .attr("transform", function (d, i){
             if(i == 0){
                 return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
@@ -69,11 +65,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         })
         .on("click", function(d){ return refreshTable(d);});
 
-        var w = window;
-        w.onresize=function(d){ return refreshTable(d);};
-
         header.append("rect")
-        //.attr("width", "100%")
         .attr("width", function (d, i){
             if(i == 0){
                 return ((fieldWidth*firstColMultiplier)-1); 
