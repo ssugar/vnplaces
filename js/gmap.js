@@ -111,7 +111,7 @@ function createMarker(place) {
         }
     }
 
-    placesList.innerHTML += '<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '">' + place.name + '</img>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '">' + place.name + '</img>' + '</p>';
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(placesList.innerHTML);
