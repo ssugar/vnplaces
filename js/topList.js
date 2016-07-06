@@ -9,13 +9,13 @@ d3.tsv("assets/summarizeData.txt", function(data)
 
     var fieldHeight = 30;
     var w = window;
-    if(w.width < 400){
+    if(w.innerWidth < 400){
         var fieldWidth = 50;
     }
     else{
         var fieldWidth = 124;
     }
-    console.log(w);
+    console.log(w.innerWidth);
 
     var firstColMultiplier = 3;
 
