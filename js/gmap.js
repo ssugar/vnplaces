@@ -112,7 +112,7 @@ function createMarker(place) {
     }
 
     google.maps.event.addListener(marker, 'click', function () {
-        infowindow.setContent(place.name);
+        infowindow.setContent(placesList.innerHTML);
         infowindow.open(map, this);
     });
 }
