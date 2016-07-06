@@ -257,18 +257,18 @@
 
 #map {
     height: 345px;
-    width: 775px;
+    width: 575px;
 }
 
 #results {
     z-index:9999;
-    position:absolute;
+    float: left;
     width:200px;
     height:388px;
     background:#222;
     top:0;
     bottom:0;
-    left:0;
+    left:575px;
     right:0px;
     color:#ccc;
     overflow-y:scroll;
