@@ -8,7 +8,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
     });
 
     var fieldHeight = 30;
-    var fieldWidth = 123;
+    var fieldWidth = 124;
     var firstColMultiplier = 3;
 
     //using total data rows + 1 for header time height + 1 for padding
