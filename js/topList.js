@@ -22,7 +22,7 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .attr("class", "canvas")
         .attr("width", "100%")
         .attr("height", "31")
-        .attr("viewbox", "0, 0, 765, 31")        
+        .attr("viewbox", "0, 0, 100, 100")        
         .attr("preserveAspectRatio", "xMinYMin meet")        
         .append("g")
         .attr("transform", "translate(0,0)");
