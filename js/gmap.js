@@ -63,7 +63,7 @@ function initialize() {
     var newPos = new google.maps.LatLng(10.773599,106.694420);
     var request = {
     location: pos,
-    radius: 5000,
+    radius: 10000,
     types: ['school', 'restaurant', 'park']
     };
     infowindow = new google.maps.InfoWindow();
