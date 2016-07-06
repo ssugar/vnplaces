@@ -61,14 +61,23 @@ function initialize() {
 
 
     var newPos = new google.maps.LatLng(10.773599,106.694420);
+
+    //var request = {
+    //location: pos,
+    //radius: 10000,
+    //types: ['school', 'restaurant', 'park']
+    //};
+
     var request = {
-    location: pos,
-    radius: 10000,
-    types: ['school', 'restaurant', 'park']
+        location: pos,
+        radius: '5000',
+        query: 'ho chi minh chucks burgers'
     };
+
+
     infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
-    service.nearbySearch(request, callback);
+    service.textSearch(request, callback);
 
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
