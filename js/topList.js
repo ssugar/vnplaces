@@ -48,42 +48,43 @@ d3.tsv("assets/summarizeData.txt", function(data)
         .data(d3.keys(jsonData[0]))
         .enter().append("g")
         .attr("class", "header")
-        //.append("svg")
-        //.attr("x", "100%")
-        //.attr("y", "20%")
-        .attr("transform", function (d, i){
-            if(i == 0){
-                return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
-            }
-            else{
-                return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
-            }
-        })
+        .attr("transform", "translate(0,0)")
+        .append("svg")
+        .attr("x", "100%")
+        .attr("y", "20%")
+        //.attr("transform", function (d, i){
+        //    if(i == 0){
+        //        return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
+        //    }
+        //    else{
+        //        return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
+        //    }
+        //})
         .on("click", function(d){ return refreshTable(d);});
         
         header.append("rect")
-        //.attr("width", "100%")
-        .attr("width", function (d, i){
-            if(i == 0){
-                return ((fieldWidth*firstColMultiplier)-1); 
-            }
-            else{
-                return (fieldWidth-1); 
-            }
-        })
+        .attr("width", "100%")
+        //.attr("width", function (d, i){
+        //    if(i == 0){
+        //        return ((fieldWidth*firstColMultiplier)-1); 
+        //    }
+        //    else{
+        //        return (fieldWidth-1); 
+        //    }
+        //})
         .attr("rx", 5)
         .attr("ry", 5)
         .attr("height", fieldHeight);
         
         header.append("text")
-        .attr("x", function(d, i){
-            if(i == 0){
-                return (fieldWidth / 2 * firstColMultiplier);
-            }
-            else{
-                return (fieldWidth / 2);
-            }
-        })
+        //.attr("x", function(d, i){
+        //    if(i == 0){
+        //        return (fieldWidth / 2 * firstColMultiplier);
+        //    }
+        //    else{
+        //        return (fieldWidth / 2);
+        //    }
+        //})
         .attr("y", fieldHeight / 2)
         .attr("dy", ".35em")
         .text(String);
