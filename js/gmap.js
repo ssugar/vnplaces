@@ -32,7 +32,7 @@ function initialize() {
     }];
 
     var styledMap = new google.maps.StyledMapType(styles, {
-    name: "Styled Map"
+    name: "vnplaces"
     });
 
     var pos = new google.maps.LatLng(10.773599,106.694420);
