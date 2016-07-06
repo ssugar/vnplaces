@@ -106,9 +106,9 @@ function createMarker(place) {
 
     function deetcallback(deetplace, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
-            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '">' + 'tel:' + deetplace.formatted_phone_number + '</a>' + '</p>';
-            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="' + deetplace.website + '">' + 'web:' + deetplace.website + '</a>' + '</p>';
-            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<img src="' + photos[0].getUrl({'maxWidth': 400, 'maxHeight': 400}) + '"></img>' + '</p>';
+            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '">' + 'tel: ' + deetplace.formatted_phone_number + '</a>' + '</p>';
+            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="' + deetplace.website + '">' + 'web: ' + deetplace.website + '</a>' + '</p>';
+            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '</p>';
         }
     }
 
