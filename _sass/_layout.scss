@@ -267,21 +267,12 @@
     height: 345px;
     width: 70%;
     float: left;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 #results {
     height:345px;
     width:30%;
     float: left;
-    background: $header-color;
-    color: $background-color;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-align: center;
-    font-size:.82em;
-    line-height:1;
     overflow-y: hidden;
     overflow-x: hidden;   
 }
