@@ -51,7 +51,7 @@ function initialize() {
         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     }
     });
-    var image = 'https://developers.google.com/maps/documentation/javascript/examples/images/beachflag.png';
+    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
     marker = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
