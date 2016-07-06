@@ -51,22 +51,8 @@ function initialize() {
         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     }
     });
-    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-    marker = new google.maps.Marker({
-    map: map,
-    animation: google.maps.Animation.DROP,
-    position: pos,
-    icon: image
-    });
-
 
     var newPos = new google.maps.LatLng(10.773599,106.694420);
-
-    //var request = {
-    //location: pos,
-    //radius: 10000,
-    //types: ['school', 'restaurant', 'park']
-    //};
 
     var request = {
         location: pos,
