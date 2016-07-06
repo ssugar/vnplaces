@@ -1,7 +1,7 @@
 var map;
 var infowindow;
 
-function initialize() {
+function initialize(q) {
 
     var styles = [{
     stylers: [{
@@ -57,7 +57,7 @@ function initialize() {
     var request = {
         location: pos,
         radius: '5000',
-        query: 'ho chi minh chucks burgers'
+        query: q
     };
 
 
@@ -68,8 +68,6 @@ function initialize() {
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
 }
-
-
 
 function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -108,10 +106,6 @@ function createMarker(place) {
 
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.formatted_address + '</p>';
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.opening_hours + '</p>';
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.html_attributions + '</p>';
-    
-
 
     totalSchool = $('.school').size();
     $('#school').text('Schools: ' + totalSchool);
@@ -127,4 +121,4 @@ function createMarker(place) {
     });
 }
 
-initialize();
+initialize('ho chi minh chucks burgers');
