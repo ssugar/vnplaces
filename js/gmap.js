@@ -111,7 +111,7 @@ function createMarker(place) {
 
     placesList = document.getElementById('results');
 
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + "___" + place.name + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.name + '</p>';
     
 
 
