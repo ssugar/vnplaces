@@ -1,4 +1,4 @@
-window.onresize = function(){ location.reload(); };
+//window.onresize = function(){ location.reload(); };
 
 d3.tsv("assets/summarizeData.txt", function(data) 
 {
