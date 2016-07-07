@@ -92,7 +92,14 @@ function initTopList(){
             })
             .attr("y", fieldHeight / 2)
             .attr("dy", ".35em")
-            .text(String);
+            .text(function(d, i){
+                if(i == 0){
+                    return '<i class="material-icons">whatshot</i>';
+                }
+                else{
+                    return String;
+                }
+            });
             
             // fill the table	
             // select rows
