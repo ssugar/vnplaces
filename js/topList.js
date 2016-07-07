@@ -92,7 +92,7 @@ function initTopList(){
             })
             .attr("y", fieldHeight / 2)
             .attr("dy", ".35em")
-            .html(String);
+            .html('<i class="material-icons">restaurant</i>');
             
             // fill the table	
             // select rows
