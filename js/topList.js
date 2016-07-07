@@ -1,3 +1,5 @@
+window.onresize = function(){ location.reload(); }
+
 d3.tsv("assets/summarizeData.txt", function(data) 
 {
     var jsonData = data.filter(function(d)
