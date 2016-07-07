@@ -9,8 +9,8 @@ d3.tsv("assets/summarizeData.txt", function(data)
 
     var fieldHeight = 30;
     var w = window;
-    if(w.innerWidth < 400){
-        var fieldWidth = 49;
+    if(w.innerWidth < 775){
+        var fieldWidth = (w.innerWidth -25) / 6;
     }
     else{
         var fieldWidth = 124;
