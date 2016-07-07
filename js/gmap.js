@@ -87,8 +87,8 @@ function createMarker(place) {
     placesList = document.getElementById('results');
 
     placesList.innerHTML = '<br/><p class="' + place.types[0] + '">' + place.name + '</p>';
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + place.formatted_address + '"><i class="material-icons">directions</i></a>' + '</p>';
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + place.formatted_address + '">' + place.formatted_address + '</a>' + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + place.formatted_address + '" target="_blank">' + place.formatted_address + '</a>' + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + place.formatted_address + '" target="_blank"><i class="material-icons">directions</i></a>' + '</p>';
 
 
     var deetrequest = {
