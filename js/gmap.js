@@ -51,7 +51,8 @@ function initialize(q) {
     }
     });
 
-    var newPos = new google.maps.LatLng(10.773599,106.694420);
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
 
     if(q == null){
         //no search defined
@@ -63,13 +64,9 @@ function initialize(q) {
             query: q
         };
 
-
         infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.textSearch(request, callback);
-
-        map.mapTypes.set('map_style', styledMap);
-        map.setMapTypeId('map_style');
     }
 }
 
@@ -85,7 +82,6 @@ function createMarker(place) {
         return;
     }
 
-    var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
@@ -115,7 +111,7 @@ function createMarker(place) {
     }
 
     google.maps.event.addListener(marker, 'click', function () {
-        infowindow.setContent(placesList.innerHTML);
+        infowindow.setContent('<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>');
         infowindow.open(map, this);
     });
 }
