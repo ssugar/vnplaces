@@ -92,7 +92,7 @@ function initTopList(){
             })
             .attr("y", fieldHeight / 2)
             .attr("dy", ".35em")
-            .text(String);
+            .html(String);
             
             // fill the table	
             // select rows
