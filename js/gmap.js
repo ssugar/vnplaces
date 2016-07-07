@@ -35,11 +35,11 @@ function initialize(q) {
     });
 
     var pos = new google.maps.LatLng(10.773599,106.694420);
-    var center = new google.maps.LatLng(10.773599,106.694420);
+    //var center = new google.maps.LatLng(10.773599,106.694420);
 
     map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    center: center,
+    //center: center,
     zoom: 14,
     streetViewControl: false,
     panControl: false,
@@ -55,7 +55,7 @@ function initialize(q) {
     map.setMapTypeId('map_style');
 
     if(q == null){
-        //no search defined
+        map.setCenter(pos);
     }
     else{
         var request = {
@@ -111,7 +111,7 @@ function createMarker(place) {
     }
 
     google.maps.event.addListener(marker, 'click', function () {
-        infowindow.setContent('<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>');
+        infowindow.setContent('<img src="' + photos[0].getUrl({'maxWidth': 400, 'maxHeight': 400}) + '"></img>');
         infowindow.open(map, this);
     });
 }
