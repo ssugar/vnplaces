@@ -92,6 +92,10 @@ function initTopList(){
             })
             .attr("y", fieldHeight / 2)
             .attr("dy", ".35em")
+            .append("foreignObject")
+            .append("xhtml:div")
+            .append("div")
+            .append("p")
             .html('<i class="material-icons">restaurant</i>');
             
             // fill the table	
