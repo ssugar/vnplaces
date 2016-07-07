@@ -2,7 +2,7 @@ var map;
 var infowindow;
 
 function initialize(q) {
-
+    console.log(q);
     var styles = [{
     stylers: [{
         hue: "#8DC9FF"
@@ -54,19 +54,24 @@ function initialize(q) {
 
     var newPos = new google.maps.LatLng(10.773599,106.694420);
 
-    var request = {
-        location: pos,
-        radius: '5000',
-        query: q
-    };
+    if(q == null){
+        //no search defined
+    }
+    else{
+        var request = {
+            location: pos,
+            radius: '5000',
+            query: q
+        };
 
 
-    infowindow = new google.maps.InfoWindow();
-    var service = new google.maps.places.PlacesService(map);
-    service.textSearch(request, callback);
+        infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.textSearch(request, callback);
 
-    map.mapTypes.set('map_style', styledMap);
-    map.setMapTypeId('map_style');
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+    }
 }
 
 function callback(results, status) {
@@ -116,4 +121,4 @@ function createMarker(place) {
     });
 }
 
-initialize('ho chi minh au parc');
+initialize();
