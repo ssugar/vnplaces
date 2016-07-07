@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+function initTopList(){ 
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
         var jsonData = data.filter(function(d)
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         }
     });
-});
+}
 
 function sort(a,b){
     if(typeof a == "string"){
@@ -188,3 +188,5 @@ function sort(a,b){
         return b ? 1 : a ? -1 : 0;
     }
 }
+
+initTopList();
