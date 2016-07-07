@@ -87,7 +87,7 @@ function createMarker(place) {
     placesList = document.getElementById('results');
 
     placesList.innerHTML = '<br/><p class="' + place.types[0] + '">' + place.name + '</p>';
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + place.formatted_address + '</p>';
+    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="geo:' + place.geometry.location + '"><i class="material-icons">address</i><br/>' + place.formatted_address + '</a>' + '</p>';
 
     var deetrequest = {
         placeId: place.place_id
