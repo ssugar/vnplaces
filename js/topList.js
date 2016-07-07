@@ -79,24 +79,21 @@ function initTopList(){
             })
             .attr("rx", 5)
             .attr("ry", 5)
-            .attr("height", fieldHeight);
+            .attr("height", fieldHeight)
+            .html('<i class="material-icons">public</i>');
             
-            header.append("text")
-            .attr("x", function(d, i){
-                if(i == 0){
-                    return (fieldWidth / 2 * firstColMultiplier);
-                }
-                else{
-                    return (fieldWidth / 2);
-                }
-            })
-            .attr("y", fieldHeight / 2)
-            .attr("dy", ".35em")
-            .append("foreignObject")
-            .append("xhtml:div")
-            .append("div")
-            .append("p")
-            .html('<i class="material-icons">restaurant</i>');
+            //header.append("text")
+            //.attr("x", function(d, i){
+            //    if(i == 0){
+            //        return (fieldWidth / 2 * firstColMultiplier);
+            //    }
+            //    else{
+            //        return (fieldWidth / 2);
+            //    }
+            //})
+            //.attr("y", fieldHeight / 2)
+            //.attr("dy", ".35em")
+            //.text(String);
             
             // fill the table	
             // select rows
