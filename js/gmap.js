@@ -34,12 +34,11 @@ function initialize(q) {
     name: "vnplaces"
     });
 
+    //10.77 x 106.69 = Cho Ben Thanh
     var pos = new google.maps.LatLng(10.773599,106.694420);
-    //var center = new google.maps.LatLng(10.773599,106.694420);
 
     map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //center: center,
     zoom: 14,
     streetViewControl: false,
     panControl: false,
