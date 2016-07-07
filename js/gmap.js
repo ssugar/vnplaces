@@ -3,35 +3,30 @@ var infowindow;
 
 function initialize(q) {
     var styles = [{
-    stylers: [{
-        hue: "#8DC9FF"
-    }, {
-        saturation: -50
-    }, {
-        lightness: 7
-    }, {
-        weight: 1
-    }
-
-    ]
-    }, {
-    featureType: "road",
-    elementType: "geometry",
-    stylers: [{
-        lightness: 100
-    }, {
-        visibility: "on"
-    }]
-    }, {
-    featureType: "road",
-    elementType: "labels",
-    stylers: [{
-        visibility: "on"
-    }]
-    }];
+        stylers: [{
+            hue: "#8DC9FF"
+        }, {
+            saturation: -50
+        }, {
+            lightness: 7
+        }, {
+            weight: 1
+        }]}, {
+            featureType: "road",
+            elementType: "geometry",
+            stylers: [{
+                lightness: 100
+        }, {
+            visibility: "on"
+        }]}, {
+            featureType: "road",
+            elementType: "labels",
+            stylers: [{
+                visibility: "on"
+    }]}];
 
     var styledMap = new google.maps.StyledMapType(styles, {
-    name: "vnplaces"
+        name: "vnplaces"
     });
 
     //10.77 x 106.69 = Cho Ben Thanh
