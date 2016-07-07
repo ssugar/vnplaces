@@ -2,7 +2,6 @@ var map;
 var infowindow;
 
 function initialize(q) {
-    console.log(q);
     var styles = [{
     stylers: [{
         hue: "#8DC9FF"
