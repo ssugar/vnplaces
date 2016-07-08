@@ -274,3 +274,13 @@ color: $background-color;
     text-align: center;
     font-size: $small-font-size;
 }
+
+.htmlLabel {
+    font-family: arial,helvetica,'sans-serif';
+    font-size: 12px;
+    padding: 8px;
+    background-color: $header-color
+}
+.htmlLabel p {
+    margin: 0;
+}
