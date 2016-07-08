@@ -276,9 +276,8 @@ color: $background-color;
 }
 
 .htmlLabel {
-    font-family: arial,helvetica,'sans-serif';
-    font-size: 12px;
-    padding: 8px;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
     background-color: $header-color;
     color: $background-color;
     text-align: center;
