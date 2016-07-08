@@ -82,8 +82,7 @@ function initTopList(){
             .attr("height", fieldHeight);
 
             //.html('<i class="material-icons">public</i>')
-            
-            header.append("text")
+            foreignObjects = header.append("foreignObject")
             .attr("x", function(d, i){
                 if(i == 0){
                     return (fieldWidth / 2 * firstColMultiplier);
@@ -93,8 +92,48 @@ function initTopList(){
                 }
             })
             .attr("y", fieldHeight / 2)
-            .attr("dy", ".35em")
-            .text(String);
+            .attr("width", function (d, i){
+                if(i == 0){
+                    return ((fieldWidth*firstColMultiplier)-1); 
+                }
+                else{
+                    return (fieldWidth-1); 
+                }
+            })
+            .attr("height", fieldHeight);
+
+
+            htmlDOMs = foreignObjects.append("xhtml:body")
+                .style("margin",0)
+                .style("padding",0)
+
+            htmlLabels = htmlDOMs.append("div")
+                .attr("class","htmlLabel");
+
+            htmlLabels.append("p")
+                .attr("class","bar-label")
+                .text(String)
+
+            htmlLabels.append("p")
+                .attr("class","description")
+                .html(function(d,i) { 
+                    return "line 1 <br/> line 2"; 
+                });
+
+
+
+            //header.append("text")
+            //.attr("x", function(d, i){
+            //    if(i == 0){
+            //        return (fieldWidth / 2 * firstColMultiplier);
+            //    }
+            //    else{
+            //        return (fieldWidth / 2);
+            //    }
+            //})
+            //.attr("y", fieldHeight / 2)
+            //.attr("dy", ".35em")
+            //.text(String);
             
             // fill the table	
             // select rows
