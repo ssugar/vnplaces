@@ -68,18 +68,18 @@ function initTopList(){
             })
             .on("click", function(d){ return refreshTable(d);});
 
-            header.append("rect")
-            .attr("width", function (d, i){
-                if(i == 0){
-                    return ((fieldWidth*firstColMultiplier)-1); 
-                }
-                else{
-                    return (fieldWidth-1); 
-                }
-            })
-            .attr("rx", 5)
-            .attr("ry", 5)
-            .attr("height", fieldHeight);
+            //header.append("rect")
+            //.attr("width", function (d, i){
+            //    if(i == 0){
+            //        return ((fieldWidth*firstColMultiplier)-1); 
+            //    }
+            //    else{
+            //        return (fieldWidth-1); 
+            //    }
+            //})
+            //.attr("rx", 5)
+            //.attr("ry", 5)
+            //.attr("height", fieldHeight);
 
             //.html('<i class="material-icons">public</i>')
             foreignObjects = header.append("foreignObject")
