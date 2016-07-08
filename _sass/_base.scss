@@ -279,7 +279,10 @@ color: $background-color;
     font-family: arial,helvetica,'sans-serif';
     font-size: 12px;
     padding: 8px;
-    background-color: $header-color
+    background-color: $header-color;
+    color: $background-color;
+    text-align: center;
+    border-radius: 5px;
 }
 .htmlLabel p {
     margin: 0;
