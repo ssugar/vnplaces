@@ -86,7 +86,8 @@ function initTopList(){
                 .style("padding",0)
 
             htmlLabels = htmlDOMs.append("div")
-                .attr("class","htmlLabel");
+                .attr("class","htmlLabel")
+                .on("click", function(d){ return refreshTable(d);});
 
             htmlLabels.append("p")
                 .attr("class","description")
@@ -103,7 +104,9 @@ function initTopList(){
                     else{
                         return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>'; 
                     }
-                });
+                })
+                .on("click", function(d){ return refreshTable(d);});
+
 
 
 
