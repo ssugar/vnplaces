@@ -101,7 +101,7 @@ function initTopList(){
                         return '<i class="material-icons">plus_one</i>'; 
                     }
                     else{
-                        return '<i class="material-icons">whatshot</i>' + '/' + '<i class="material-icons">plus_one</i>'; 
+                        return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>'; 
                     }
                 });
 
