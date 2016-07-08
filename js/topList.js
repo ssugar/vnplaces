@@ -94,6 +94,9 @@ function initTopList(){
                     if(i == 0){
                         return '<i class="material-icons">restaurant</i>'; 
                     }
+                    else if(i == 2){
+                        return '<i class="material-icons">plus_one</i>'; 
+                    }
                     else{
                         return '<i class="material-icons">whatshot</i>'; 
                     }
