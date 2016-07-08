@@ -83,14 +83,7 @@ function initTopList(){
 
             //.html('<i class="material-icons">public</i>')
             foreignObjects = header.append("foreignObject")
-            .attr("x", function(d, i){
-                if(i == 0){
-                    return (i * (fieldWidth * firstColMultiplier));
-                }
-                else{
-                    return ((i + firstColMultiplier - 1) * fieldWidth);
-                }
-            })
+            .attr("x", 0)
             .attr("y", 0)
             .attr("width", function (d, i){
                 if(i == 0){
@@ -102,17 +95,12 @@ function initTopList(){
             })
             .attr("height", fieldHeight);
 
-
             htmlDOMs = foreignObjects.append("xhtml:body")
                 .style("margin",0)
                 .style("padding",0)
 
             htmlLabels = htmlDOMs.append("div")
                 .attr("class","htmlLabel");
-
-            //htmlLabels.append("p")
-            //    .attr("class","bar-label")
-            //    .text(String)
 
             htmlLabels.append("p")
                 .attr("class","description")
