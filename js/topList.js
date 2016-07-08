@@ -85,13 +85,13 @@ function initTopList(){
             foreignObjects = header.append("foreignObject")
             .attr("x", function(d, i){
                 if(i == 0){
-                    return (fieldWidth / 2 * firstColMultiplier);
+                    return (i * (fieldWidth * firstColMultiplier));
                 }
                 else{
-                    return (fieldWidth / 2);
+                    return ((i + firstColMultiplier - 1) * fieldWidth);
                 }
             })
-            .attr("y", fieldHeight / 2)
+            .attr("y", 0)
             .attr("width", function (d, i){
                 if(i == 0){
                     return ((fieldWidth*firstColMultiplier)-1); 
@@ -110,14 +110,14 @@ function initTopList(){
             htmlLabels = htmlDOMs.append("div")
                 .attr("class","htmlLabel");
 
-            htmlLabels.append("p")
-                .attr("class","bar-label")
-                .text(String)
+            //htmlLabels.append("p")
+            //    .attr("class","bar-label")
+            //    .text(String)
 
             htmlLabels.append("p")
                 .attr("class","description")
                 .html(function(d,i) { 
-                    return "line 1 <br/> line 2"; 
+                    return '<i class="material-icons">whatshot</i>'; 
                 });
 
 
