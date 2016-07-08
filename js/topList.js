@@ -68,20 +68,6 @@ function initTopList(){
             })
             .on("click", function(d){ return refreshTable(d);});
 
-            //header.append("rect")
-            //.attr("width", function (d, i){
-            //    if(i == 0){
-            //        return ((fieldWidth*firstColMultiplier)-1); 
-            //    }
-            //    else{
-            //        return (fieldWidth-1); 
-            //    }
-            //})
-            //.attr("rx", 5)
-            //.attr("ry", 5)
-            //.attr("height", fieldHeight);
-
-            //.html('<i class="material-icons">public</i>')
             foreignObjects = header.append("foreignObject")
             .attr("x", 0)
             .attr("y", 0)
@@ -105,7 +91,12 @@ function initTopList(){
             htmlLabels.append("p")
                 .attr("class","description")
                 .html(function(d,i) { 
-                    return '<i class="material-icons">whatshot</i>'; 
+                    if(i == 0){
+                        return '<i class="material-icons">restaurant</i>'; 
+                    }
+                    else{
+                        return '<i class="material-icons">whatshot</i>'; 
+                    }
                 });
 
 
