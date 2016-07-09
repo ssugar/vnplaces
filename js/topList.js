@@ -53,6 +53,7 @@ function initTopList(){
 
         d3.select("#filter-input").on("input", function() {
             filterVal = +this.value;
+            d3.select('#filter-value').text(filterVal);            
             refreshTable(null);
         });
 
