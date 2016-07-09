@@ -103,12 +103,12 @@ function createMarker(place) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
 
             if (deetplace.photos.length < 4){
-                photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100}) + '"></img>';
+                photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 150, 'maxHeight': 150}) + '"></img>';
                 placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
-                placesList.innerHTML += '<p class="' + place.types[0] + '">' + photoHtml + '</p>';
+                placesList.innerHTML += '<div class="photoDisplay">' + photoHtml + '</div>';
             }
             else {
-                photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[1].getUrl({'maxWidth': 100, 'maxHeight': 100}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[2].getUrl({'maxWidth': 100, 'maxHeight': 100}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[3].getUrl({'maxWidth': 100, 'maxHeight': 100}) + '"></img>';
+                photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 150, 'maxHeight': 150}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[1].getUrl({'maxWidth': 150, 'maxHeight': 150}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[2].getUrl({'maxWidth': 150, 'maxHeight': 150}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[3].getUrl({'maxWidth': 150, 'maxHeight': 150}) + '"></img>';
                 placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
                 placesList.innerHTML += '<a class="w3-btn-floating-left" onclick="plusDivs(-1)">&#10094;</a>' + '<a class="w3-btn-floating-right" onclick="plusDivs(+1)">&#10095;</a>'
                 placesList.innerHTML += '<div class="photoDisplay">' + photoHtml + '</div>';
