@@ -101,7 +101,6 @@ function createMarker(place) {
 
     function deetcallback(deetplace, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
-            console.log(deetplace.photos.length);
 
             if (deetplace.photos.length < 4){
                 photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
@@ -132,14 +131,12 @@ function initSlider(){
 }
 
 function plusDivs(n) {
-    console.log(slideIndex += n);
     showDivs(slideIndex += n);
 }
 
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("imgSlider");
-    console.log(x.length);
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
