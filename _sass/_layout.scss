@@ -279,28 +279,38 @@
 }
 
 .w3-btn-floating-left{
-    bottom: 60px;
+    bottom: 70px;
     left: 0px;
     position: absolute;
     z-index: 999;
     height: 24px;
     width: 24px;
+    @include media-query($on-palm) {
+        bottom: 60px;
+    }
 }
 
 .w3-btn-floating-right{
-    bottom: 60px;
+    bottom: 70px;
     right: 0px;
     position: absolute;
     z-index: 999;
     height: 24px;
     width: 24px;
+    @include media-query($on-palm) {
+        bottom: 60px;
+    }
+    
 }
 
 .photoDisplay {
-    height: 40%;
+    height: 50%;
     width: 100%;
     position: absolute;
     bottom: 0px;
+    @include media-query($on-palm) {
+        height: 40%;
+    }
 }
 
 img.imgSlider {
