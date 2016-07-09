@@ -1,3 +1,5 @@
+var filterVal = 2000;
+
 function initTopList(){ 
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
@@ -203,3 +205,9 @@ function sort(a,b){
 }
 
 initTopList();
+
+d3.select("#filter-input").on("input", function() {
+    filterVal = +this.value;
+    d3.select('#filter-value').text(filterVal);
+    console.log(filterVal);
+});
