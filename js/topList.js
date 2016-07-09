@@ -225,7 +225,7 @@ function sort(a,b){
 
 function clearTable(){
     d3.select(".rowsGrp").html("");
-    d3.select("g.row").selectAll("*").remove();
+    //d3.select("g.row").selectAll("*").remove();
 }
 
 initTopList();
