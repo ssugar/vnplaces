@@ -290,6 +290,22 @@ color: $background-color;
 .w3-btn-floating-left{
     font-size: $small-font-size;
     color: $grey-color-light;
+
+    a {
+        color: $grey-color-light;
+        text-decoration: none;
+
+        &:visited {
+            color: $grey-color-light;
+        }
+
+        &:hover {
+            color: $grey-color-light;
+            text-decoration: none;
+        }
+    }
+
+
 }
 
 .w3-btn-floating-right{
