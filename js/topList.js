@@ -1,15 +1,17 @@
 var filterVal = 2000;
+var jsonData;
 
-function initTopList(filterThreshold){ 
-    console.log(filterThreshold);
+function initTopList(){ 
+    console.log(filterVal);
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
-        var jsonData = data.filter(function(d)
+        jsonData = data.filter(function(d)
         {
-            if(d["Count"] > filterThreshold){
+            if(d["Count"] > filterVal){
                 return d;
             }
         });
+        console.log(jsonData.length);
 
         var w = window;
         var fieldHeight = 30;
@@ -49,10 +51,24 @@ function initTopList(filterThreshold){
 
         var previousSort = null;
 
+        d3.select("#filter-input").on("input", function() {
+            filterVal = +this.value;
+            refreshTable(null);
+        });
+
         refreshTable(null);
+
 
         function refreshTable(sortOn)
         {
+            jsonData = data.filter(function(d)
+            {
+                if(d["Count"] > filterVal){
+                    return d;
+                }
+            });
+            console.log(jsonData.length);
+
             // create the table header	
             var header = headerGrp.selectAll("g")
             .data(d3.keys(jsonData[0]))
@@ -166,7 +182,7 @@ function initTopList(filterThreshold){
             .attr("y", fieldHeight / 2)
             .attr("dy", ".35em")
             .text(String);
-            
+
             //update if not in initialisation
             if(sortOn !== null) {
                 // update rows
@@ -205,9 +221,4 @@ function sort(a,b){
     }
 }
 
-initTopList(filterVal);
-
-d3.select("#filter-input").on("input", function() {
-    filterVal = +this.value;
-    refreshTable(null);
-});
+initTopList();
