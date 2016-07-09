@@ -1,5 +1,6 @@
 var map;
 var infowindow;
+var slideIndex;
 
 function initialize(q) {
     var styles = [{
@@ -126,7 +127,7 @@ function createMarker(place) {
 initialize();
 
 function initSlider(){
-    var slideIndex = 1;
+    slideIndex = 1;
     showDivs(slideIndex);
 }
 
