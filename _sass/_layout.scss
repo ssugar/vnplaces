@@ -293,15 +293,13 @@
 }
 
 .imgDisplay {
-    position: absolute;
-    bottom: 0px;
     height: 100px;
     width: 100%;
-    //vertical-align: center;
-    img{
-        position: relative;
-        margin: 0 auto;
-    }
+    vertical-align: bottom;
+}
+
+.imgSlider img{
+     margin: 0 auto;
 } 
 
 
