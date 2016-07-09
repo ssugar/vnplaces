@@ -276,12 +276,6 @@
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;   
-    img {
-        position: absolute;
-        //margin: 0 auto;
-        bottom: 0px;
-        text-align: center;
-    }
 }
 
 .w3-btn-floating-left{
@@ -297,4 +291,17 @@
     position: absolute;
     z-index: 999;
 }
+
+.imgDisplay {
+    margin: 0 auto;
+    height: 100px;
+    img {
+        position: absolute;
+        //margin: 0 auto;
+        bottom: 0px;
+        text-align: center;
+    }
+} 
+
+
 
