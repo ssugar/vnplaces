@@ -278,9 +278,9 @@
     overflow-x: hidden;   
     img {
         position: absolute;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0 auto;
         bottom: 0px;
+        //text-align: center;
     }
 }
 
