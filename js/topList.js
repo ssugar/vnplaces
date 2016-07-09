@@ -1,11 +1,11 @@
 var filterVal = 2000;
 
-function initTopList(){ 
+function initTopList(filterThreshold){ 
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
         var jsonData = data.filter(function(d)
         {
-            if(d["Count"] > 2000){
+            if(d["Count"] > filterThreshold){
                 return d;
             }
         });
@@ -204,10 +204,10 @@ function sort(a,b){
     }
 }
 
-initTopList();
+initTopList(filterVal);
 
 d3.select("#filter-input").on("input", function() {
     filterVal = +this.value;
     d3.select('#filter-value').text(filterVal);
-    console.log(filterVal);
+    initTopList(filterVal);
 });
