@@ -224,7 +224,7 @@ function sort(a,b){
 }
 
 function clearTable(){
-    d3.select(".container").html("");
+    d3.select(".rowsGrp").html("");
     d3.select("g.row").selectAll("*").remove();
 }
 
