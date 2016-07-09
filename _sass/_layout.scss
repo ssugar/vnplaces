@@ -295,7 +295,8 @@
 .imgDisplay {
     height: 100px;
     width: 100%;
-    vertical-align: bottom;
+    position: absolute;
+    bottom: 0px;
 }
 
 .imgSlider img{
