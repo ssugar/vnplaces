@@ -131,7 +131,10 @@ function initSlider(){
 }
 
 function plusDivs(n) {
+    console.log(slideIndex);
+    console.log(n);
     showDivs(slideIndex += n);
+    console.log(slideIndex);
 }
 
 function showDivs(n) {
