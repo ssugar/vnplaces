@@ -54,6 +54,7 @@ function initTopList(){
         d3.select("#filter-input").on("input", function() {
             filterVal = +this.value;
             d3.select('#filter-value').text(filterVal);            
+            clearTable();
             refreshTable(null);
         });
 
@@ -220,6 +221,11 @@ function sort(a,b){
     else if(typeof a == "boolean"){
         return b ? 1 : a ? -1 : 0;
     }
+}
+
+function clearTable(){
+    //d3.select(".container").html("");
+    d3.select("g.row").selectAll("*").remove();
 }
 
 initTopList();
