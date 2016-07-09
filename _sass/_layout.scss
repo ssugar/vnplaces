@@ -299,8 +299,8 @@
     bottom: 0px;
 }
 
-.imgSlider img{
-    position: absolute;
+img.imgSlider {
+    position: relative;
     margin: 0 auto;
 } 
 
