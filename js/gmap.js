@@ -105,23 +105,14 @@ function createMarker(place) {
             if (deetplace.photos.length < 4){
                 photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
             }
-            else
-            {
+            else {
                 photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[1].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[2].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[3].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
+                initSlider();
             }
-
             placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
             placesList.innerHTML += '<a class="w3-btn-floating" onclick="plusDivs(-1)">&#10094;</a>' + '<a class="w3-btn-floating" onclick="plusDivs(+1)">&#10095;</a>'
             placesList.innerHTML += '<p class="' + place.types[0] + '">' + photoHtml + '</p>';
         }
-    }
-
-    if (deetplace.photos.length < 4){
-        //no slider required;
-    }
-    else
-    {
-        initSlider();
     }
 
     google.maps.event.addListener(marker, 'click', function () {
@@ -135,19 +126,19 @@ initialize();
 function initSlider(){
     var slideIndex = 1;
     showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("imgSlider");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} ;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }  
 }
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("imgSlider");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}  
