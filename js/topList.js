@@ -1,7 +1,7 @@
 var filterVal = 2000;
 
 function initTopList(filterThreshold){ 
-    console.log(filterThreshold.length);
+    console.log(filterThreshold);
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
         var jsonData = data.filter(function(d)
@@ -209,5 +209,5 @@ initTopList(filterVal);
 
 d3.select("#filter-input").on("input", function() {
     filterVal = +this.value;
-    initTopList(filterVal);
+    refreshTable(null);
 });
