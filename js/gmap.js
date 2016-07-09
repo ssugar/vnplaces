@@ -102,16 +102,21 @@ function createMarker(place) {
     function deetcallback(deetplace, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
 
-            if (deetplace.photos.length < 4){
-                photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>';
-                placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
-                placesList.innerHTML += '<div class="photoDisplay">' + photoHtml + '</div>';
-            }
-            else {
-                photoHtml = '<img class="imgSlider" src="' + deetplace.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[1].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[2].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>' + '<img class="imgSlider" src="' + deetplace.photos[3].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>';
-                placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
-                placesList.innerHTML += '<a class="w3-btn-floating-left" onclick="plusDivs(-1)"><i class="material-icons">keyboard_arrow_left</i></a>' + '<a class="w3-btn-floating-right" onclick="plusDivs(+1)"><i class="material-icons">keyboard_arrow_right</i></a>'
-                placesList.innerHTML += '<div class="photoDisplay">' + photoHtml + '</div>';
+            placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
+
+            deetplace.photos.forEach(function(item, ind){
+                if(ind == 0){
+                    photoHtml = '<img class="imgSlider" src="' + deetplace.photos[ind].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>';
+                }
+                else{
+                    photoHtml += '<img class="imgSlider" src="' + deetplace.photos[ind].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>'; 
+                }
+            });
+
+            placesList.innerHTML += '<div class="photoDisplay">' + photoHtml + '</div>';
+
+            if (deetplace.photos.length > 1){
+                placesList.innerHTML += '<a class="w3-btn-floating-left" onclick="plusDivs(-1)"><i class="material-icons">keyboard_arrow_left</i></a>' + '<a class="w3-btn-floating-right" onclick="plusDivs(+1)"><i class="material-icons">keyboard_arrow_right</i></a>';
                 initSlider();
             }
         }
