@@ -273,8 +273,15 @@
     height:345px;
     width:30%;
     float: left;
+    position: relative;
     overflow-y: hidden;
     overflow-x: hidden;   
+}
+
+.w3-btn-floating-left{
+    top: 100px;
+    left: 0px;
+    position: absolute;
 }
 
 .w3-btn-floating-right{
@@ -282,7 +289,3 @@
     right: 0px;
 }
 
-.w3-btn-floating-left{
-    top: 100px;
-    left: 0px;
-}
