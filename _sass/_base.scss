@@ -290,28 +290,35 @@ color: $background-color;
 .w3-btn-floating-left{
     font-size: $small-font-size;
     color: $grey-color-light;
-
-    a {
+}
+a.w3-btn-floating-left {
+    color: $grey-color-light;
+    text-decoration: none;
+    &:visited {
+        color: $grey-color-light;
+    }
+    &:hover {
         color: $grey-color-light;
         text-decoration: none;
-
-        &:visited {
-            color: $grey-color-light;
-        }
-
-        &:hover {
-            color: $grey-color-light;
-            text-decoration: none;
-        }
     }
-
-
 }
 
 .w3-btn-floating-right{
     font-size: $small-font-size;
     color: $grey-color-light;
 }
+a.w3-btn-floating-right {
+    color: $grey-color-light;
+    text-decoration: none;
+    &:visited {
+        color: $grey-color-light;
+    }
+    &:hover {
+        color: $grey-color-light;
+        text-decoration: none;
+    }
+}
+
 
 .photoDisplay {
     background-color: $grey-color-dark;
