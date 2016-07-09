@@ -279,24 +279,25 @@
 }
 
 .w3-btn-floating-left{
-    bottom: 50px;
+    bottom: 75px;
     left: 0px;
     position: absolute;
     z-index: 999;
 }
 
 .w3-btn-floating-right{
-    bottom: 50px;
+    bottom: 75px;
     right: 0px;
     position: absolute;
     z-index: 999;
 }
 
 .photoDisplay {
-    height: 100px;
+    height: 150px;
     width: 100%;
     position: absolute;
     bottom: 0px;
+    text-align: center;
 }
 
 .imgSlider img{
