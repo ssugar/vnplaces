@@ -110,6 +110,7 @@ function createMarker(place) {
 
     function deetcallback(deetplace, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
+            console.log(deetplace.photos.length);
             placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a> <a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
             placesList.innerHTML += '<a class="w3-btn-floating" onclick="plusDivs(-1)">&#10094;</a>' + '<a class="w3-btn-floating" onclick="plusDivs(+1)">&#10095;</a>'
             placesList.innerHTML += '<p class="' + place.types[0] + '">' + photoHtml + '</p>';
