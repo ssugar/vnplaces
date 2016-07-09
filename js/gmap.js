@@ -76,6 +76,8 @@ function createMarker(place) {
         return;
     }
 
+    console.log(photos.length);
+
     if (photos.length < 4){
         photoHtml = '<img class="imgSlider" src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
     }
