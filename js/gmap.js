@@ -106,10 +106,10 @@ function createMarker(place) {
 
             deetplace.photos.forEach(function(item, ind){
                 if(ind == 0){
-                    photoHtml = '<img class="imgSlider" src="' + deetplace.photos[ind].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>';
+                    photoHtml = '<img class="imgSlider" src="' + deetplace.photos[ind].getUrl({'maxWidth': 400, 'maxHeight': 400}) + '"></img>';
                 }
                 else{
-                    photoHtml += '<img class="imgSlider" src="' + deetplace.photos[ind].getUrl({'maxWidth': 200, 'maxHeight': 100}) + '"></img>'; 
+                    photoHtml += '<img class="imgSlider" src="' + deetplace.photos[ind].getUrl({'maxWidth': 400, 'maxHeight': 400}) + '"></img>'; 
                 }
             });
 
