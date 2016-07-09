@@ -91,7 +91,6 @@ function initTopList(){
 
             htmlLabels.append("p")
                 .attr("class","description")
-                .attr("dy", ".35em")
                 .html(function(d,i) { 
                     if(i == 0){
                         return '<i class="material-icons">restaurant</i>'; 
