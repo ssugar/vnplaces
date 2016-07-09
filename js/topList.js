@@ -20,7 +20,6 @@ function initTopList(){
             var fieldWidth = 124;
         }
 
-
         //using total data rows + 1 for header time height + 1 for padding
         var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
 
@@ -32,8 +31,6 @@ function initTopList(){
             .attr("class", "canvas")
             .attr("width", "100%")
             .attr("height", "31")
-            //.attr("viewbox", "0, 0, 100, 100")        
-            //.attr("preserveAspectRatio", "xMinYMin meet")        
             .append("g")
             .attr("transform", "translate(0,0)");
 
@@ -107,26 +104,11 @@ function initTopList(){
                 })
                 .on("click", function(d){ return refreshTable(d);});
 
-
-
-
-            //header.append("text")
-            //.attr("x", function(d, i){
-            //    if(i == 0){
-            //        return (fieldWidth / 2 * firstColMultiplier);
-            //    }
-            //    else{
-            //        return (fieldWidth / 2);
-            //    }
-            //})
-            //.attr("y", fieldHeight / 2)
-            //.attr("dy", ".35em")
-            //.text(String);
-            
             // fill the table	
             // select rows
-            var rows = rowsGrp.selectAll("g.row").data(jsonData, 
-            function(d){ return d.Name; });
+            var rows = rowsGrp.selectAll("g.row").data(jsonData, function(d){ 
+                return d.Name; 
+            });
             
             // create rows	
             var rowsEnter = rows.enter().append("svg:g")
@@ -134,13 +116,15 @@ function initTopList(){
             .attr("transform", function (d, i){
                 return "translate(0," + (i) * (fieldHeight+1) + ")";
             })
-        .on("click", function(d){
+            .on("click", function(d){
                 //calling gmap.js initialize function
-            initialize("ho chi minh " + d.Name);
+                initialize("ho chi minh " + d.Name);
             });
 
             // select cells
-            var cells = rows.selectAll("g.cell").data(function(d){return d3.values(d);});
+            var cells = rows.selectAll("g.cell").data(function(d){
+                return d3.values(d);
+            });
             
             // create cells
             var cellsEnter = cells.enter().append("svg:g")
