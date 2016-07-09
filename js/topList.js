@@ -1,7 +1,7 @@
 var filterVal = 2000;
 
 function initTopList(filterThreshold){ 
-    console.log(filterThreshold);
+    console.log(filterThreshold.length);
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
         var jsonData = data.filter(function(d)
