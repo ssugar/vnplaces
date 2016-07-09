@@ -76,7 +76,13 @@ function createMarker(place) {
         return;
     }
 
-    photoHtml = '<img class="imgSlider" src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + photos[1].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + photos[2].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + photos[3].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
+    if (photos.length < 4){
+        photoHtml = '<img class="imgSlider" src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
+    }
+    else
+    {
+        photoHtml = '<img class="imgSlider" src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + photos[1].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + photos[2].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>' + '<img class="imgSlider" src="' + photos[3].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>';
+    }
 
     var marker = new google.maps.Marker({
         map: map,
@@ -108,6 +114,14 @@ function createMarker(place) {
         }
     }
 
+    if (photos.length < 4){
+        //no slider required;
+    }
+    else
+    {
+        initSlider();
+    }
+
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent('<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>');
         infowindow.open(map, this);
@@ -116,20 +130,22 @@ function createMarker(place) {
 
 initialize();
 
-var slideIndex = 1;
-showDivs(slideIndex);
+function initSlider(){
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("imgSlider");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
     }
-    x[slideIndex-1].style.display = "block";
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("imgSlider");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }  
 }
