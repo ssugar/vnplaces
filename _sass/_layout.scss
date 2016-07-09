@@ -276,6 +276,10 @@
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;   
+    img {
+        position: absolute;
+        bottom: 0px;
+    }
 }
 
 .w3-btn-floating-left{
@@ -287,5 +291,6 @@
 .w3-btn-floating-right{
     top: 100px;
     right: 0px;
+    position: absolute;
 }
 
