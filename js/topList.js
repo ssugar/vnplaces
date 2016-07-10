@@ -236,7 +236,7 @@ function initFilterAndCount(filterThresh){
 
     filterLabel.append("span")
         .attr("id", "filter-value")
-        .text('> ' + filterThresh);
+        .text(' > ' + filterThresh);
 
     filterLabel.append("input")
         .attr("id", "filter-input")
