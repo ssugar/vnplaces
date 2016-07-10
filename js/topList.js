@@ -241,7 +241,7 @@ function initFilterAndCount(){
             .attr("step", "100")
             .attr("min", "1000")
             .attr("max", "5000")
-            .attr("width", "50%");
+            .attr("style", "width=50%;");
 
         filterLabel.append("span")
             .attr("id", "rest-count");
