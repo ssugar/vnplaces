@@ -41,5 +41,3 @@ function centerOnUserMark(){
 
 //getLocation();
 //centerOnUserMark();
-
-var GeoMarker = new GeolocationMarker(map);
