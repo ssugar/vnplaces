@@ -227,6 +227,7 @@ function clearTable(){
 }
 
 function initFilterAndCount(filterThresh){
+    d3.select(".slideFilter").html("");
     var filterLabel = d3.select(".slideFilter").append("label")
         .attr("for", "filter-input");
 
