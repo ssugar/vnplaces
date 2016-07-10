@@ -241,7 +241,7 @@ function initFilterAndCount(filterThresh){
             .attr("min", "1000")
             .attr("max", "5000")
             .attr("style", "width=50%;")
-            .value(2000);
+            .value = filterThresh;
 
         filterLabel.append("span")
             .attr("id", "rest-count");
