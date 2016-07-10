@@ -227,7 +227,6 @@ function clearTable(){
 }
 
 function initFilterAndCount(filterThresh){
-    d3.select(".slideFilter").html("");
     var filterLabel = d3.select(".slideFilter").append("label")
         .attr("for", "filter-input");
 
@@ -257,7 +256,7 @@ function initFilterAndCount(filterThresh){
 
     filterLabel.append("span")
         .attr("id", "filter-post-count")
-        .text(" rest.");
+        .html('<i class="material-icons">restaurant</i></a>');
 }
 
 initFilterAndCount(filterVal);
