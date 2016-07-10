@@ -2,6 +2,7 @@ var map;
 var infowindow;
 var slideIndex;
 var markers = [];
+var userMarkers = [];
 
 var restIcon = {
     url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
@@ -18,6 +19,9 @@ function setMapOnAll(map) {
     for (var i = 0; i < markers.length; i++) {
         markers[i].setMap(map);
     }
+    for (var i = 0; i < userMarkers.length; i++) {
+        userMarkers[i].setMap(map);
+    }    
 }
 
 // Removes the markers from the map, but keeps them in the array.
@@ -34,7 +38,9 @@ function showMarkers() {
 function deleteMarkers() {
     clearMarkers();
     markers = [];
+    userMarkers = [];
 }
+
 
 
 function initialize(q) {

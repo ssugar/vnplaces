@@ -21,7 +21,8 @@ function getLocation() {
     
 function showPosition(position) {
     //console.log(position.coords);
-    //clearMarkers();
+    clearMarkers();
+    userMarkers = [];
     userMarker(position);
     showMarkers();
 }
@@ -33,7 +34,7 @@ function userMarker(currentLoc) {
 
     userMark.setMap(map);
     userMark.setPosition(userLatlng);
-    markers.push(userMark);
+    userMarkers.push(userMark);
     //centerOnUserMark(userMark); 
 }
 
