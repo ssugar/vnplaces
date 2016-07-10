@@ -77,17 +77,12 @@ function createMarker(place) {
         return;
     }
 
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    var icons = {
-        restaurant: {
-            icon: iconBase + 'dining.png'
-        }
-    };
+    var restIcon = 'https://maps.google.com/mapfiles/kml/shapes/dining.png';
 
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        icon: icons[restaurant].icon,
+        icon: restIcon,
         title: place.name
     });
 
