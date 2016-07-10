@@ -33,6 +33,9 @@ function initialize(q) {
     //10.77 x 106.69 = Cho Ben Thanh
     var pos = new google.maps.LatLng(10.773599,106.694420);
 
+    var userPos = getLocation();
+    console.log(userPos);    
+
     map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     zoom: 14,
