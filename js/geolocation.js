@@ -20,7 +20,7 @@ function userMarker(currentLoc) {
     var userLatlng = new google.maps.LatLng(lat, lng);
 
     var userIcon = {
-        url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
+        url: 'https://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
         scaledSize: new google.maps.Size(30, 30),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point(0, 0)
