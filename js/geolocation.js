@@ -18,11 +18,17 @@ function userMarker(currentLoc) {
     var lat = currentLoc.coords.latitude;
     var lng = currentLoc.coords.longitude;
     var userLatlng = new google.maps.LatLng(lat, lng);
-    userMark = new google.maps.Marker({
-        map: map,
-        position: userLatlng,
-        title: "You are at: " + lat + " , " + lng
-    });
+    if(userMark == null){
+        userMark = new google.maps.Marker({
+            map: map,
+            position: userLatlng,
+            title: "Your location"
+        });
+    }
+    else{
+        userMark.setPosition(userLatlng);
+    }
+
 }
 
 function centerOnUserMark(){
