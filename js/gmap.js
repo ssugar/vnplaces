@@ -116,6 +116,7 @@ function createMarker(place) {
     marker.setPosition(place.geometry.location);
     markers.push(marker);
     map.setCenter(marker.getPosition());
+    console.log(markers.length);
     showMarkers();
 
     placesList = document.getElementById('results');
