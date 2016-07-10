@@ -232,11 +232,11 @@ function initFilterAndCount(filterThresh){
 
     filterLabel.append("span")
         .attr("id", "filter-pre-label")
-        .html('<i class="material-icons">plus_one</i><i class="material-icons">keyboard_arrow_right</i>');
+        .html('<i class="material-icons">plus_one</i>');
 
     filterLabel.append("span")
         .attr("id", "filter-value")
-        .text(filterThresh);
+        .text('> ' + filterThresh);
 
     filterLabel.append("input")
         .attr("id", "filter-input")
