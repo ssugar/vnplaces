@@ -2,7 +2,6 @@ var filterVal = 2000;
 var jsonData;
 
 function initTopList(){ 
-    console.log(filterVal);
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
         jsonData = data.filter(function(d)
@@ -227,4 +226,28 @@ function clearTable(){
     d3.select(".rowsGrp").html("");
 }
 
+function initFilterAndCount(filterThresh){
+        var filterLabel = d3.select(".slideFilter").append("label")
+            .attr("for", "filter-input");
+
+        filterLabel.append("span")
+            .attr("id", "filter-value")
+            .text(filterThresh);
+
+        filterLabel.append("input")
+            .attr("id", "filter-input")
+            .attr("type", "range")
+            .attr("value", filterThresh)
+            .attr("step", "100")
+            .attr("min", "1000")
+            .attr("max", "5000")
+            .attr("width", "50%");
+
+        filterLabel.append("span")
+            .attr("id", "rest-count");
+}
+
+initFilterAndCount(filterVal);
+
 initTopList();
+
