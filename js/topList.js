@@ -237,7 +237,7 @@ function initFilterAndCount(filterThresh){
         filterLabel.append("input")
             .attr("id", "filter-input")
             .attr("type", "range")
-            .attr("value", +filterThresh)
+            .attr("value", 2000)
             .attr("step", "100")
             .attr("min", "1000")
             .attr("max", "5000")
