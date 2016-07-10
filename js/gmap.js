@@ -123,8 +123,6 @@ function createMarker(place) {
     markers = [];
     markers.push(marker);
     map.setCenter(marker.getPosition());
-    console.log(markers.length);
-    console.log(userMarkers.length);
     showMarkers();
 
     placesList = document.getElementById('results');
