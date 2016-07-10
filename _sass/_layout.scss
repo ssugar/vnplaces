@@ -322,7 +322,13 @@ img.imgSlider {
 
 .slideFilter {
     width: 100%;
+
+    label{
+        width: 100%;
+    }
 }
+
+
 
 #filter-value{
     font-size: 18px;
