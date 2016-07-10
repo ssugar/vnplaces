@@ -151,5 +151,3 @@ function showDivs(n) {
 }  
 
 initialize();
-
-//getLocation();
