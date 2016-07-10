@@ -1,3 +1,15 @@
+var userIcon = {
+    url: 'https://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
+    scaledSize: new google.maps.Size(17, 17),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 0)
+};
+
+var userMark = new google.maps.Marker({
+    icon: userIcon,      
+    title: "Your location"
+});
+
 function getLocation() {
     if (navigator.geolocation) {
         var geoPos = navigator.geolocation.watchPosition(showPosition);
@@ -41,24 +53,13 @@ function userMarker(currentLoc) {
     var lng = currentLoc.coords.longitude;
     var userLatlng = new google.maps.LatLng(lat, lng);
 
-    var userIcon = {
-        url: 'https://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
-        scaledSize: new google.maps.Size(17, 17),
-        origin: new google.maps.Point(0,0),
-        anchor: new google.maps.Point(0, 0)
-    };
+    userMark.setMap(map);
+    userMark.setPosition(userLatlng);
 
-    var userMark = new google.maps.Marker({
-        map: map,
-        position: userLatlng,
-        icon: userIcon,      
-        title: "Your location"
-    });
     if(!markers.include(userMark)){
         markers.push(userMark);
         centerOnUserMark(userMark);
     }
-    userMark.setPosition(userLatlng);
 }
 
 function centerOnUserMark(userMark){

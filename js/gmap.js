@@ -3,6 +3,19 @@ var infowindow;
 var slideIndex;
 var markers = [];
 
+var restIcon = {
+    url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
+    scaledSize: new google.maps.Size(30, 30),
+    origin: new google.maps.Point(0,0),
+    anchor: new google.maps.Point(0, 0)
+};
+
+var marker = new google.maps.Marker({
+    icon: restIcon     
+});
+
+
+
 function initialize(q) {
     var styles = [{
         stylers: [{
@@ -78,21 +91,9 @@ function createMarker(place) {
         return;
     }
 
-    var restIcon = {
-        url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
-        scaledSize: new google.maps.Size(30, 30),
-        origin: new google.maps.Point(0,0),
-        anchor: new google.maps.Point(0, 0)
-    };
-
-    var marker = new google.maps.Marker({
-        map: map,
-        position: place.geometry.location,
-        icon: restIcon,
-        title: place.name
-    });
+    marker.setMap(map);
+    marker.setPosition(place.geometry.location);
     markers.push(marker);
-
     map.setCenter(marker.getPosition());
 
     placesList = document.getElementById('results');
