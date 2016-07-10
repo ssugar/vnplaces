@@ -227,7 +227,9 @@ function clearTable(){
 }
 
 function initFilterAndCount(filterThresh){
-    var filterLabel = d3.select(".slideFilter").append("label")
+    var filterDiv = d3.select(".slideFilter");
+
+    var filterLabel = filterDiv.append("label")
         .attr("for", "filter-input");
 
     filterLabel.append("span")
@@ -238,23 +240,23 @@ function initFilterAndCount(filterThresh){
         .attr("id", "filter-value")
         .text(filterThresh);
 
-    filterLabel.append("input")
-        .attr("value", +filterThresh)
+    filterDiv.append("input")
         .attr("id", "filter-input")
         .attr("type", "range")
         .attr("step", "100")
         .attr("min", "1000")
         .attr("max", "5000")
-        .attr("style", "width=100%;");
+        .attr("style", "width=100%")
+        .attr("value", +filterThresh);
 
-    filterLabel.append("span")
+    filterDiv.append("span")
         .attr("id", "filter-pre-count")
         .text(" = ");
 
-    filterLabel.append("span")
+    filterDiv.append("span")
         .attr("id", "rest-count");
 
-    filterLabel.append("span")
+    filterDiv.append("span")
         .attr("id", "filter-post-count")
         .html('<i class="material-icons">restaurant</i>');
 }
