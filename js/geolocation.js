@@ -1,7 +1,8 @@
 
 function getLocation() {
     if (navigator.geolocation) {
-        var geoPos = navigator.geolocation.watchPosition(showPosition); 
+        var geoPos = navigator.geolocation.watchPosition(showPosition);
+        console.log(geoPos); 
         return geoPos;
     } else { 
         return "Geolocation is not supported by this browser.";
@@ -9,5 +10,6 @@ function getLocation() {
 }
     
 function showPosition(position) {
-   return position.coords;
+    console.log(position.coords);
+    return position.coords;
 }
