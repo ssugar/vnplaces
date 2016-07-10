@@ -77,7 +77,12 @@ function createMarker(place) {
         return;
     }
 
-    var restIcon = 'https://maps.google.com/mapfiles/kml/shapes/dining.png';
+    var restIcon = {
+        url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
+        scaledSize: new google.maps.Size(50, 50),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point(0, 0)
+    };
 
     var marker = new google.maps.Marker({
         map: map,
