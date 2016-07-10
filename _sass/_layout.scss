@@ -322,4 +322,20 @@ img.imgSlider {
 
 .slideFilter {
     width: 100%;
+    position: relative;
+}
+
+#filter-value{
+    position: absolute;
+    top: 0px;
+}
+
+#filter-pre-count{
+    position: absolute;
+    top: 0px;
+}
+
+#rest-count{
+    position: absolute;
+    top: 0px;
 }
