@@ -1,6 +1,7 @@
 var map;
 var infowindow;
 var slideIndex;
+var markers = [];
 
 function initialize(q) {
     var styles = [{
@@ -90,6 +91,7 @@ function createMarker(place) {
         icon: restIcon,
         title: place.name
     });
+    markers.push(marker);
 
     map.setCenter(marker.getPosition());
 
