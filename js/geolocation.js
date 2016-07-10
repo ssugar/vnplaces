@@ -21,7 +21,7 @@ function userMarker(currentLoc) {
 
     var userIcon = {
         url: 'https://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
-        scaledSize: new google.maps.Size(30, 30),
+        scaledSize: new google.maps.Size(17, 17),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point(0, 0)
     };
