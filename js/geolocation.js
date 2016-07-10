@@ -1,4 +1,4 @@
-var userMark;
+var userMark = null;
 
 function getLocation() {
     if (navigator.geolocation) {
