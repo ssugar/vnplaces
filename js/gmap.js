@@ -49,8 +49,6 @@ function initialize(q) {
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
 
-    var GeoMarker = new GeolocationMarker(map);
-
     if(q == null){
         map.setCenter(pos);
     }
