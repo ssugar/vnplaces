@@ -239,13 +239,13 @@ function initFilterAndCount(filterThresh){
         .text(filterThresh);
 
     filterLabel.append("input")
+        .attr("value", +filterThresh)
         .attr("id", "filter-input")
         .attr("type", "range")
-        .attr("value", +filterThresh)
         .attr("step", "100")
         .attr("min", "1000")
         .attr("max", "5000")
-        .attr("style", "width=50%;");
+        .attr("style", "width=100%;");
 
     filterLabel.append("span")
         .attr("id", "filter-pre-count")
