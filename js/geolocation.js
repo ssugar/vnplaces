@@ -1,4 +1,4 @@
-var userMark;
+//var userMark;
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -39,6 +39,7 @@ function centerOnUserMark(){
     map.setCenter(userMark.getPosition());
 }
 
-getLocation();
+//getLocation();
+//centerOnUserMark();
 
-centerOnUserMark();
+var GeoMarker = new GeolocationMarker(map);
