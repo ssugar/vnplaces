@@ -328,8 +328,6 @@ img.imgSlider {
     }
 }
 
-
-
 #filter-value{
     font-size: 18px;
     line-height: 18px;
@@ -352,4 +350,8 @@ img.imgSlider {
     font-size: 18px;
     line-height: 18px;
     vertical-align: text-top;
+}
+
+input#filter-input{
+    width: 70%;
 }
