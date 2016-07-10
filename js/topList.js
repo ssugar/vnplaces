@@ -11,8 +11,8 @@ function initTopList(){
                 return d;
             }
         });
-        console.log(jsonData.length);
-
+        d3.select('#rest-count').text(jsonData.length);            
+ 
         var w = window;
         var fieldHeight = 30;
         var firstColMultiplier = 3;
@@ -69,7 +69,7 @@ function initTopList(){
                     return d;
                 }
             });
-            console.log(jsonData.length);
+            d3.select('#rest-count').text(jsonData.length);            
 
             // create the table header	
             var header = headerGrp.selectAll("g")
