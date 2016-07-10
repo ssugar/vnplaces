@@ -11,5 +11,20 @@ function getLocation() {
     
 function showPosition(position) {
     console.log(position.coords);
-    return position.coords;
+    userMarker(position)
 }
+
+function userMarker(currentLoc) {
+    var lat = currentLoc.coords.latitude;
+    var lng = currentLoc.coords.longitude;
+    var userLatlng = new google.maps.LatLng(lat, lng);
+    console.log(userLatlng);
+    var marker = new google.maps.Marker({
+        map: map,
+        position: userLatlng,
+        title: "You are at: " + lat + " , " + lng
+    });
+
+    map.setCenter(marker.getPosition());
+}
+
