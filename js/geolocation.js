@@ -33,11 +33,8 @@ function userMarker(currentLoc) {
 
     userMark.setMap(map);
     userMark.setPosition(userLatlng);
-
-    if(!markers.include(userMark)){
-        markers.push(userMark);
-        centerOnUserMark(userMark);
-    }
+    markers.push(userMark);
+    //centerOnUserMark(userMark); 
 }
 
 function centerOnUserMark(userMark){
