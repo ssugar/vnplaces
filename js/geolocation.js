@@ -25,10 +25,7 @@ function userMarker(currentLoc) {
             title: "Your location"
         });
     }
-    else{
-        userMark.setPosition(userLatlng);
-    }
-
+    userMark.setPosition(userLatlng);
 }
 
 function centerOnUserMark(){
