@@ -227,24 +227,36 @@ function clearTable(){
 }
 
 function initFilterAndCount(filterThresh){
-        var filterLabel = d3.select(".slideFilter").append("label")
-            .attr("for", "filter-input");
+    var filterLabel = d3.select(".slideFilter").append("label")
+        .attr("for", "filter-input");
 
-        filterLabel.append("span")
-            .attr("id", "filter-value")
-            .text(filterThresh);
+    filterLabel.append("span")
+        .attr("id", "filter-pre-label")
+        .text("+1 > ");
 
-        filterLabel.append("input")
-            .attr("id", "filter-input")
-            .attr("type", "range")
-            .attr("value", +filterThresh)
-            .attr("step", "100")
-            .attr("min", "1000")
-            .attr("max", "5000")
-            .attr("style", "width=50%;");
+    filterLabel.append("span")
+        .attr("id", "filter-value")
+        .text(filterThresh);
 
-        filterLabel.append("span")
-            .attr("id", "rest-count");
+    filterLabel.append("input")
+        .attr("id", "filter-input")
+        .attr("type", "range")
+        .attr("value", +filterThresh)
+        .attr("step", "100")
+        .attr("min", "1000")
+        .attr("max", "5000")
+        .attr("style", "width=50%;");
+
+    filterLabel.append("span")
+        .attr("id", "filter-pre-count")
+        .text(" = ");
+
+    filterLabel.append("span")
+        .attr("id", "rest-count");
+
+    filterLabel.append("span")
+        .attr("id", "filter-post-count")
+        .text(" rest.");
 }
 
 initFilterAndCount(filterVal);
