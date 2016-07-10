@@ -226,18 +226,18 @@ function clearTable(){
     d3.select(".rowsGrp").html("");
 }
 
-function initFilterAndCount(){
+function initFilterAndCount(filterThresh){
         var filterLabel = d3.select(".slideFilter").append("label")
             .attr("for", "filter-input");
 
         filterLabel.append("span")
             .attr("id", "filter-value")
-            .text("2000");
+            .text(filterThresh);
 
         filterLabel.append("input")
             .attr("id", "filter-input")
             .attr("type", "range")
-            .attr("value", "2000")
+            .attr("value", +filterThresh)
             .attr("step", "100")
             .attr("min", "1000")
             .attr("max", "5000")
@@ -247,7 +247,7 @@ function initFilterAndCount(){
             .attr("id", "rest-count");
 }
 
-initFilterAndCount();
+initFilterAndCount(filterVal);
 
 initTopList();
 
