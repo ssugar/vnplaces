@@ -1,5 +1,3 @@
-var userMark = null;
-
 function getLocation() {
     if (navigator.geolocation) {
         var geoPos = navigator.geolocation.watchPosition(showPosition);
@@ -33,7 +31,7 @@ function deleteMarkers() {
 
 function showPosition(position) {
     //console.log(position.coords);
-    clearMarkers();
+    //clearMarkers();
     userMarker(position);
     showMarkers();
 }
