@@ -18,9 +18,18 @@ function userMarker(currentLoc) {
     var lat = currentLoc.coords.latitude;
     var lng = currentLoc.coords.longitude;
     var userLatlng = new google.maps.LatLng(lat, lng);
+
+    var userIcon = {
+        url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
+        scaledSize: new google.maps.Size(30, 30),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point(0, 0)
+    };
+
     userMark = new google.maps.Marker({
         map: map,
         position: userLatlng,
+        icon: userIcon,      
         title: "Your location"
     });
     userMark.setPosition(userLatlng);
