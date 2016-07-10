@@ -230,13 +230,13 @@ function initFilterAndCount(filterThresh){
     var filterLabel = d3.select(".slideFilter").append("label")
         .attr("for", "filter-input");
 
-    filterLabel.append("span")
-        .attr("id", "filter-pre-label")
-        .html('<i class="material-icons">plus_one</i>');
+    //filterLabel.append("span")
+    //    .attr("id", "filter-pre-label")
+    //    .html('<i class="material-icons">plus_one</i>');
 
     filterLabel.append("span")
         .attr("id", "filter-value")
-        .text(' > ' + filterThresh);
+        .text('+1 > ' + filterThresh);
 
     filterLabel.append("input")
         .attr("id", "filter-input")
