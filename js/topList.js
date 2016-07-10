@@ -232,7 +232,7 @@ function initFilterAndCount(filterThresh){
 
     filterLabel.append("span")
         .attr("id", "filter-pre-label")
-        .text("+1 > ");
+        .html('<i class="material-icons">plus_one</i>&nbsp;<i class="material-icons">keyboard_arrow_right</i>$nbsp;');
 
     filterLabel.append("span")
         .attr("id", "filter-value")
@@ -256,7 +256,7 @@ function initFilterAndCount(filterThresh){
 
     filterLabel.append("span")
         .attr("id", "filter-post-count")
-        .html('<i class="material-icons">restaurant</i></a>');
+        .html('<i class="material-icons">restaurant</i>');
 }
 
 initFilterAndCount(filterVal);
