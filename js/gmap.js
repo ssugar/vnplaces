@@ -120,6 +120,7 @@ function createMarker(place) {
 
     marker.setMap(map);
     marker.setPosition(place.geometry.location);
+    markers = [];
     markers.push(marker);
     map.setCenter(marker.getPosition());
     console.log(markers.length);
