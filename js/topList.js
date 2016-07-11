@@ -1,5 +1,7 @@
 var filterVal = 2000;
 var jsonData;
+var headerGrp;
+var rowsGrp;
 
 function initTopList(){ 
     d3.tsv("assets/summarizeData.txt", function(data) 
@@ -45,8 +47,8 @@ function initTopList(){
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var headerGrp = canvasHeader.append("g").attr("class", "headerGrp");
-        var rowsGrp = canvas.append("g").attr("class","rowsGrp");
+        headerGrp = canvasHeader.append("g").attr("class", "headerGrp");
+        rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
         var previousSort = null;
 
