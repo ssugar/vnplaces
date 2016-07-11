@@ -28,9 +28,10 @@ function setMapOnAll(map) {
     }
     if(markers.length > 0 && fitAlready == 0)  //if restaurant marker has been set, fit bounds.
     {
+        fitAlready = 1;
         map.fitBounds(bounds);
-        fitAlready == 1;
     }
+    //console.log(fitAlready);
 }
 
 function clearMapOnAll(map) {
