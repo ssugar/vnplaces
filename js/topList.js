@@ -7,7 +7,6 @@ var fieldHeight = 30;
 var firstColMultiplier = 3;
 var numOfCols = (1 * firstColMultiplier) + 3;
 var previousSort;
-var canvas;
 
 if(w.innerWidth < 775){
     var fieldWidth = (w.innerWidth - 30) / numOfCols;
@@ -48,7 +47,7 @@ function initTopList(){
             .append("g")
             .attr("transform", "translate(0,0)");
 
-        canvas = d3.select(".container").append("svg")
+        var canvas = d3.select(".container").append("svg")
             .attr("class", "canvas")
             .attr("width", "100%")
             .attr("height", height + margin.top + margin.bottom)
@@ -80,7 +79,8 @@ function refreshTable(sortOn, data)
     var margin = {top: 0, right: 30, bottom: 30, left: 0},
         width = 960 - margin.left - margin.right,
         height = tableHeight - margin.top - margin.bottom;    
-
+    
+    var canvas = d3.select("svg.canvas");
     canvas.attr("height", height + margin.top + margin.bottom);
     
     var header = headerGrp.selectAll("g")
