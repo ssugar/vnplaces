@@ -137,6 +137,7 @@ function initTopList(){
                 return "translate(0," + (i) * (fieldHeight+1) + ")";
             })
             .on("click", function(d){
+                fitAlready = 0;
                 //calling gmap.js initialize function
                 initialize("ho chi minh " + d.Name);
             });

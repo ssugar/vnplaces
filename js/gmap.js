@@ -3,6 +3,7 @@ var infowindow;
 var slideIndex;
 var markers = [];
 var userMarkers = [];
+var fitAlready = 0;
 
 var restIcon = {
     url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
@@ -25,9 +26,10 @@ function setMapOnAll(map) {
         userMarkers[i].setMap(map);
         bounds.extend(userMarkers[i].getPosition());
     }
-    if(markers.length > 0)  //if restaurant marker has been set, fit bounds.
+    if(markers.length > 0 && fitAlready == 0)  //if restaurant marker has been set, fit bounds.
     {
         map.fitBounds(bounds);
+        fitAlready == 1;
     }
 }
 
