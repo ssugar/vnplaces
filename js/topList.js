@@ -48,6 +48,7 @@ function initTopList(){
             .attr("transform", "translate(0,0)");
 
         var canvas = d3.select(".container").append("svg")
+            .attr("id", "canvasRows")
             .attr("class", "canvas")
             .attr("width", "100%")
             .attr("height", height + margin.top + margin.bottom)
@@ -80,7 +81,7 @@ function refreshTable(sortOn, data)
         width = 960 - margin.left - margin.right,
         height = tableHeight - margin.top - margin.bottom;    
     
-    var canvas = d3.select("svg.canvas")
+    var canvas = d3.select("#canvasRows")
         .attr("height", (height + margin.top + margin.bottom));
     
     console.log(+(height + margin.top + margin.bottom));
