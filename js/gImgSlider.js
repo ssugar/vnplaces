@@ -1,6 +1,6 @@
 var slideIndex;
 
-function initSlider(){
+function initImgSlider(){
     slideIndex = 1;
     showDivs(slideIndex);
 }
