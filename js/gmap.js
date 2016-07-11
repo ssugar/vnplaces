@@ -112,7 +112,7 @@ function deetCallback(deetplace, status) {
 
 function fillResultsBox(deetplace) {
     placesList = document.getElementById('results');
-    placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + place.formatted_address + '" target="_blank"><i class="material-icons">directions</i></a>&nbsp;<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a>&nbsp;<a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
+    placesList.innerHTML += '<p class="' + deetplace.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + deetplace.formatted_address + '" target="_blank"><i class="material-icons">directions</i></a>&nbsp;<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a>&nbsp;<a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
 
     deetplace.photos.forEach(function(item, ind){
         if(ind == 0){
