@@ -3,7 +3,6 @@ var infowindow;
 var slideIndex;
 var markers = [];
 var userMarkers = [];
-//var bounds = new google.maps.LatLngBounds();
 
 var restIcon = {
     url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
@@ -17,20 +16,31 @@ var marker = new google.maps.Marker({
 });
 
 function setMapOnAll(map) {
+    var bounds = new google.maps.LatLngBounds();
     for (var i = 0; i < markers.length; i++) {
         markers[i].setMap(map);
-        //bounds.extend(markers[i].getPosition());
+        bounds.extend(markers[i].getPosition());
     }
     for (var i = 0; i < userMarkers.length; i++) {
         userMarkers[i].setMap(map);
-        //bounds.extend(userMarkers[i].getPosition());        
-    }    
-    //map.fitBounds(bounds);
+        bounds.extend(userMarkers[i].getPosition());
+    }
+    map.fitBounds(bounds);
 }
+
+function clearMapOnAll(map) {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
+    for (var i = 0; i < userMarkers.length; i++) {
+        userMarkers[i].setMap(map);
+    }
+}
+
 
 // Removes the markers from the map, but keeps them in the array.
 function clearMarkers() {
-    setMapOnAll(null);
+    clearMapOnAll(null);
 }
 
 // Shows any markers currently in the array.
