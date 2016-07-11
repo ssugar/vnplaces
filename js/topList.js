@@ -18,14 +18,7 @@ else{
 function initTopList(){ 
     d3.tsv("assets/summarizeData.txt", function(data) 
     {
-        jsonData = data.filter(function(d)
-        {
-            if(d["Count"] > filterVal){
-                return d;
-            }
-        });
-        d3.select('#rest-count').text(jsonData.length);            
- 
+        filterAndCount(data); 
         //using total data rows + 1 for header time height + 1 for padding
         var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
 
@@ -63,12 +56,7 @@ function initTopList(){
     });
 }
 
-function clearTable(){
-    d3.select(".rowsGrp").html("");
-}
-
-function refreshTable(sortOn, data)
-{
+function filterAndCount(data) {
     jsonData = data.filter(function(d)
     {
         if(d["Count"] > filterVal){
@@ -76,7 +64,15 @@ function refreshTable(sortOn, data)
         }
     });
     d3.select('#rest-count').text(jsonData.length);            
+}
 
+function clearTable(){
+    d3.select(".rowsGrp").html("");
+}
+
+function refreshTable(sortOn, data)
+{
+    filterAndCount(data);
     // create the table header	
     var header = headerGrp.selectAll("g")
     .data(d3.keys(jsonData[0]))
@@ -229,4 +225,3 @@ function sort(a,b){
 }
 
 initTopList();
-
