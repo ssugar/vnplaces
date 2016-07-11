@@ -1,6 +1,5 @@
 var map;
 var infowindow;
-var slideIndex;
 
 //10.77 x 106.69 = Cho Ben Thanh
 var pos = new google.maps.LatLng(10.773599,106.694420);
@@ -104,7 +103,7 @@ function fillDetailedResults(place) {
 
             if (deetplace.photos.length > 1){
                 placesList.innerHTML += '<a class="w3-btn-floating-left" onclick="plusDivs(-1)"><i class="material-icons">keyboard_arrow_left</i></a>' + '<a class="w3-btn-floating-right" onclick="plusDivs(+1)"><i class="material-icons">keyboard_arrow_right</i></a>';
-                initSlider();
+                initSlider(); //calling initSlider function from gImgSlider.js
             }
         }
     }
@@ -131,28 +130,5 @@ function createMarker(place) {
         infowindow.open(map, this);
     });
 }
-
-function initSlider(){
-    slideIndex = 1;
-    showDivs(slideIndex);
-}
-
-function plusDivs(n) {
-    console.log(slideIndex);
-    console.log(n);
-    showDivs(slideIndex += n);
-    console.log(slideIndex);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("imgSlider");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-}  
 
 initMap();
