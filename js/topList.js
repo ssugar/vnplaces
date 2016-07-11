@@ -80,9 +80,11 @@ function refreshTable(sortOn, data)
         width = 960 - margin.left - margin.right,
         height = tableHeight - margin.top - margin.bottom;    
     
-    var canvas = d3.select("svg.canvas");
-    canvas.attr("height", height + margin.top + margin.bottom);
+    var canvas = d3.select("svg.canvas")
+        .attr("height", (height + margin.top + margin.bottom));
     
+    console.log(+(height + margin.top + margin.bottom));
+
     var header = headerGrp.selectAll("g")
     .data(d3.keys(jsonData[0]))
     .enter().append("g")
