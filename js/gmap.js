@@ -61,7 +61,7 @@ function deleteMarkers() {
     userMarkers = [];
 }
 
-function initialize(q) {
+function initMap() {
     var styles = [{
         stylers: [{
             hue: "#8DC9FF"
@@ -107,21 +107,19 @@ function initialize(q) {
 
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
+    map.setCenter(pos);
+}
 
-    if(q == null){
-        map.setCenter(pos);
-    }
-    else{
-        var request = {
-            location: pos,
-            radius: '5000',
-            query: q
-        };
+function requestRest(q) {
+    var request = {
+        location: pos,
+        radius: '5000',
+        query: q
+    };
 
-        infowindow = new google.maps.InfoWindow();
-        var service = new google.maps.places.PlacesService(map);
-        service.textSearch(request, callback);
-    }
+    infowindow = new google.maps.InfoWindow();
+    var service = new google.maps.places.PlacesService(map);
+    service.textSearch(request, callback);
 }
 
 function callback(results, status) {
@@ -130,23 +128,15 @@ function callback(results, status) {
     }
 }
 
-function createMarker(place) {
-    var photos = place.photos;
-    if (!photos) {
-        return;
-    }
-
-    marker.setMap(map);
-    marker.setPosition(place.geometry.location);
-    markers = [];
-    markers.push(marker);
-    map.setCenter(marker.getPosition());
-    showMarkers();
-
+function fillBasicResults(place) {
     placesList = document.getElementById('results');
 
     placesList.innerHTML = '<br/><p class="' + place.types[0] + '">' + place.name + '</p>';
     placesList.innerHTML += '<p class="' + place.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + place.formatted_address + '" target="_blank">' + place.formatted_address + '</a>' + '</p>';
+}
+
+function fillDetailedResults(place) {
+    placesList = document.getElementById('results');
 
     var deetrequest = {
         placeId: place.place_id
@@ -177,13 +167,29 @@ function createMarker(place) {
             }
         }
     }
+}
+
+function createMarker(place) {
+    var photos = place.photos;
+    if (!photos) {
+        return;
+    }
+
+    marker.setMap(map);
+    marker.setPosition(place.geometry.location);
+    markers = [];
+    markers.push(marker);
+    map.setCenter(marker.getPosition());
+    showMarkers();
+
+    fillBasicResults(place);
+    fillDetailedResults(place);
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent('<img src="' + photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200}) + '"></img>');
         infowindow.open(map, this);
     });
 }
-
 
 function initSlider(){
     slideIndex = 1;
@@ -208,4 +214,4 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block";
 }  
 
-initialize();
+initMap();

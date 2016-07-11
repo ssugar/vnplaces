@@ -138,8 +138,8 @@ function initTopList(){
             })
             .on("click", function(d){
                 fitAlready = 0;
-                //calling gmap.js initialize function
-                initialize("ho chi minh " + d.Name);
+                //calling gmap.js requestRest function
+                requestRest("ho chi minh " + d.Name);
             });
 
             // select cells
