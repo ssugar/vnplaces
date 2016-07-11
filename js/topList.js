@@ -58,152 +58,155 @@ function initTopList(){
         });
 
         refreshTable(null);
+    });
+}
 
+function clearTable(){
+    d3.select(".rowsGrp").html("");
+}
 
-        function refreshTable(sortOn)
-        {
-            jsonData = data.filter(function(d)
-            {
-                if(d["Count"] > filterVal){
-                    return d;
-                }
-            });
-            d3.select('#rest-count').text(jsonData.length);            
-
-            // create the table header	
-            var header = headerGrp.selectAll("g")
-            .data(d3.keys(jsonData[0]))
-            .enter().append("g")
-            .attr("class", "header")
-            .attr("transform", function (d, i){
-                if(i == 0){
-                    return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
-                }
-                else{
-                    return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
-                }
-            })
-            .on("click", function(d){ return refreshTable(d);});
-
-            foreignObjects = header.append("foreignObject")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("width", function (d, i){
-                if(i == 0){
-                    return ((fieldWidth*firstColMultiplier)-1); 
-                }
-                else{
-                    return (fieldWidth-1); 
-                }
-            })
-            .attr("height", fieldHeight);
-
-            htmlDOMs = foreignObjects.append("xhtml:body")
-                .style("margin",0)
-                .style("padding",0)
-
-            htmlLabels = htmlDOMs.append("div")
-                .attr("class","htmlLabel")
-                .on("click", function(d){ return refreshTable(d);});
-
-            htmlLabels.append("p")
-                .attr("class","description")
-                .html(function(d,i) { 
-                    if(i == 0){
-                        return '<i class="material-icons">restaurant</i>'; 
-                    }
-                    else if (i == 1){
-                        return '<i class="material-icons">whatshot</i>'; 
-                    }
-                    else if(i == 2){
-                        return '<i class="material-icons">plus_one</i>'; 
-                    }
-                    else{
-                        return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>'; 
-                    }
-                })
-                .on("click", function(d){ return refreshTable(d);});
-
-            // fill the table	
-            // select rows
-            var rows = rowsGrp.selectAll("g.row").data(jsonData, function(d){ 
-                return d.Name; 
-            });
-            
-            // create rows	
-            var rowsEnter = rows.enter().append("svg:g")
-            .attr("class","row")
-            .attr("transform", function (d, i){
-                return "translate(0," + (i) * (fieldHeight+1) + ")";
-            })
-            .on("click", function(d){
-                fitAlready = 0;
-                //calling gmap.js requestRest function
-                requestRest("ho chi minh " + d.Name);
-            });
-
-            // select cells
-            var cells = rows.selectAll("g.cell").data(function(d){
-                return d3.values(d);
-            });
-            
-            // create cells
-            var cellsEnter = cells.enter().append("svg:g")
-            .attr("class", "cell")
-            .attr("transform", function (d, i){
-                if(i == 0){
-                    return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
-                }
-                else{
-                    return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
-                }
-            });
-            
-            cellsEnter.append("rect")
-            .attr("width", function (d, i){
-                if(i == 0){
-                    return ((fieldWidth * firstColMultiplier)-1); 
-                }
-                else{
-                    return (fieldWidth-1); 
-                }
-            })
-            .attr("rx", 2)
-            .attr("ry", 2)
-            .attr("height", fieldHeight);	
-            
-            cellsEnter.append("text")
-            .attr("x", function (d, i){
-                if(i == 0){
-                    return (fieldWidth / 2 * firstColMultiplier);
-                }
-                else{
-                    return (fieldWidth / 2);
-                }
-            })
-            .attr("y", fieldHeight / 2)
-            .attr("dy", ".35em")
-            .text(String);
-
-            //update if not in initialisation
-            if(sortOn !== null) {
-                // update rows
-                if(sortOn != previousSort){
-                    rows.sort(function(a,b){return sort(b[sortOn], a[sortOn]);});
-                    previousSort = sortOn;
-                }
-                else{
-                    rows.sort(function(a,b){return sort(a[sortOn], b[sortOn]);});			
-                    previousSort = null;
-                }
-                rows.transition()
-                .duration(500)
-                .attr("transform", function (d, i){
-                    return "translate(0," + (i) * (fieldHeight+1) + ")";
-                });
-            }
+function refreshTable(sortOn)
+{
+    jsonData = data.filter(function(d)
+    {
+        if(d["Count"] > filterVal){
+            return d;
         }
     });
+    d3.select('#rest-count').text(jsonData.length);            
+
+    // create the table header	
+    var header = headerGrp.selectAll("g")
+    .data(d3.keys(jsonData[0]))
+    .enter().append("g")
+    .attr("class", "header")
+    .attr("transform", function (d, i){
+        if(i == 0){
+            return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
+        }
+        else{
+            return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
+        }
+    })
+    .on("click", function(d){ return refreshTable(d);});
+
+    foreignObjects = header.append("foreignObject")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", function (d, i){
+        if(i == 0){
+            return ((fieldWidth*firstColMultiplier)-1); 
+        }
+        else{
+            return (fieldWidth-1); 
+        }
+    })
+    .attr("height", fieldHeight);
+
+    htmlDOMs = foreignObjects.append("xhtml:body")
+        .style("margin",0)
+        .style("padding",0)
+
+    htmlLabels = htmlDOMs.append("div")
+        .attr("class","htmlLabel")
+        .on("click", function(d){ return refreshTable(d);});
+
+    htmlLabels.append("p")
+        .attr("class","description")
+        .html(function(d,i) { 
+            if(i == 0){
+                return '<i class="material-icons">restaurant</i>'; 
+            }
+            else if (i == 1){
+                return '<i class="material-icons">whatshot</i>'; 
+            }
+            else if(i == 2){
+                return '<i class="material-icons">plus_one</i>'; 
+            }
+            else{
+                return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>'; 
+            }
+        })
+        .on("click", function(d){ return refreshTable(d);});
+
+    // fill the table	
+    // select rows
+    var rows = rowsGrp.selectAll("g.row").data(jsonData, function(d){ 
+        return d.Name; 
+    });
+    
+    // create rows	
+    var rowsEnter = rows.enter().append("svg:g")
+    .attr("class","row")
+    .attr("transform", function (d, i){
+        return "translate(0," + (i) * (fieldHeight+1) + ")";
+    })
+    .on("click", function(d){
+        fitAlready = 0;
+        //calling gmap.js requestRest function
+        requestRest("ho chi minh " + d.Name);
+    });
+
+    // select cells
+    var cells = rows.selectAll("g.cell").data(function(d){
+        return d3.values(d);
+    });
+    
+    // create cells
+    var cellsEnter = cells.enter().append("svg:g")
+    .attr("class", "cell")
+    .attr("transform", function (d, i){
+        if(i == 0){
+            return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
+        }
+        else{
+            return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
+        }
+    });
+    
+    cellsEnter.append("rect")
+    .attr("width", function (d, i){
+        if(i == 0){
+            return ((fieldWidth * firstColMultiplier)-1); 
+        }
+        else{
+            return (fieldWidth-1); 
+        }
+    })
+    .attr("rx", 2)
+    .attr("ry", 2)
+    .attr("height", fieldHeight);	
+    
+    cellsEnter.append("text")
+    .attr("x", function (d, i){
+        if(i == 0){
+            return (fieldWidth / 2 * firstColMultiplier);
+        }
+        else{
+            return (fieldWidth / 2);
+        }
+    })
+    .attr("y", fieldHeight / 2)
+    .attr("dy", ".35em")
+    .text(String);
+
+    //update if not in initialisation
+    if(sortOn !== null) {
+        // update rows
+        if(sortOn != previousSort){
+            rows.sort(function(a,b){return sort(b[sortOn], a[sortOn]);});
+            previousSort = sortOn;
+        }
+        else{
+            rows.sort(function(a,b){return sort(a[sortOn], b[sortOn]);});			
+            previousSort = null;
+        }
+        rows.transition()
+        .duration(500)
+        .attr("transform", function (d, i){
+            return "translate(0," + (i) * (fieldHeight+1) + ")";
+        });
+    }
 }
 
 function sort(a,b){
@@ -221,10 +224,6 @@ function sort(a,b){
     else if(typeof a == "boolean"){
         return b ? 1 : a ? -1 : 0;
     }
-}
-
-function clearTable(){
-    d3.select(".rowsGrp").html("");
 }
 
 initTopList();
