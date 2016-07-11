@@ -6,6 +6,7 @@ var w = window;
 var fieldHeight = 30;
 var firstColMultiplier = 3;
 var numOfCols = (1 * firstColMultiplier) + 3;
+var previousSort;
 
 if(w.innerWidth < 775){
     var fieldWidth = (w.innerWidth - 30) / numOfCols;
