@@ -4,7 +4,8 @@ var slideIndex;
 var markers = [];
 var userMarkers = [];
 var fitAlready = 0;
-
+//10.77 x 106.69 = Cho Ben Thanh
+var pos = new google.maps.LatLng(10.773599,106.694420);
 var restIcon = {
     url: 'https://maps.google.com/mapfiles/kml/shapes/dining.png',
     scaledSize: new google.maps.Size(30, 30),
@@ -88,9 +89,6 @@ function initMap() {
     var styledMap = new google.maps.StyledMapType(styles, {
         name: "vnplaces"
     });
-
-    //10.77 x 106.69 = Cho Ben Thanh
-    var pos = new google.maps.LatLng(10.773599,106.694420);
 
     map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
