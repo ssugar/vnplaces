@@ -2,6 +2,17 @@ var filterVal = 2000;
 var jsonData;
 var headerGrp;
 var rowsGrp;
+var w = window;
+var fieldHeight = 30;
+var firstColMultiplier = 3;
+var numOfCols = (1 * firstColMultiplier) + 3;
+
+if(w.innerWidth < 775){
+    var fieldWidth = (w.innerWidth - 30) / numOfCols;
+}
+else{
+    var fieldWidth = 124;
+}
 
 function initTopList(){ 
     d3.tsv("assets/summarizeData.txt", function(data) 
@@ -14,18 +25,6 @@ function initTopList(){
         });
         d3.select('#rest-count').text(jsonData.length);            
  
-        var w = window;
-        var fieldHeight = 30;
-        var firstColMultiplier = 3;
-        var numOfCols = (1 * firstColMultiplier) + 3;
-
-        if(w.innerWidth < 775){
-            var fieldWidth = (w.innerWidth - 30) / numOfCols;
-        }
-        else{
-            var fieldWidth = 124;
-        }
-
         //using total data rows + 1 for header time height + 1 for padding
         var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
 
