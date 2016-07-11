@@ -26,7 +26,7 @@ function setMapOnAll(map) {
         userMarkers[i].setMap(map);
         bounds.extend(userMarkers[i].getPosition());
     }
-    if(markers.length > 0 && fitAlready == 0)  //if restaurant marker has been set, fit bounds.
+    if(markers.length > 0 && userMarkers.length > 0 && fitAlready == 0)  //if both markers have been set, and no fit yet, fit bounds.
     {
         fitAlready = 1;
         map.fitBounds(bounds);
