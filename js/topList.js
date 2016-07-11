@@ -54,10 +54,10 @@ function initTopList(){
             filterVal = +this.value;
             d3.select('#filter-value').text(filterVal);            
             clearTable();
-            refreshTable(null);
+            refreshTable(null, data);
         });
 
-        refreshTable(null);
+        refreshTable(null, data);
     });
 }
 
@@ -65,7 +65,7 @@ function clearTable(){
     d3.select(".rowsGrp").html("");
 }
 
-function refreshTable(sortOn)
+function refreshTable(sortOn, data)
 {
     jsonData = data.filter(function(d)
     {
@@ -88,7 +88,7 @@ function refreshTable(sortOn)
             return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
         }
     })
-    .on("click", function(d){ return refreshTable(d);});
+    .on("click", function(d){ return refreshTable(d, data);});
 
     foreignObjects = header.append("foreignObject")
     .attr("x", 0)
@@ -109,7 +109,7 @@ function refreshTable(sortOn)
 
     htmlLabels = htmlDOMs.append("div")
         .attr("class","htmlLabel")
-        .on("click", function(d){ return refreshTable(d);});
+        .on("click", function(d){ return refreshTable(d, data);});
 
     htmlLabels.append("p")
         .attr("class","description")
@@ -127,7 +127,7 @@ function refreshTable(sortOn)
                 return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>'; 
             }
         })
-        .on("click", function(d){ return refreshTable(d);});
+        .on("click", function(d){ return refreshTable(d, data);});
 
     // fill the table	
     // select rows
