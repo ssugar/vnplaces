@@ -7,12 +7,27 @@ var fieldHeight = 30;
 var firstColMultiplier = 3;
 var numOfCols = (1 * firstColMultiplier) + 3;
 var previousSort;
+var canvas;
 
 if(w.innerWidth < 775){
     var fieldWidth = (w.innerWidth - 30) / numOfCols;
 }
 else{
     var fieldWidth = 124;
+}
+
+function filterAndCount(data) {
+    jsonData = data.filter(function(d)
+    {
+        if(d["Count"] > filterVal){
+            return d;
+        }
+    });
+    d3.select('#rest-count').text(jsonData.length);            
+}
+
+function clearTable(){
+    d3.select(".rowsGrp").html("");
 }
 
 function initTopList(){ 
@@ -33,7 +48,7 @@ function initTopList(){
             .append("g")
             .attr("transform", "translate(0,0)");
 
-        var canvas = d3.select(".container").append("svg")
+        canvas = d3.select(".container").append("svg")
             .attr("class", "canvas")
             .attr("width", "100%")
             .attr("height", height + margin.top + margin.bottom)
@@ -56,54 +71,38 @@ function initTopList(){
     });
 }
 
-function filterAndCount(data) {
-    jsonData = data.filter(function(d)
-    {
-        if(d["Count"] > filterVal){
-            return d;
-        }
-    });
-    d3.select('#rest-count').text(jsonData.length);            
-}
-
-function clearTable(){
-    d3.select(".rowsGrp").html("");
-}
-
 function refreshTable(sortOn, data)
 {
     filterAndCount(data);
-    // create the table header	
+
+    var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
+
+    var margin = {top: 0, right: 30, bottom: 30, left: 0},
+        width = 960 - margin.left - margin.right,
+        height = tableHeight - margin.top - margin.bottom;    
+
+    canvas.attr("height", height + margin.top + margin.bottom);
+    
     var header = headerGrp.selectAll("g")
     .data(d3.keys(jsonData[0]))
     .enter().append("g")
     .attr("class", "header")
     .attr("transform", function (d, i){
-        if(i == 0){
-            return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
-        }
-        else{
-            return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
-        }
+        if(i == 0){return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";}
+        else{return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";}
     })
     .on("click", function(d){ return refreshTable(d, data);});
 
     foreignObjects = header.append("foreignObject")
-    .attr("x", 0)
-    .attr("y", 0)
+    .attr("x", 0).attr("y", 0)
+    .attr("height", fieldHeight)
     .attr("width", function (d, i){
-        if(i == 0){
-            return ((fieldWidth*firstColMultiplier)-1); 
-        }
-        else{
-            return (fieldWidth-1); 
-        }
-    })
-    .attr("height", fieldHeight);
+        if(i == 0){return ((fieldWidth*firstColMultiplier)-1);}
+        else{return (fieldWidth-1);}
+    });
 
     htmlDOMs = foreignObjects.append("xhtml:body")
-        .style("margin",0)
-        .style("padding",0)
+        .style("margin",0).style("padding",0)
 
     htmlLabels = htmlDOMs.append("div")
         .attr("class","htmlLabel")
@@ -112,28 +111,17 @@ function refreshTable(sortOn, data)
     htmlLabels.append("p")
         .attr("class","description")
         .html(function(d,i) { 
-            if(i == 0){
-                return '<i class="material-icons">restaurant</i>'; 
-            }
-            else if (i == 1){
-                return '<i class="material-icons">whatshot</i>'; 
-            }
-            else if(i == 2){
-                return '<i class="material-icons">plus_one</i>'; 
-            }
-            else{
-                return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>'; 
-            }
+            if(i == 0){return '<i class="material-icons">restaurant</i>';}
+            else if (i == 1){return '<i class="material-icons">whatshot</i>';}
+            else if(i == 2){return '<i class="material-icons">plus_one</i>';}
+            else{return '<i class="material-icons">whatshot</i>' + '<i class="material-icons">merge_type</i>' + '<i class="material-icons">plus_one</i>';}
         })
         .on("click", function(d){ return refreshTable(d, data);});
 
-    // fill the table	
-    // select rows
     var rows = rowsGrp.selectAll("g.row").data(jsonData, function(d){ 
         return d.Name; 
     });
     
-    // create rows	
     var rowsEnter = rows.enter().append("svg:g")
     .attr("class","row")
     .attr("transform", function (d, i){
@@ -141,52 +129,36 @@ function refreshTable(sortOn, data)
     })
     .on("click", function(d){
         fitAlready = 0;
-        //calling gmap.js requestRest function
-        requestRest("ho chi minh " + d.Name);
+        requestRest("ho chi minh " + d.Name);  //calling gmap.js requestRest function
     });
 
-    // select cells
     var cells = rows.selectAll("g.cell").data(function(d){
         return d3.values(d);
     });
     
-    // create cells
     var cellsEnter = cells.enter().append("svg:g")
     .attr("class", "cell")
     .attr("transform", function (d, i){
-        if(i == 0){
-            return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";            
-        }
-        else{
-            return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";
-        }
+        if(i == 0){return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";}
+        else{return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";}
     });
     
     cellsEnter.append("rect")
+    .attr("rx", 2).attr("ry", 2)
+    .attr("height", fieldHeight)
     .attr("width", function (d, i){
-        if(i == 0){
-            return ((fieldWidth * firstColMultiplier)-1); 
-        }
-        else{
-            return (fieldWidth-1); 
-        }
-    })
-    .attr("rx", 2)
-    .attr("ry", 2)
-    .attr("height", fieldHeight);	
+        if(i == 0){return ((fieldWidth * firstColMultiplier)-1);}
+        else{return (fieldWidth-1);}
+    });	
     
     cellsEnter.append("text")
-    .attr("x", function (d, i){
-        if(i == 0){
-            return (fieldWidth / 2 * firstColMultiplier);
-        }
-        else{
-            return (fieldWidth / 2);
-        }
-    })
     .attr("y", fieldHeight / 2)
     .attr("dy", ".35em")
-    .text(String);
+    .text(String)
+    .attr("x", function (d, i){
+        if(i == 0){return (fieldWidth / 2 * firstColMultiplier);}
+        else{return (fieldWidth / 2);}
+    });
 
     //update if not in initialisation
     if(sortOn !== null) {
