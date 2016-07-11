@@ -1,14 +1,6 @@
-var userIcon = {
-    url: 'https://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
-    scaledSize: new google.maps.Size(17, 17),
-    origin: new google.maps.Point(0,0),
-    anchor: new google.maps.Point(0, 0)
-};
-
-var userMark = new google.maps.Marker({
-    icon: userIcon,      
-    title: "Your location"
-});
+var markers = [];
+var userMarkers = [];
+var fitAlready = 0;
 
 function getLocation() {
     if (navigator.geolocation) {
