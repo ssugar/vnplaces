@@ -7,14 +7,9 @@ var firstColMultiplier = 3;
 var numOfCols = (1 * firstColMultiplier) + 3;
 var margin = {top: 0, right: 30, bottom: 30, left: 0};
 var width = 960 - margin.left - margin.right;
+if(w.innerWidth < 775){var fieldWidth = (w.innerWidth - 30) / numOfCols;}
+else{var fieldWidth = 124;}
 var previousSort;
-
-if(w.innerWidth < 775){
-    var fieldWidth = (w.innerWidth - 30) / numOfCols;
-}
-else{
-    var fieldWidth = 124;
-}
 
 function filterAndCount(data) {
     jsonData = data.filter(function(d)
@@ -80,7 +75,10 @@ function refreshTable(sortOn, data)
         if(i == 0){return "translate(" + i * (fieldWidth * firstColMultiplier) + ",0)";}
         else{return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";}
     })
-    .on("click", function(d){ return refreshTable(d, data);});
+    .on("click", function(d){ 
+        console.log(d);
+        return refreshTable(d, data);
+    });
 
     foreignObjects = header.append("foreignObject")
     .attr("x", 0).attr("y", 0)
