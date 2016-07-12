@@ -9,7 +9,7 @@ function initFilterAndCount(filterThresh){
 
     filterLabel.append("span")
         .attr("id", "filter-pre-label")
-        .text('+1 > ');
+        .html('<i class="material-icons">plus_one</i><i class="material-icons">keyboard_arrow_right</i>');
 
     filterLabel.append("span")
         .attr("id", "filter-value")
