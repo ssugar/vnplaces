@@ -1,3 +1,5 @@
+var filterVal = 2000;
+
 function initFilterAndCount(filterThresh){
     var filterDiv = d3.select(".slideFilter");
 

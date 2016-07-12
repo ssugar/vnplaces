@@ -1,4 +1,3 @@
-var filterVal = 2000;
 var jsonData;
 var headerGrp;
 var rowsGrp;
