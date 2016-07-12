@@ -1,5 +1,6 @@
 var map;
 var infowindow;
+var gmapService;
 
 //10.77 x 106.69 = Cho Ben Thanh
 var pos = new google.maps.LatLng(10.773599,106.694420);
@@ -48,6 +49,7 @@ function initMap() {
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
     map.setCenter(pos);
+    gmapService = new google.maps.places.PlacesService(map);
 }
 
 //Called from topList.js on click of svg table row
@@ -57,10 +59,8 @@ function requestRest(q) {
         radius: '5000',
         query: q
     };
-
     infowindow = new google.maps.InfoWindow();
-    var service = new google.maps.places.PlacesService(map);
-    service.textSearch(request, requestRestCallback);
+    gmapService.textSearch(request, requestRestCallback);
 }
 
 function requestRestCallback(results, status) {
@@ -100,8 +100,7 @@ function getDetailedResults(place) {
     var deetrequest = {
         placeId: place.place_id
     };
-    deetservice = new google.maps.places.PlacesService(map);
-    deetservice.getDetails(deetrequest, deetCallback);
+    gmapService.getDetails(deetrequest, deetCallback);
 }
 
 function deetCallback(deetplace, status) {
