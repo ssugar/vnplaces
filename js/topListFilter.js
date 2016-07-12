@@ -33,4 +33,13 @@ function initFilterAndCount(filterThresh){
         .html('<i class="material-icons">restaurant</i>');
 }
 
+function watchFilterInput(data){
+    d3.select("#filter-input").on("input", function() {
+        filterVal = +this.value;
+        d3.select('#filter-value').text(filterVal);            
+        clearTable();
+        refreshTable(null, data);
+    });
+}
+
 initFilterAndCount(filterVal);

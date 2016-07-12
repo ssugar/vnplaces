@@ -6,6 +6,8 @@ var w = window;
 var fieldHeight = 30;
 var firstColMultiplier = 3;
 var numOfCols = (1 * firstColMultiplier) + 3;
+var margin = {top: 0, right: 30, bottom: 30, left: 0};
+var width = 960 - margin.left - margin.right;
 var previousSort;
 
 if(w.innerWidth < 775){
@@ -30,15 +32,11 @@ function clearTable(){
 }
 
 function initTopList(){ 
-    d3.tsv("assets/summarizeData.txt", function(data) 
-    {
+    d3.tsv("assets/summarizeData.txt", function(data) {
         filterAndCount(data); 
         //using total data rows + 1 for header time height + 1 for padding
         var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
-
-        var margin = {top: 0, right: 30, bottom: 30, left: 0},
-            width = 960 - margin.left - margin.right,
-            height = tableHeight - margin.top - margin.bottom;
+        var height = tableHeight - margin.top - margin.bottom;
 
         var canvasHeader = d3.select(".containerHeader").append("svg")
             .attr("class", "canvas")
@@ -60,12 +58,8 @@ function initTopList(){
 
         previousSort = null;
 
-        d3.select("#filter-input").on("input", function() {
-            filterVal = +this.value;
-            d3.select('#filter-value').text(filterVal);            
-            clearTable();
-            refreshTable(null, data);
-        });
+        //calling watchFilterInput function from topListFilter.js
+        watchFilterInput(data);
 
         refreshTable(null, data);
     });
@@ -76,16 +70,9 @@ function refreshTable(sortOn, data)
     filterAndCount(data);
 
     var tableHeight = (jsonData.length + 1) * (fieldHeight + 2); 
-
-    var margin = {top: 0, right: 30, bottom: 30, left: 0},
-        width = 960 - margin.left - margin.right,
-        height = tableHeight - margin.top - margin.bottom;    
+    var height = tableHeight - margin.top - margin.bottom;    
+    d3.select("#canvasRows").attr("height", (height + margin.top + margin.bottom));
     
-    var canvas = d3.select("#canvasRows")
-        .attr("height", (height + margin.top + margin.bottom));
-    
-    console.log(+(height + margin.top + margin.bottom));
-
     var header = headerGrp.selectAll("g")
     .data(d3.keys(jsonData[0]))
     .enter().append("g")
