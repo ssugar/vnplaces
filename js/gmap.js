@@ -29,7 +29,7 @@ function initMap() {
     }]}];
 
     var styledMap = new google.maps.StyledMapType(styles, {
-        name: "vnplaces"
+        name: "EOSaigon"
     });
 
     map = new google.maps.Map(document.getElementById('map'), {
