@@ -60,6 +60,7 @@ function requestRest(q) {
         query: q
     };
     infowindow = new google.maps.InfoWindow();
+    clearListingsBy();
     gmapService.textSearch(request, requestRestCallback);
 }
 
@@ -129,5 +130,10 @@ function fillResultsBox(deetplace) {
         initImgSlider(); //calling initImgSlider function from gImgSlider.js
     }
 }
+
+function clearListingsBy() {
+    d3.selectAll("div.gm-style-cc").html('');
+}
+
 
 initMap();
