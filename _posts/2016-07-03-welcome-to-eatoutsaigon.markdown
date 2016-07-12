@@ -8,7 +8,7 @@ Welcome to Eat Out Saigon
 
 This site is part of an automated system designed to do the following:
 
-1. Collect unique comments and ratings about restaurants in the Ho Chi Minh City area
+1. Collect unique comments and ratings about restaurants in the Saigon / Ho Chi Minh City area
 2. Summarize this comment and rating data into the following columns:
   + **Name:** The name of the restaurant
   + **Value:** The sum of all unique comment ratings.  All comment ratings are scaled down to # out of 5.
