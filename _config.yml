@@ -10,7 +10,8 @@ title: vnplaces
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   This site is part of an automated system to collect, summarize, 
-  and display restaurant data in Ho Chi Minh City.
+  and display restaurant data in Ho Chi Minh City/Saigon area. 
+  The aim of the system is to help me find good food.
 baseurl: "/vnplaces" # the subpath of your site, e.g. /blog
 url: "https://ssugar.github.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
