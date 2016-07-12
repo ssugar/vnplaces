@@ -60,7 +60,6 @@ function requestRest(q) {
         query: q
     };
     infowindow = new google.maps.InfoWindow();
-    clearListingsBy();
     gmapService.textSearch(request, requestRestCallback);
 }
 
