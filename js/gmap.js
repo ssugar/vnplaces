@@ -132,7 +132,8 @@ function fillResultsBox(deetplace) {
 }
 
 function clearListingsBy() {
-    d3.selectAll(".gm-style-cc").html('');
+    d3.select("div#map").selectAll("div.gm-style-cc").html("");
+    console.log("ran clear");
 }
 
 
