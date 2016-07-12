@@ -50,12 +50,11 @@ function initTopList(){
         headerGrp = canvasHeader.append("g").attr("class", "headerGrp");
         rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
-        previousSort = null;
-
         //calling watchFilterInput function from topListFilter.js
         watchFilterInput(data);
 
-        refreshTable(null, data);
+        previousSort = null;
+        refreshTable("Avg", data);
     });
 }
 
