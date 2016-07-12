@@ -1,4 +1,5 @@
 var filterVal = 2000;
+var previousSort;
 
 function initFilterAndCount(filterThresh){
     var filterDiv = d3.select(".slideFilter");
@@ -40,6 +41,7 @@ function watchFilterInput(data){
         filterVal = +this.value;
         d3.select('#filter-value').text(filterVal);            
         clearTable();
+        previousSort = null;
         refreshTable("Avg", data);
     });
 }

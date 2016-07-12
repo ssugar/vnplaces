@@ -9,7 +9,6 @@ var margin = {top: 0, right: 30, bottom: 30, left: 0};
 var width = 960 - margin.left - margin.right;
 if(w.innerWidth < 775){var fieldWidth = (w.innerWidth - 30) / numOfCols;}
 else{var fieldWidth = 124;}
-var previousSort;
 
 function filterAndCount(data) {
     jsonData = data.filter(function(d)
