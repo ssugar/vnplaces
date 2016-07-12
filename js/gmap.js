@@ -132,7 +132,7 @@ function fillResultsBox(deetplace) {
 }
 
 function clearListingsBy() {
-    d3.selectAll("div.gm-style-cc").html('');
+    d3.selectAll(".gm-style-cc").html('');
 }
 
 
