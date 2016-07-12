@@ -171,7 +171,7 @@ function sort(a,b){
             return +a > +b ? 1 : +a == +b ? 0 : -1;            
         }
         else{
-            return a.localeCompare(b);
+            return b.localeCompare(a);
         }
     }
     else if(typeof a == "number"){
