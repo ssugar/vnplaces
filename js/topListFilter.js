@@ -31,6 +31,13 @@ function initFilterAndCount(filterThresh){
     filterDiv.append("span")
         .attr("id", "filter-post-count")
         .html('<i class="material-icons">restaurant</i>');
+
+    d3.select("#filter-input").on("input", function() {
+        filterVal = +this.value;
+        d3.select('#filter-value').text(filterVal);            
+        clearTable();
+        refreshTable(null, data);
+    });
 }
 
 initFilterAndCount(filterVal);

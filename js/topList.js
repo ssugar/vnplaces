@@ -58,15 +58,7 @@ function initTopList(){
         headerGrp = canvasHeader.append("g").attr("class", "headerGrp");
         rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
-        var previousSort = null;
-
-        d3.select("#filter-input").on("input", function() {
-            filterVal = +this.value;
-            d3.select('#filter-value').text(filterVal);            
-            clearTable();
-            refreshTable(null, data);
-        });
-
+        previousSort = null;
         refreshTable(null, data);
     });
 }
