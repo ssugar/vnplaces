@@ -59,6 +59,14 @@ function initTopList(){
         rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
         previousSort = null;
+
+        d3.select("#filter-input").on("input", function() {
+            filterVal = +this.value;
+            d3.select('#filter-value').text(filterVal);            
+            clearTable();
+            refreshTable(null, data);
+        });
+
         refreshTable(null, data);
     });
 }
