@@ -21,7 +21,7 @@ function initFilterAndCount(filterThresh){
         .attr("step", "100")
         .attr("min", "1000")
         .attr("max", "5000")
-        .attr("style", "width=100%")
+        .attr("style", "vertical-align:middle")
         .attr("value", +filterThresh);
 
     filterDiv.append("span")
