@@ -54,6 +54,7 @@ function initMap() {
 
 //Called from topList.js on click of svg table row
 function requestRest(q) {
+    clearListingsBy();
     var request = {
         location: pos,
         radius: '5000',

@@ -114,7 +114,6 @@ function refreshTable(sortOn, data)
     })
     .on("click", function(d){
         fitAlready = 0;
-        clearListingsBy();
         requestRest("ho chi minh " + d.Name);  //calling gmap.js requestRest function
     });
 
