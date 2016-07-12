@@ -40,7 +40,7 @@ function watchFilterInput(data){
         filterVal = +this.value;
         d3.select('#filter-value').text(filterVal);            
         clearTable();
-        refreshTable(null, data);
+        refreshTable("Avg", data);
     });
 }
 
