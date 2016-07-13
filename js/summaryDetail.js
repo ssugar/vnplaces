@@ -11,8 +11,10 @@ function addCountAllRestaurants(data){
 
     d3.select(".summaryDetailData").append("div")
     .attr("id", "sDD-left")
-    .append("span")
-    .text(numFormatter(data.length));
+    .append("p")
+    .text(numFormatter(data.length))
+    .append("p")
+    .text("total restaurants");
 }
 
 function addAvgAllAvg(data){
@@ -26,9 +28,10 @@ function addAvgAllAvg(data){
 
     d3.select(".summaryDetailData").append("div")
     .attr("id", "sDD-right")
-    .append("span")
-    .text(avgFormatter(avgAllAvg));
-
+    .append("p")
+    .text(avgFormatter(avgAllAvg))
+    .append("p")
+    .text("average all avg");
 }
 
 function addCountAllComments(data){
@@ -42,8 +45,10 @@ function addCountAllComments(data){
     console.log(numFormatter(sumAllCount));
     d3.select(".summaryDetailData").append("div")
     .attr("id", "sDD-middle")
-    .append("span")
-    .text(numFormatter(sumAllCount));
+    .append("p")
+    .text(numFormatter(sumAllCount))
+    .append("p")
+    .text("total comments");
     
 }
 
