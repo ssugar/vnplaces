@@ -74,7 +74,7 @@ function refreshTable(sortOn, data)
         else{return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";}
     })
     .on("click", function(d){ 
-        $(".container").animate({ scrollTop: 0 }, "fast");
+        d3.select(".container").animate({ scrollTop: 0 }, "fast");
         return refreshTable(d, data);
     });
 
