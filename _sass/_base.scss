@@ -327,6 +327,16 @@ a.w3-btn-floating-right {
 .slideFilter {
     font-size: 18px;
     line-height: 18px;
+    background-color: $grey-color-light;
+    color: $grey-color-dark;
+}
+
+.summaryDetail {
+    font-size: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    background-color: $grey-color-light;
+    color: $grey-color-dark;
 }
 
 i.material-icons {
@@ -346,8 +356,3 @@ span#filter-value {
     vertical-align: middle;
 }
 
-.summaryDetail {
-    font-size: 14px;
-    line-height: 14px;
-    vertical-align: middle;
-}
