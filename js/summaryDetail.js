@@ -17,7 +17,7 @@ function addCountAllRestaurants(data){
     
     leftDiv.append("p")
     .attr("class", "summNumberText")
-    .text("total restaurants");
+    .text("restaurants found");
 }
 
 function addAvgAllAvg(data){
@@ -37,7 +37,7 @@ function addAvgAllAvg(data){
     
     rightDiv.append("p")
     .attr("class", "summNumberText")
-    .text("average all avg");
+    .text("avg all ratings");
 }
 
 function addCountAllComments(data){
@@ -57,7 +57,7 @@ function addCountAllComments(data){
     
     middleDiv.append("p")
     .attr("class", "summNumberText")
-    .text("total comments");
+    .text("comments found");
     
 }
 
