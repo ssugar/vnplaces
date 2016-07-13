@@ -14,6 +14,7 @@ function addCountAllRestaurants(data){
     .append("p")
     .text(numFormatter(data.length))
     .append("p")
+    .attr("font-size", "10px")
     .text("total restaurants");
 }
 
@@ -31,6 +32,7 @@ function addAvgAllAvg(data){
     .append("p")
     .text(avgFormatter(avgAllAvg))
     .append("p")
+    .attr("font-size", "10px")
     .text("average all avg");
 }
 
@@ -48,6 +50,7 @@ function addCountAllComments(data){
     .append("p")
     .text(numFormatter(sumAllCount))
     .append("p")
+    .attr("font-size", "10px")
     .text("total comments");
     
 }
