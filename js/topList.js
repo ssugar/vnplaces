@@ -75,6 +75,7 @@ function refreshTable(sortOn, data)
     })
     .on("click", function(d){ 
         var contDiv = d3.select("div.container");
+        console.log(contDiv.scrollTop);
         contDiv.scrollTop = 0;
         return refreshTable(d, data);
     });
