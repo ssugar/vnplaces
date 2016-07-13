@@ -55,8 +55,9 @@ function initTopList(){
         headerGrp = canvasHeader.append("g").attr("class", "headerGrp");
         rowsGrp = canvas.append("g").attr("class","rowsGrp");
 
-        watchFilterInput(data);   //calling from topListFilter.js
+        watchFilterInput(data);         //calling from topListFilter.js
         addCountAllRestaurants(data);   //calling from summaryDetail.js        
+        addAvgAllAvg(data);             //calling from summaryDetail.js
 
         previousSort = null;
         refreshTable("Avg", data);
