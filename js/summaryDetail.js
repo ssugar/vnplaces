@@ -9,4 +9,12 @@ function addCountAllRestaurants(data){
     console.log(data.length);
 }
 
+function addAvgAllAvg(data){
+    var avgAllAvg = d3.mean(data, function(d){
+        return +d.Avg;
+    });
+    console.log(avgAllAvg);
+}
+
+
 refreshSummaryDetail();
