@@ -182,3 +182,8 @@ function sort(a,b){
 }
 
 initTopList();
+
+d3.text("assets/summarizeDetail.txt", function(data) {
+    console.log(data);
+});
+
