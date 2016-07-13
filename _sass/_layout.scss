@@ -355,7 +355,15 @@ input#filter-input{
 
 #sDD-left {
     height:50px;
-    width:50%;
+    width:30%;
+    float: left;
+    overflow-y: hidden;
+    overflow-x: hidden;   
+}
+
+#sDD-middle {
+    height:50px;
+    width:30%;
     float: left;
     overflow-y: hidden;
     overflow-x: hidden;   
@@ -363,7 +371,7 @@ input#filter-input{
 
 #sDD-right {
     height:50px;
-    width:50%;
+    width:30%;
     float: left;
     overflow-y: hidden;
     overflow-x: hidden;   

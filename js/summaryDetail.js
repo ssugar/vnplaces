@@ -6,19 +6,21 @@ function refreshSummaryDetail(){
 }
 
 function addCountAllRestaurants(data){
-    console.log(data.length);
+    var numFormatter = d3.format(",");
+    console.log(numFormatter(data.length));
 
     d3.select(".summaryDetailData").append("div")
     .attr("id", "sDD-left")
     .append("span")
-    .text(data.length);
+    .text(numFormatter(data.length));
 }
 
 function addAvgAllAvg(data){
+    var avgFormatter = d3.format(".2f");
+
     var avgAllAvg = d3.mean(data, function(d){
         return +d.Avg;
     });
-    var avgFormatter = d3.format(".2f");
 
     console.log(avgFormatter(avgAllAvg));
 
@@ -33,10 +35,15 @@ function addCountAllComments(data){
     //d3.text("assets/summarizeCommentCount.txt", function(data) {
     //    console.log(data);
     //});
+    var numFormatter = d3.format(",");
     var sumAllCount = d3.sum(data, function(d){
         return +d.Count;
     });
-    console.log(sumAllCount);
+    console.log(numFormatter(sumAllCount));
+    d3.select(".summaryDetailData").append("div")
+    .attr("id", "sDD-middle")
+    .append("span")
+    .text(numFormatter(sumAllCount));
     
 }
 

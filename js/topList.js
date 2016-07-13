@@ -57,8 +57,8 @@ function initTopList(){
 
         watchFilterInput(data);         //calling from topListFilter.js
         addCountAllRestaurants(data);   //calling from summaryDetail.js        
-        addAvgAllAvg(data);             //calling from summaryDetail.js
         addCountAllComments(data);      //calling from summaryDetail.js
+        addAvgAllAvg(data);             //calling from summaryDetail.js
 
         previousSort = null;
         refreshTable("Avg", data);
