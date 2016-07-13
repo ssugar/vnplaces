@@ -7,6 +7,11 @@ function refreshSummaryDetail(){
 
 function addCountAllRestaurants(data){
     console.log(data.length);
+
+    d3.select(".summaryDetailData").append("div")
+    .attr("id", "sDD-left")
+    .append("span")
+    .text(data.length);
 }
 
 function addAvgAllAvg(data){
@@ -14,8 +19,22 @@ function addAvgAllAvg(data){
         return +d.Avg;
     });
     var avgFormatter = d3.format(".2f");
+
     console.log(avgFormatter(avgAllAvg));
+
+    d3.select(".summaryDetailData").append("div")
+    .attr("id", "sDD-right")
+    .append("span")
+    .text(avgFormatter(avgAllAvg));
+
 }
+
+function addCountAllComments(){
+    d3.text("assets/summarizeCommentCount.txt", function(data) {
+        console.log(data);
+    });
+}
+
 
 
 refreshSummaryDetail();
