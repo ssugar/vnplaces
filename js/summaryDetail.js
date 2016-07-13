@@ -9,12 +9,14 @@ function addCountAllRestaurants(data){
     var numFormatter = d3.format(",");
     console.log(numFormatter(data.length));
 
-    d3.select(".summaryDetailData").append("div")
-    .attr("id", "sDD-left")
-    .append("p")
-    .text(numFormatter(data.length))
-    .append("p")
-    .attr("font-size", "10px")
+    var leftDiv = d3.select(".summaryDetailData").append("div")
+    .attr("id", "sDD-left");
+    
+    leftDiv.append("p")
+    .text(numFormatter(data.length));
+    
+    leftDiv.append("p")
+    .attr("class", "summNumberText")
     .text("total restaurants");
 }
 
@@ -27,12 +29,14 @@ function addAvgAllAvg(data){
 
     console.log(avgFormatter(avgAllAvg));
 
-    d3.select(".summaryDetailData").append("div")
-    .attr("id", "sDD-right")
-    .append("p")
-    .text(avgFormatter(avgAllAvg))
-    .append("p")
-    .attr("font-size", "10px")
+    var rightDiv = d3.select(".summaryDetailData").append("div")
+    .attr("id", "sDD-right");
+    
+    rightDiv.append("p")
+    .text(avgFormatter(avgAllAvg));
+    
+    rightDiv.append("p")
+    .attr("class", "summNumberText")
     .text("average all avg");
 }
 
@@ -45,12 +49,14 @@ function addCountAllComments(data){
         return +d.Count;
     });
     console.log(numFormatter(sumAllCount));
-    d3.select(".summaryDetailData").append("div")
-    .attr("id", "sDD-middle")
-    .append("p")
-    .text(numFormatter(sumAllCount))
-    .append("p")
-    .attr("font-size", "10px")
+    var middleDiv = d3.select(".summaryDetailData").append("div")
+    .attr("id", "sDD-middle");
+    
+    middleDiv.append("p")
+    .text(numFormatter(sumAllCount));
+    
+    middleDiv.append("p")
+    .attr("class", "summNumberText")
     .text("total comments");
     
 }
