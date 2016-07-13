@@ -74,7 +74,7 @@ function refreshTable(sortOn, data)
         else{return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";}
     })
     .on("click", function(d){ 
-        console.log(d);
+        clearTable();
         return refreshTable(d, data);
     });
 
