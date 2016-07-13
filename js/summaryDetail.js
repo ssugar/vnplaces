@@ -33,7 +33,7 @@ function addAvgAllAvg(data){
     .attr("id", "sDD-right");
     
     rightDiv.append("p")
-    .text(avgFormatter(avgAllAvg));
+    .text(avgFormatter(avgAllAvg) + ' / 5');
     
     rightDiv.append("p")
     .attr("class", "summNumberText")
