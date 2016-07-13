@@ -324,7 +324,7 @@ a.w3-btn-floating-right {
 }
 
 .summaryDetailData {
-    font-family: "Roboto";
+    font-family: $number-font-family;
     font-size: 45px;
     line-height: 45px;
     vertical-align: text-bottom;
@@ -352,11 +352,13 @@ span#filter-value {
     font-size: 18px;
     line-height: 18px;
     vertical-align: middle;
+    font-family: $number-font-family;
 }
 #rest-count {
     font-size: 18px;
     line-height: 18px;
     vertical-align: middle;
+    font-family: $number-font-family;
 }
 
 .filledSpacer {
