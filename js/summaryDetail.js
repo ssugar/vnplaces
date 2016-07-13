@@ -13,7 +13,8 @@ function addAvgAllAvg(data){
     var avgAllAvg = d3.mean(data, function(d){
         return +d.Avg;
     });
-    console.log(avgAllAvg);
+    var avgFormatter = d3.format(".2f");
+    console.log(avgFormatter(avgAllAvg));
 }
 
 
