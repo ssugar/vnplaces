@@ -29,10 +29,15 @@ function addAvgAllAvg(data){
 
 }
 
-function addCountAllComments(){
-    d3.text("assets/summarizeCommentCount.txt", function(data) {
-        console.log(data);
+function addCountAllComments(data){
+    //d3.text("assets/summarizeCommentCount.txt", function(data) {
+    //    console.log(data);
+    //});
+    var sumAllCount = d3.sum(data, function(d){
+        return +d.Count;
     });
+    console.log(sumAllCount);
+    
 }
 
 
