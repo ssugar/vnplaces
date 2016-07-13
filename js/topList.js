@@ -184,5 +184,5 @@ function sort(a,b){
 initTopList();
 
 d3.xhr("assets/summarizeData.txt", function(error, response) {
-  console.log(response.getResponseHeader("Content-Type"));
+  console.log(response.getResponseHeader("Last-Modified"));
 });
