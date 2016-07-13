@@ -266,7 +266,15 @@
     height: 15px;
     width: 100%;
     overflow-y: hidden;
-    overflow-x: hidden;   
+    overflow-x: hidden;
+    border-bottom-left-radius: 5px;   
+    border-bottom-right-radius: 5px;
+}
+
+.slideFilter {
+    width: 100%;
+    border-top-left-radius: 5px;   
+    border-top-right-radius: 5px;
 }
 
 #map {
@@ -325,10 +333,6 @@ img.imgSlider {
     max-width: 100%;
     max-height: 100%;
 } 
-
-.slideFilter {
-    width: 100%;
-}
 
 input#filter-input{
     width: 40%;
