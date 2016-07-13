@@ -24,6 +24,12 @@ function clearTable(){
     d3.select(".rowsGrp").html("");
 }
 
+function scrollTableTop(){
+    var contDiv = d3.select("div.container");
+    var contEle = (contDiv[0])[0];
+    contEle.scrollTop = 0;
+}
+
 function initTopList(){ 
     d3.tsv("assets/summarizeData.txt", function(data) {
         filterAndCount(data); 
@@ -74,11 +80,7 @@ function refreshTable(sortOn, data)
         else{return "translate(" + (i + firstColMultiplier - 1) * fieldWidth + ",0)";}
     })
     .on("click", function(d){ 
-        var contDiv = d3.select("div.container");
-        var contEle = (contDiv[0])[0];
-        console.log(contEle);
-        console.log(contEle.scrollTop);
-        contEle.scrollTop = 0;
+        scrollTableTop();
         return refreshTable(d, data);
     });
 
