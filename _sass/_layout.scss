@@ -262,6 +262,17 @@
     overflow-x: hidden;   
 }
 
+.slideFilter {
+    width: 100%;
+}
+
+.summaryDetailData {
+    height: 60px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .summaryDetail {
     height: 15px;
     width: 100%;
@@ -269,10 +280,6 @@
     overflow-x: hidden;
     border-bottom-left-radius: 5px;   
     border-bottom-right-radius: 5px;
-}
-
-.slideFilter {
-    width: 100%;
 }
 
 #map {
