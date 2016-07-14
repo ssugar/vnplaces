@@ -334,8 +334,9 @@ a.w3-btn-floating-right {
 }
 
 .summaryDetail {
-    font-size: 14px;
-    line-height: 14px;
+    font-family: $number-font-family;
+    font-size: 10px;
+    line-height: 10px;
     vertical-align: middle;
     text-align: right;
     background-color: $header-color;
