@@ -175,6 +175,10 @@
  */
 .page-content {
     padding: 5px 0;
+    @include media-query($on-palm) {
+        padding: 15px 0;
+    }
+
 }
 
 .page-heading {
