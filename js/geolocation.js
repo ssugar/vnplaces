@@ -1,6 +1,7 @@
 var markers = [];
 var userMarkers = [];
 var fitAlready = 0;
+var centerAlready = 0;
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -25,7 +26,10 @@ function userMarker(currentLoc) {
     userMark.setPosition(userLatlng);
     userMarkers = [];
     userMarkers.push(userMark);
-    map.setCenter(userMark.getPosition());
+    if(centerAlready == 0) {
+        map.setCenter(userMark.getPosition());
+        centerAlready = 1;
+    }
 }
 
 getLocation();
