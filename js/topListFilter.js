@@ -19,7 +19,7 @@ function initFilterAndCount(filterThresh){
         .attr("id", "filter-input")
         .attr("type", "range")
         .attr("step", "10")
-        .attr("min", "10")
+        .attr("min", "30")
         .attr("max", "400")
         .attr("style", "vertical-align:middle")
         .attr("value", +filterThresh);
