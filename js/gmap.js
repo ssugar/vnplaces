@@ -112,7 +112,31 @@ function deetCallback(deetplace, status) {
 
 function fillResultsBox(deetplace) {
     placesList = document.getElementById('results');
-    placesList.innerHTML += '<p class="' + deetplace.types[0] + '">' + '<a href="https://maps.google.com/maps?q=' + deetplace.formatted_address + '" target="_blank"><i class="material-icons">directions</i></a>&nbsp;<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a>&nbsp;<a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>' + '</p>';
+    var addInfo = '<a href="https://maps.google.com/maps?q=' + deetplace.formatted_address + '" target="_blank"><i class="material-icons">directions</i></a>';
+    var phInfo = '<a href="tel:' + deetplace.formatted_phone_number + '"><i class="material-icons">phone</i></a>';
+    var webInfo = '<a href="' + deetplace.website + '" target="_blank"><i class="material-icons">public</i></a>';
+    placesList.innerHTML += '<p class="' + deetplace.types[0] + '">';
+
+    if(deetplace.website == undefined){
+        if(deetplace.formatted_phone_number == undefined)
+        {
+            placesList.innerHTML += addInfo; 
+        }
+        else{
+            placesList.innerHTML += addInfo + '&nbsp;' + phInfo; 
+        }
+    }
+    else{
+        if(deetplace.formatted_phone_number == undefined)
+        {
+            placesList.innerHTML += addInfo + '&nbsp;' + webInfo; 
+        }
+        else{
+            placesList.innerHTML += addInfo + '&nbsp;' + phInfo + '&nbsp;' + webInfo; 
+        }
+    }
+    placesList.innerHTML += '</p>';
+
 
     deetplace.photos.forEach(function(item, ind){
         if(ind == 0){
