@@ -25,6 +25,7 @@ function userMarker(currentLoc) {
     userMark.setPosition(userLatlng);
     userMarkers = [];
     userMarkers.push(userMark);
+    map.setCenter(userMark.getPosition());
 }
 
 getLocation();
