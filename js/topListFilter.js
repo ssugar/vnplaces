@@ -1,4 +1,4 @@
-var filterVal = 200;
+var filterVal = 50;
 var previousSort;
 
 function initFilterAndCount(filterThresh){
@@ -19,8 +19,8 @@ function initFilterAndCount(filterThresh){
         .attr("id", "filter-input")
         .attr("type", "range")
         .attr("step", "10")
-        .attr("min", "50")
-        .attr("max", "1000")
+        .attr("min", "10")
+        .attr("max", "400")
         .attr("style", "vertical-align:middle")
         .attr("value", +filterThresh);
 
