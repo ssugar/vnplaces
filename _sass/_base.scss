@@ -331,6 +331,11 @@ a.w3-btn-floating-right {
     text-align: center;
     background-color: $header-color;
     color: $grey-color-light;
+
+    @include media-query($on-palm) {
+        font-size: 15px;
+        line-height: 15px;
+    }
 }
 
 .summaryDetail {
