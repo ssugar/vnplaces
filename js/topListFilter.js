@@ -1,4 +1,4 @@
-var filterVal = 2000;
+var filterVal = 200;
 var previousSort;
 
 function initFilterAndCount(filterThresh){
@@ -18,9 +18,9 @@ function initFilterAndCount(filterThresh){
     filterDiv.append("input")
         .attr("id", "filter-input")
         .attr("type", "range")
-        .attr("step", "100")
-        .attr("min", "1000")
-        .attr("max", "5000")
+        .attr("step", "10")
+        .attr("min", "50")
+        .attr("max", "1000")
         .attr("style", "vertical-align:middle")
         .attr("value", +filterThresh);
 
