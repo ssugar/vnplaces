@@ -178,6 +178,26 @@ function drawU(){
     }
 }
 
+function clearLogo(){
+    logomaxX = 210;
+    logomaxY = 56;
+    logospacer = 1;
+    logoboxSize = 3;
+    logostartX = 0;
+    logostartY = 0;
+    logomargin = 10;
+    logoloopLimit = Math.floor((logomaxY - (logomargin*2)) / (logoboxSize + logospacer));
+
+    d3.select(".site-title").html("");
+    
+    svgLogoContainer = d3.select(".site-title").append("svg")
+        .attr("width", logomaxX)
+        .attr("height", logomaxY)
+        .on("click", function(){
+            window.location = "https://ssugar.github.io/vnplaces";
+    });
+}
+
 function generateLogo(){
 
     drawE();
@@ -208,3 +228,8 @@ function generateLogo(){
 }
 
 generateLogo();
+
+setTimeout(clearLogo, 10000);
+setTimeout(generateLogo, 20000);
+setTimeout(clearLogo, 30000);
+setTimeout(generateLogo, 40000);
