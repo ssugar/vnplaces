@@ -22,7 +22,7 @@ function generateLogo(){
     var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
     //E
-    for(h = 0; h < 3; h++) {
+    for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i % 2 == 0 || h == 0){
                 drawBox(startX, startY, boxSize, margin);
