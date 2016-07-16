@@ -1,6 +1,8 @@
+var maxX = 200;
+var maxY = 56;
 var svgContainer = d3.select(".fixedHeader").append("svg")
-    .attr("width", 100)
-    .attr("height", 56);
+    .attr("width", maxX)
+    .attr("height", maxY);
 
 function drawBox(startX, startY, boxSize, margin){
     svgContainer.append("rect")
@@ -15,8 +17,6 @@ function generateLogo(){
     var boxSize = 5;
     var startX = 0;
     var startY = 0;
-    var maxX = 100;
-    var maxY = 56;
     var margin = 10;
 
     var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
