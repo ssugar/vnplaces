@@ -79,7 +79,7 @@ function generateLogo(){
                     //skip
                 }
                 else{
-                    if(i == 0 && h != 2){
+                    if((i == 0 && h != 2) || (h == 2 && i == 1)){
                         //skip
                     }
                     else{
