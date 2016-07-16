@@ -25,14 +25,19 @@ function drawBox(){
         .attr("cy", logostartY + logomargin)
         .attr("r", logoboxSize/1.5)
         .transition()
-        .attr("r",logoboxSize)
         .duration(4000)
-        .each("end", function(){
-            d3.select(this)
+        .each(animateLogo);
+
+    function animateLogo() {
+        var circle = d3.select(this);
+        (function repeat() {
+            circle = circle.transition()
+                .attr("r", logoboxSize)
             .transition()
-            .attr("r", logoboxSize/1.5)
-            .duration(4000);
-        });
+                .attr("r", logoboxSize/1.5)
+                .each("end", repeat);
+        })();
+    }        
 }
 
 function drawA(){
@@ -238,7 +243,7 @@ function generateLogo(){
 
 generateLogo();
 
-setTimeout(clearLogo, 8000);
-setTimeout(generateLogo, 8100);
-setTimeout(clearLogo, 16000);
-setTimeout(generateLogo, 16100);
+//setTimeout(clearLogo, 8000);
+//setTimeout(generateLogo, 8100);
+//setTimeout(clearLogo, 16000);
+//setTimeout(generateLogo, 16100);
