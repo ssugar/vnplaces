@@ -22,21 +22,11 @@ function generateLogo(){
     var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
     for(i = 0; i < loopLimit; i++) {
-        if(i == 0){
-            svgContainer.append("rect")
-                .attr("x", startX + margin)
-                .attr("y", startY + margin)
-                .attr("width", boxSize)
-                .attr("height", boxSize);
-        }
-        else{
-            svgContainer.append("rect")
-                .attr("x", startX + margin)
-                .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
-                .attr("width", boxSize)
-                .attr("height", boxSize);
-        }
-
+        svgContainer.append("rect")
+            .attr("x", startX + margin)
+            .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
+            .attr("width", boxSize)
+            .attr("height", boxSize);
     }
 }
 
