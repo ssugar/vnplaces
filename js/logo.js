@@ -118,6 +118,11 @@ function generateLogo(){
                     drawBox(startX, startY, boxSize, margin);            
                 }
             }
+            else{
+                if(h == 2 && i == 2){
+                    drawBox(startX, startY, boxSize, margin);
+                }
+            }
             startY = startY + boxSize + spacer;
         }
         startY = 0;
