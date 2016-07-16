@@ -61,7 +61,7 @@ function drawBox(){
         .attr("cy", logostartY + logomargin)
         .attr("r", logoboxSize/1.5)
         .transition()
-        .duration(4000)
+        .duration(1000)
         .each(animateLogo);
 
     function animateLogo() {
