@@ -23,7 +23,10 @@ function drawBox(){
     svgLogoContainer.append("circle")
         .attr("cx", logostartX + logomargin)
         .attr("cy", logostartY + logomargin)
-        .attr("r", logoboxSize/1.5);
+        .attr("r", logoboxSize/1.5)
+        .transition()
+        .attr("r",logoboxSize)
+        .duration(2000);
 }
 
 function drawA(){
