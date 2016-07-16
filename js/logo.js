@@ -40,7 +40,7 @@ var randomColor = (function(){
           b = hue2rgb(p, q, h - 1/3);
       }
 
-      return '#'+Math.round((r * 255)*.3).toString(16)+Math.round((g * 255*.6)).toString(16)+Math.round((b * 255*.11)).toString(16);
+      return '#'+Math.round((r * 255)*.3).toString(16)+Math.round((g * 255*.6)).toString(16)+Math.round((b * 255*.21)).toString(16);
   };
   
   return function(){
@@ -61,14 +61,14 @@ function drawBox(){
         .attr("cy", logostartY + logomargin)
         .attr("r", logoboxSize/1.5)
         .transition()
-        .duration(250)
+        .duration(2000)
         .each(animateLogo);
 
     function animateLogo() {
         var circle = d3.select(this);
         (function repeat() {
             circle = circle.transition()
-                .attr("r", logoboxSize/1.25)
+                .attr("r", logoboxSize/1.35)
                 .style({fill: randomColor})
             .transition()
                 .attr("r", logoboxSize/1.5)
