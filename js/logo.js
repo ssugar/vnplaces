@@ -5,7 +5,7 @@ var logoboxSize = 3;
 var logostartX = 0;
 var logostartY = 0;
 var logomargin = 10;
-var logoloopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
+var logoloopLimit = Math.floor((logomaxY - (logomargin*2)) / (logoboxSize + logospacer));
 
 var svgLogoContainer = d3.select(".fixedHeader").append("svg")
     .attr("width", logomaxX)
