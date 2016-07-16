@@ -26,7 +26,13 @@ function drawBox(){
         .attr("r", logoboxSize/1.5)
         .transition()
         .attr("r",logoboxSize)
-        .duration(2000);
+        .duration(4000)
+        .each("end", function(){
+            d3.select(this)
+            .transition()
+            .attr("r", logoboxSize/1.5)
+            .duration(4000);
+        });
 }
 
 function drawA(){
