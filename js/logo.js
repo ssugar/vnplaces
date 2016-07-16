@@ -14,28 +14,24 @@ function generateLogo(){
         .attr("width", 100)
         .attr("height", 56);
 
-    //drawing E
-    //First Line
-    //for(i = 0; i < loopLimit; i++) {
-    //    svgContainer.append("rect")
-    //        .attr("x", startX + margin)
-    //        .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
-    //        .attr("width", boxSize)
-    //        .attr("height", boxSize);
-    //}
-
     //E
     for(h = 0; h < 3; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i % 2 == 0 || h == 0){
                 svgContainer.append("rect")
-                    .attr("x", startX + margin + (boxSize * h) + (spacer*h))
-                    .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
+                    .attr("x", startX + margin)
+                    .attr("y", startY + margin)
                     .attr("width", boxSize)
                     .attr("height", boxSize);
+                startX = startX + ((boxSize * h) + (spacer*h));
+                startY = startY + ((boxSize * i) + (spacer*i));
             }
         }
     }
+
+    //O
+
+
 }
 
 generateLogo();
