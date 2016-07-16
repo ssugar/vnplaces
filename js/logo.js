@@ -100,7 +100,7 @@ function drawN(){
     //O
     for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
+            if(i == 0 || i == (loopLimit-1)){
                 drawBox(startX, startY, boxSize, margin);            
             }
             startY = startY + boxSize + spacer;
