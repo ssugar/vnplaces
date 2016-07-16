@@ -53,7 +53,12 @@ function generateLogo(){
     for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i % 2 == 0 || h == 0 || h == 3){
-                drawBox(startX, startY, boxSize, margin)            
+                if((h == 0 && i == 3) || (h == 3 && i == 1)){
+                    //skip
+                }
+                else{
+                    drawBox(startX, startY, boxSize, margin)            
+                }
             }
             startY = startY + boxSize + spacer;
         }
