@@ -2,7 +2,8 @@
 function generateLogo(){
     var svgContainer = d3.select(".fixedHeader").append("svg")
         .attr("width", 100)
-        .attr("height", 40);
+        .attr("height", 40)
+        .attr("position", "absolute");
     
     var circle = svgContainer.append("circle")
         .attr("cx", 20)
