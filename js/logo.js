@@ -25,13 +25,15 @@ function generateLogo(){
     }
 
     //Second Line
-    for(i = 0; i < loopLimit; i++) {
-        if(i%2 == 0){  //only write on even loops to look like an E.
-            svgContainer.append("rect")
-                .attr("x", startX + margin + boxSize + spacer)
-                .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
-                .attr("width", boxSize)
-                .attr("height", boxSize);
+    for(h = 0; h < 3; h++) {
+        for(i = 0; i < loopLimit; i++) {
+            if(i%2 == 0){  //only write on even loops to look like an E.
+                svgContainer.append("rect")
+                    .attr("x", startX + margin + (boxSize * h) + (spacer*h))
+                    .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
+                    .attr("width", boxSize)
+                    .attr("height", boxSize);
+            }
         }
     }
 }
