@@ -93,6 +93,24 @@ function generateLogo(){
         startX = startX + boxSize + spacer;
     }
 
+    startX = startX + (spacer*2);
+
+    //I
+    for(h = 0; h < 3; h++) {
+        for(i = 0; i < loopLimit; i++) {
+            if(h == 0 || h == 2){
+                //skip
+            }
+            else{
+                drawBox(startX, startY, boxSize, margin);            
+            }
+            startY = startY + boxSize + spacer;
+        }
+        startY = 0;
+        startX = startX + boxSize + spacer;
+    }
+    
+
 
 }
 
