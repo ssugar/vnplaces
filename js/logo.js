@@ -31,6 +31,20 @@ function generateLogo(){
     }
 
     //O
+    for(h = 0; h < 3; h++) {
+        for(i = 0; i < loopLimit; i++) {
+            if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
+                svgContainer.append("rect")
+                    .attr("x", startX + margin)
+                    .attr("y", startY + margin)
+                    .attr("width", boxSize)
+                    .attr("height", boxSize);
+            }
+            startY = startY + boxSize + spacer;
+        }
+        startY = 0;
+        startX = startX + boxSize + spacer;
+    }
 
 
 }
