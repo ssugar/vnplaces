@@ -7,7 +7,7 @@ var startY = 0;
 var margin = 10;
 var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
-var svgContainer = d3.select(".fixedHeader").append("svg")
+var svgContainer = d3.select(".site-title").append("svg")
     .attr("width", maxX)
     .attr("height", maxY);
 
