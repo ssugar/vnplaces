@@ -23,11 +23,11 @@ function drawA(){
     //A
     for(h = 0; h < 5; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if((h == 0 && i < 3) || (h == 4 && i < 3)){
+            if((h == 0 && i < 5) || (h == 4 && i < 5)){
                 //skip
             }
             else{
-                if(h > 0 && h < 4 && i > 2){
+                if(h > 0 && h < 4 && i > 4){
                     //skip
                 }
                 else{
