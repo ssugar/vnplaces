@@ -66,6 +66,8 @@ function generateLogo(){
         startX = startX + boxSize + spacer;
     }
 
+    startX = startX + (spacer*2);
+
     //A
     for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
