@@ -114,7 +114,7 @@ function drawO(){
     //O
     for(h = 0; h < 4; h++) {
         for(i = 0; i < logoloopLimit; i++) {
-            if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
+            if(i == 0 || i == (logoloopLimit-1) || h == 0 || h == 3){
                 drawBox(logostartX, logostartY, logoboxSize, logomargin);            
             }
             logostartY = logostartY + logoboxSize + logospacer;
