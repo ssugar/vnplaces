@@ -101,10 +101,14 @@
 .fixedHeader {
     position: fixed;
     height: 56px;
-    width: 750px;
-    padding-right: 20px;
+    width: 740px;
+    padding-left: 50px;
+    padding-right: 50px;
     background: white;
     z-index: 999;
+    @include media-query($on-palm) {
+        width: 300px;
+    }
 }
 
 //.home {
