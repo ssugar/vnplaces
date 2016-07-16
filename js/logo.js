@@ -14,7 +14,7 @@ var svgLogoContainer = d3.select(".site-title").append("svg")
         window.location = "https://ssugar.github.io/vnplaces";
     });
 
-function drawBox(startX, startY, boxSize, margin){
+function drawBox(){
     //svgLogoContainer.append("rect")
     //    .attr("x", logostartX + logomargin)
     //    .attr("y", logostartY + logomargin)
@@ -42,7 +42,7 @@ function drawA(){
                         //skip
                     }
                     else{
-                        drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                        drawBox();            
                     }
                 }
             }
@@ -58,7 +58,7 @@ function drawE() {
     for(h = 0; h < 3; h++) {
         for(i = 0; i < logoloopLimit; i++) {
             if(i == 0 || i == 4 || i == 8 || h == 0){
-                drawBox(logostartX, logostartY, logoboxSize, logomargin);
+                drawBox();
             }
             logostartY = logostartY + logoboxSize + logospacer;
         }
@@ -76,12 +76,12 @@ function drawG() {
                     //skip
                 }
                 else{
-                    drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                    drawBox();
                 }
             }
             else{
                 if(h == 2 && i == 4){
-                    drawBox(logostartX, logostartY, logoboxSize, logomargin);
+                    drawBox();
                 }
             }
             logostartY = logostartY + logoboxSize + logospacer;
@@ -95,7 +95,7 @@ function drawI() {
     //I
     for(h = 0; h < 1; h++) {
         for(i = 0; i < logoloopLimit; i++) {
-            drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+            drawBox();
             logostartY = logostartY + logoboxSize + logospacer;
         }
         logostartY = 0;
@@ -108,7 +108,7 @@ function drawN(){
     for(h = 0; h < 9; h++) {
         for(i = 0; i < logoloopLimit; i++) {
             if(h == 0 || h == 8 || i == h){
-                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                drawBox();
             }
             logostartY = logostartY + logoboxSize + logospacer;
         }
@@ -122,7 +122,7 @@ function drawO(){
     for(h = 0; h < 4; h++) {
         for(i = 0; i < logoloopLimit; i++) {
             if(i == 0 || i == (logoloopLimit-1) || h == 0 || h == 3){
-                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                drawBox();
             }
             logostartY = logostartY + logoboxSize + logospacer;
         }
@@ -140,7 +140,7 @@ function drawS(){
                     //skip
                 }
                 else{
-                    drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                    drawBox();
                 }
             }
             logostartY = logostartY + logoboxSize + logospacer;
@@ -155,7 +155,7 @@ function drawT() {
     for(h = 0; h < 3; h++) {
         for(i = 0; i < logoloopLimit; i++) {
             if(h == 1 || i == 0) {
-                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                drawBox();
             }
             logostartY = logostartY + logoboxSize + logospacer;
         }
@@ -169,7 +169,7 @@ function drawU(){
     for(h = 0; h < 4; h++) {
         for(i = 0; i < logoloopLimit; i++) {
             if(i == (logoloopLimit-1) || h == 0 || h == 3){
-                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+                drawBox();
             }
             logostartY = logostartY + logoboxSize + logospacer;
         }
