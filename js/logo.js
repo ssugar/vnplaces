@@ -175,7 +175,17 @@ function generateLogo(){
 
     drawE();
     startX = startX + (spacer*2);
+    drawA();
+    startX = startX + (spacer*2);
+    drawT();
+    startX = startX + (spacer*2);
+    startX = startX + (spacer*2);
     drawO();
+    startX = startX + (spacer*2);
+    drawU();
+    startX = startX + (spacer*2);
+    drawT();
+    startX = startX + (spacer*2);
     startX = startX + (spacer*2);
     drawS();
     startX = startX + (spacer*2);
@@ -188,10 +198,6 @@ function generateLogo(){
     drawO();
     startX = startX + (spacer*2);
     drawN();
-    startX = startX + (spacer*2);
-    drawT();
-    startX = startX + (spacer*2);
-    drawU();
 }
 
 generateLogo();
