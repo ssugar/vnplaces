@@ -106,7 +106,7 @@ function drawN(){
             startY = startY + boxSize + spacer;
         }
         startY = 0;
-        startX = startX + boxSize + spacer/2;
+        startX = startX + boxSize + spacer/4;
     }
 }
 
