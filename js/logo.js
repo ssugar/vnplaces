@@ -9,17 +9,23 @@ function generateLogo(){
     //    .attr("cy", 20)
     //    .attr("r", 10);
 
-    svgContainer.append("rect")
-        .attr("x", 10)
-        .attr("y", 10)
-        .attr("width", 5)
-        .attr("height", 5);
+
+    //drawing E
+    var spacer = 2;
+    var boxSize = 5;
+    var startPoint = 10;
 
     svgContainer.append("rect")
-        .attr("x", 10)
-        .attr("y", 17)
-        .attr("width", 5)
-        .attr("height", 5);
+        .attr("x", startPoint)
+        .attr("y", startPoint)
+        .attr("width", boxSize)
+        .attr("height", boxSize);
+
+    svgContainer.append("rect")
+        .attr("x", startPoint)
+        .attr("y", (startPoint + boxSize + spacer))
+        .attr("width", boxSize)
+        .attr("height", boxSize);
 
 }
 
