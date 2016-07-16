@@ -5,8 +5,7 @@
     //border-top: 5px solid $grey-color-dark;
     //border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    background: white;
-    z-index: 998;
+
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -102,7 +101,7 @@
 .fixedHeader {
     position: fixed;
     height: 56px;
-    width: 740px;
+    width: 750px;
     background: white;
     z-index: 999;
 }
