@@ -32,7 +32,7 @@ function drawBox(){
         var circle = d3.select(this);
         (function repeat() {
             circle = circle.transition()
-                .attr("r", logoboxSize)
+                .attr("r", logoboxSize/1.25)
             .transition()
                 .attr("r", logoboxSize/1.5)
                 .each("end", repeat);
