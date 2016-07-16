@@ -6,7 +6,7 @@ function generateLogo(){
     var startY = 0;
     var maxX = 100;
     var maxY = 56;
-    var margin = 5;
+    var margin = 7;
 
     var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
