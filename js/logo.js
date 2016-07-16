@@ -1,5 +1,13 @@
 
 function generateLogo(){
+    var spacer = 2;
+    var boxSize = 5;
+    var startX = 0;
+    var startY = 0;
+    var maxX = 100;
+    var maxY = 40
+    var margin = 10
+
     var svgContainer = d3.select(".fixedHeader").append("svg")
         .attr("width", 100)
         .attr("height", 40);
@@ -11,21 +19,14 @@ function generateLogo(){
 
 
     //drawing E
-    var spacer = 2;
-    var boxSize = 5;
-    var startPoint = 10;
 
+    for(i = 0; i < 2; i++) {
     svgContainer.append("rect")
-        .attr("x", startPoint)
-        .attr("y", startPoint)
+        .attr("x", startX + margin)
+        .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
         .attr("width", boxSize)
         .attr("height", boxSize);
-
-    svgContainer.append("rect")
-        .attr("x", startPoint)
-        .attr("y", (startPoint + boxSize + spacer))
-        .attr("width", boxSize)
-        .attr("height", boxSize);
+    }
 
 }
 
