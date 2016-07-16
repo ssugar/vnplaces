@@ -63,7 +63,7 @@ function drawE() {
             logostartY = logostartY + logoboxSize + logospacer;
         }
         logostartY = 0;
-        logostartX = logostartX + logoboxSize + logospacer;
+        logostartX = logostartX + logoboxSize + logospacer/2;
     }
 }
 
@@ -87,7 +87,7 @@ function drawG() {
             logostartY = logostartY + logoboxSize + logospacer;
         }
         logostartY = 0;
-        logostartX = logostartX + logoboxSize + logospacer;
+        logostartX = logostartX + logoboxSize + logospacer/2;
     }
 }
 
@@ -146,7 +146,7 @@ function drawS(){
             logostartY = logostartY + logoboxSize + logospacer;
         }
         logostartY = 0;
-        logostartX = logostartX + logoboxSize + logospacer;
+        logostartX = logostartX + logoboxSize + logospacer/2;
     }
 }
 
