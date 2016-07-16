@@ -104,7 +104,7 @@ function drawN(){
                 drawBox(startX, startY, boxSize, margin);            
             }
             else{
-                if((h == 1 && i == 1) || (h == 2 && i == 2)) {
+                if(h == i) {
                     drawBox(startX, startY, boxSize, margin);            
                 }
             }
