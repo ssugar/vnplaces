@@ -98,13 +98,13 @@ function drawI() {
 
 function drawN(){
     //O
-    for(h = 0; h < 4; h++) {
+    for(h = 0; h < 5; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if(h == 0 || h == 3){
+            if(h == 0 || h == 4){
                 drawBox(startX, startY, boxSize, margin);            
             }
             else{
-                if(h == 1 && i == 1) {
+                if((h == 1 && i == 1) || (h == 2 && i == 2)) {
                     drawBox(startX, startY, boxSize, margin);            
                 }
             }
