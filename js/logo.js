@@ -68,8 +68,10 @@ function drawBox(){
         var circle = d3.select(this);
         (function repeat() {
             circle = circle.transition()
+                .attr("r", logoboxSize/1.25)
                 .style({fill: randomColor})
             .transition()
+                .attr("r", logoboxSize/1.5)
                 .style({fill: randomColor})
                 .each("end", repeat);
         })();
