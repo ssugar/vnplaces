@@ -98,10 +98,14 @@
     }
 }
 
-
-.home {
-    margin-top: 56px;
+.fixedHeader {
+    position: fixed;
+    height: 56px;
 }
+
+//.home {
+//    margin-top: 56px;
+//}
 
 /**
  * Site footer
