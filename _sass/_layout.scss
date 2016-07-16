@@ -101,6 +101,8 @@
 .fixedHeader {
     position: fixed;
     height: 56px;
+    background: white;
+    z-index: 999;
 }
 
 //.home {
