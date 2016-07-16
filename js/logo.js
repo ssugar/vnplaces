@@ -14,6 +14,13 @@ function generateLogo(){
         .attr("y", 10)
         .attr("width", 5)
         .attr("height", 5);
+
+    svgContainer.append("rect")
+        .attr("x", 10)
+        .attr("y", 17)
+        .attr("width", 5)
+        .attr("height", 5);
+
 }
 
 generateLogo();
