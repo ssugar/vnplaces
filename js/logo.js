@@ -5,12 +5,12 @@ function generateLogo(){
     var startX = 0;
     var startY = 0;
     var maxX = 100;
-    var maxY = 40
-    var margin = 10
+    var maxY = 56;
+    var margin = 5;
 
     var svgContainer = d3.select(".fixedHeader").append("svg")
         .attr("width", 100)
-        .attr("height", 40);
+        .attr("height", 56);
     
     //svgContainer.append("circle")
     //    .attr("cx", 20)
@@ -19,8 +19,9 @@ function generateLogo(){
 
 
     //drawing E
+    var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
-    for(i = 0; i < 2; i++) {
+    for(i = 0; i < loopLimit; i++) {
         if(i == 0){
             svgContainer.append("rect")
                 .attr("x", startX + margin)
