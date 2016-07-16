@@ -50,7 +50,7 @@ function drawE() {
     //E
     for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if(i % 2 == 0 || h == 0){
+            if(i == 0 || i == 4 || i == 8 || h == 0){
                 drawBox(startX, startY, boxSize, margin);
             }
             startY = startY + boxSize + spacer;
