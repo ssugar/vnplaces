@@ -364,12 +364,22 @@ span#filter-value {
     line-height: 18px;
     vertical-align: middle;
     font-family: $number-font-family;
+    @include media-query($on-palm) {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
 }
 #rest-count {
     font-size: 18px;
     line-height: 18px;
     vertical-align: middle;
     font-family: $number-font-family;
+    @include media-query($on-palm) {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
 }
 
 .filledSpacer {
