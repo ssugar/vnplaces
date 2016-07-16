@@ -40,7 +40,7 @@ var randomColor = (function(){
           b = hue2rgb(p, q, h - 1/3);
       }
 
-      return '#'+Math.round(r * 255).toString(16)+Math.round(g * 255).toString(16)+Math.round(b * 255).toString(16);
+      return '#'+Math.round((r * 255)*.3).toString(16)+Math.round((g * 255*.6)).toString(16)+Math.round((b * 255*.11)).toString(16);
   };
   
   return function(){
