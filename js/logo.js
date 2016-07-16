@@ -113,7 +113,7 @@ function drawN(){
             logostartY = logostartY + logoboxSize + logospacer;
         }
         logostartY = 0;
-        logostartX = logostartX + logoboxSize - (logospacer*2);
+        logostartX = logostartX + logoboxSize - (logospacer*1.25);
     }
 }
 
