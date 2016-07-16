@@ -51,29 +51,44 @@ var randomColor = (function(){
 })();
 
 function drawBox(){
-    //svgLogoContainer.append("rect")
-    //    .attr("x", logostartX + logomargin)
-    //    .attr("y", logostartY + logomargin)
-    //    .attr("width", logoboxSize)
-    //    .attr("height", logoboxSize);
-    svgLogoContainer.append("circle")
-        .attr("cx", logostartX + logomargin)
-        .attr("cy", logostartY + logomargin)
-        .attr("r", logoboxSize/1.5)
+    svgLogoContainer.append("rect")
+        .attr("x", logostartX + logomargin)
+        .attr("y", logostartY + logomargin)
+        .attr("width", logoboxSize)
+        .attr("height", logoboxSize)
+    //svgLogoContainer.append("circle")
+    //    .attr("cx", logostartX + logomargin)
+    //    .attr("cy", logostartY + logomargin)
+    //    .attr("r", logoboxSize/1.5)
         .transition()
         .duration(2000)
-        .each(animateLogo);
+        //.each(animateLogoCircle);
+        .each(animateLogoSquare);
 
-    function animateLogo() {
+    function animateLogoCircle() {
         var circle = d3.select(this);
-        (function repeat() {
+        (function repeatCircle() {
             circle = circle.transition()
                 .attr("r", logoboxSize/1.35)
                 .style({fill: randomColor})
             .transition()
                 .attr("r", logoboxSize/1.5)
                 .style({fill: randomColor})
-                .each("end", repeat);
+                .each("end", repeatCircle);
+        })();
+    }        
+    function animateLogoSquare() {
+        var circle = d3.select(this);
+        (function repeatSquare() {
+            circle = circle.transition()
+                .attr("width", logoboxSize/1.35)
+                .attr("height", logoboxSize/1.35)
+                .style({fill: randomColor})
+            .transition()
+                .attr("width", logoboxSize/1.35)
+                .attr("height", logoboxSize/1.35)
+                .style({fill: randomColor})
+                .each("end", repeatSquare);
         })();
     }        
 }
