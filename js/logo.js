@@ -65,7 +65,7 @@ function drawG() {
     for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
-                if(h == 3 && i == 1){
+                if(h == 3 && i > 0 && i < 4){
                     //skip
                 }
                 else{
@@ -73,7 +73,7 @@ function drawG() {
                 }
             }
             else{
-                if(h == 2 && i == 2){
+                if(h == 2 && i == 4){
                     drawBox(startX, startY, boxSize, margin);
                 }
             }
