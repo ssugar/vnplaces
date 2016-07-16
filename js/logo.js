@@ -75,7 +75,7 @@ function generateLogo(){
                 //skip
             }
             else{
-                if(h > 0 && h < 5 && i > 2){
+                if(h > 0 && h < 4 && i > 2){
                     //skip
                 }
                 else{
