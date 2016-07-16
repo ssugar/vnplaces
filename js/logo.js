@@ -27,7 +27,7 @@ function generateLogo(){
     //E
     for(h = 0; h < 3; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if(i % 2 == 0 || i == 1){
+            if(i % 2 == 0 || h == 0){
                 svgContainer.append("rect")
                     .attr("x", startX + margin + (boxSize * h) + (spacer*h))
                     .attr("y", (startY + margin + (boxSize * i) + (spacer*i)))
