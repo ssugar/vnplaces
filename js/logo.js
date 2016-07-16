@@ -69,9 +69,9 @@ function generateLogo(){
     startX = startX + (spacer*2);
 
     //A
-    for(h = 0; h < 4; h++) {
+    for(h = 0; h < 5; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if((h == 0 && i < 3) || (h == 3 && i < 3)){
+            if((h == 0 && i < 3) || (h == 4 && i < 3)){
                 //skip
             }
             else{
