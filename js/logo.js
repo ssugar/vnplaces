@@ -143,6 +143,34 @@ function drawS(){
     }
 }
 
+function drawT() {
+    //T
+    for(h = 0; h < 3; h++) {
+        for(i = 0; i < loopLimit; i++) {
+            if(h == 1 || i == 0) {
+                drawBox(startX, startY, boxSize, margin);            
+            }
+            startY = startY + boxSize + spacer;
+        }
+        startY = 0;
+        startX = startX + boxSize + spacer;
+    }
+}
+
+function drawU(){
+    //U
+    for(h = 0; h < 4; h++) {
+        for(i = 0; i < loopLimit; i++) {
+            if(i == (loopLimit-1) || h == 0 || h == 3){
+                drawBox(startX, startY, boxSize, margin);            
+            }
+            startY = startY + boxSize + spacer;
+        }
+        startY = 0;
+        startX = startX + boxSize + spacer;
+    }
+}
+
 function generateLogo(){
 
     drawE();
@@ -160,6 +188,10 @@ function generateLogo(){
     drawO();
     startX = startX + (spacer*2);
     drawN();
+    startX = startX + (spacer*2);
+    drawT();
+    startX = startX + (spacer*2);
+    drawU();
 }
 
 generateLogo();
