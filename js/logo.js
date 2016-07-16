@@ -1,4 +1,4 @@
-var logomaxX = 300;
+var logomaxX = 210;
 var logomaxY = 56;
 var logospacer = 1;
 var logoboxSize = 3;
