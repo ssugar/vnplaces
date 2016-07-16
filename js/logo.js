@@ -100,13 +100,8 @@ function drawN(){
     //O
     for(h = 0; h < 5; h++) {
         for(i = 0; i < loopLimit; i++) {
-            if(h == 0 || h == 4){
+            if(h == 0 || h == 4 || h == i){
                 drawBox(startX, startY, boxSize, margin);            
-            }
-            else{
-                if(h == i) {
-                    drawBox(startX, startY, boxSize, margin);            
-                }
             }
             startY = startY + boxSize + spacer;
         }
