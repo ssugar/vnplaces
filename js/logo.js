@@ -1,3 +1,14 @@
+var svgContainer = d3.select(".fixedHeader").append("svg")
+    .attr("width", 100)
+    .attr("height", 56);
+
+function drawBox(startX, startY, boxSize, margin){
+    svgContainer.append("rect")
+        .attr("x", startX + margin)
+        .attr("y", startY + margin)
+        .attr("width", boxSize)
+        .attr("height", boxSize);
+}
 
 function generateLogo(){
     var spacer = 2;
@@ -10,19 +21,11 @@ function generateLogo(){
 
     var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
-    var svgContainer = d3.select(".fixedHeader").append("svg")
-        .attr("width", 100)
-        .attr("height", 56);
-
     //E
     for(h = 0; h < 3; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i % 2 == 0 || h == 0){
-                svgContainer.append("rect")
-                    .attr("x", startX + margin)
-                    .attr("y", startY + margin)
-                    .attr("width", boxSize)
-                    .attr("height", boxSize);
+                drawBox(startX, startY, boxSize, margin);
             }
             startY = startY + boxSize + spacer;
         }
@@ -36,11 +39,7 @@ function generateLogo(){
     for(h = 0; h < 4; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
-                svgContainer.append("rect")
-                    .attr("x", startX + margin)
-                    .attr("y", startY + margin)
-                    .attr("width", boxSize)
-                    .attr("height", boxSize);
+                drawBox(startX, startY, boxSize, margin)            
             }
             startY = startY + boxSize + spacer;
         }
