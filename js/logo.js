@@ -238,7 +238,7 @@ function generateLogo(){
 
 generateLogo();
 
-setTimeout(clearLogo, 10000);
-setTimeout(generateLogo, 20000);
-setTimeout(clearLogo, 30000);
-setTimeout(generateLogo, 40000);
+setTimeout(clearLogo, 8000);
+setTimeout(generateLogo, 8100);
+setTimeout(clearLogo, 16000);
+setTimeout(generateLogo, 16100);
