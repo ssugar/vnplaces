@@ -23,10 +23,11 @@ function generateLogo(){
                     .attr("y", startY + margin)
                     .attr("width", boxSize)
                     .attr("height", boxSize);
-                startX = startX + ((boxSize * h) + (spacer*h));
-                startY = startY + ((boxSize * i) + (spacer*i));
             }
+            startY = startY + boxSize + spacer;
         }
+        startY = 0;
+        startX = startX + boxSize + spacer;
     }
 
     //O
