@@ -40,7 +40,7 @@ function generateLogo(){
         else{
             svgContainer.append("rect")
                 .attr("x", startX + margin)
-                .attr("y", (startY + margin + (boxSize * i) + (spacer*2))
+                .attr("y", (startY + margin + (boxSize * i) + (spacer*2)))
                 .attr("width", boxSize)
                 .attr("height", boxSize);
         }
