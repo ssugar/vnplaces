@@ -47,6 +47,20 @@ function generateLogo(){
         startX = startX + boxSize + spacer;
     }
 
+    startX = startX + (spacer*2);
+
+    //S
+    for(h = 0; h < 4; h++) {
+        for(i = 0; i < loopLimit; i++) {
+            if(i % 2 == 0 || h == 0 || h == 3){
+                drawBox(startX, startY, boxSize, margin)            
+            }
+            startY = startY + boxSize + spacer;
+        }
+        startY = 0;
+        startX = startX + boxSize + spacer;
+    }
+
 
 }
 
