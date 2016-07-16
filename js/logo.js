@@ -9,7 +9,10 @@ var logoloopLimit = Math.floor((logomaxY - (logomargin*2)) / (logoboxSize + logo
 
 var svgLogoContainer = d3.select(".site-title").append("svg")
     .attr("width", logomaxX)
-    .attr("height", logomaxY);
+    .attr("height", logomaxY)
+    .on("click", function(){
+        window.location = "https://ssugar.github.io/vnplaces";
+    });
 
 function drawBox(startX, startY, boxSize, margin){
     svgLogoContainer.append("rect")
