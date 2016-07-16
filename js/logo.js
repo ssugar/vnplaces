@@ -33,7 +33,7 @@ function generateLogo(){
         startX = startX + boxSize + spacer;
     }
 
-    startX = startX + spacer;
+    startX = startX + (spacer*2);
 
     //O
     for(h = 0; h < 4; h++) {
