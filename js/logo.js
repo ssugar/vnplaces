@@ -103,6 +103,11 @@ function drawN(){
             if(h == 0 || h == 3){
                 drawBox(startX, startY, boxSize, margin);            
             }
+            else{
+                if(h == 1 && i == 1) {
+                    drawBox(startX, startY, boxSize, margin);            
+                }
+            }
             startY = startY + boxSize + spacer;
         }
         startY = 0;
