@@ -185,15 +185,15 @@ function generateLogo(){
     drawA();
     logostartX = logostartX + (logospacer*2);
     drawT();
-    logostartX = logostartX + (logospacer*2);
-    logostartX = logostartX + (logospacer*2);
+    logostartX = logostartX + (logospacer*6);
+
     drawO();
     logostartX = logostartX + (logospacer*2);
     drawU();
     logostartX = logostartX + (logospacer*2);
     drawT();
-    logostartX = logostartX + (logospacer*2);
-    logostartX = logostartX + (logospacer*2);
+    logostartX = logostartX + (logospacer*6);
+
     drawS();
     logostartX = logostartX + (logospacer*2);
     drawA();
