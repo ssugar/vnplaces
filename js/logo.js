@@ -81,12 +81,12 @@ function drawBox(){
         var circle = d3.select(this);
         (function repeatSquare() {
             circle = circle.transition()
-                .attr("width", logoboxSize)
-                .attr("height", logoboxSize)
-                .style({fill: randomColor})
-            .transition()
                 .attr("width", logoboxSize*1.35)
                 .attr("height", logoboxSize*1.35)
+                .style({fill: randomColor})
+            .transition()
+                .attr("width", logoboxSize*1.5)
+                .attr("height", logoboxSize*1.5)
                 .style({fill: randomColor})
                 .each("end", repeatSquare);
         })();
