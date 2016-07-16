@@ -106,7 +106,7 @@
     background: white;
     z-index: 999;
     @include media-query($on-palm) {
-        width: 200px;
+        width: 250px;
     }
 }
 
