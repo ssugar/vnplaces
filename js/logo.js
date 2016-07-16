@@ -31,7 +31,7 @@ function drawA(){
                     //skip
                 }
                 else{
-                    if((i == 0 && h != 2) || (h == 2 && i == 1)){
+                    if((i == 0 && h != 2) || (h == 2 && i > 0 && i < 4)){
                         //skip
                     }
                     else{
