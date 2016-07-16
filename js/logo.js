@@ -79,7 +79,12 @@ function generateLogo(){
                     //skip
                 }
                 else{
-                    drawBox(startX, startY, boxSize, margin);            
+                    if(i == 0 && h != 2){
+                        //skip
+                    }
+                    else{
+                        drawBox(startX, startY, boxSize, margin);            
+                    }
                 }
             }
             startY = startY + boxSize + spacer;
