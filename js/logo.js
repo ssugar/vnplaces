@@ -29,10 +29,18 @@ function generateLogo(){
                 .attr("width", boxSize)
                 .attr("height", boxSize);
         }
-        else{
+        else if(i == 1){
             svgContainer.append("rect")
                 .attr("x", startX + margin)
                 .attr("y", (startY + margin + (boxSize * i) + spacer))
+                .attr("width", boxSize)
+                .attr("height", boxSize);
+        }
+
+        else{
+            svgContainer.append("rect")
+                .attr("x", startX + margin)
+                .attr("y", (startY + margin + (boxSize * i) + (spacer*2))
                 .attr("width", boxSize)
                 .attr("height", boxSize);
         }
