@@ -105,7 +105,7 @@ function drawN(){
             }
             else
             {
-                if(h == 2 && i > 3 && i < 6){
+                if(h == 2 && i > 2 && i < 6){
                     drawBox(startX, startY, boxSize, margin);
                 }
             }
