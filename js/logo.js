@@ -120,7 +120,7 @@ function drawO(){
             startY = startY + boxSize + spacer;
         }
         startY = 0;
-        startX = startX + boxSize + spacer;
+        startX = startX + boxSize + spacer/2;
     }
 }
 
@@ -167,7 +167,7 @@ function drawU(){
             startY = startY + boxSize + spacer;
         }
         startY = 0;
-        startX = startX + boxSize + spacer;
+        startX = startX + boxSize + spacer/2;
     }
 }
 
