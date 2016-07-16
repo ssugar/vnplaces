@@ -48,7 +48,7 @@ function drawA(){
 
 function drawE() {
     //E
-    for(h = 0; h < 4; h++) {
+    for(h = 0; h < 3; h++) {
         for(i = 0; i < loopLimit; i++) {
             if(i == 0 || i == 4 || i == 8 || h == 0){
                 drawBox(startX, startY, boxSize, margin);
