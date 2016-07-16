@@ -1,28 +1,28 @@
-var maxX = 400;
-var maxY = 56;
-var spacer = 1;
-var boxSize = 3;
-var startX = 0;
-var startY = 0;
-var margin = 10;
-var loopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
+var logomaxX = 400;
+var logomaxY = 56;
+var logospacer = 1;
+var logoboxSize = 3;
+var logostartX = 0;
+var logostartY = 0;
+var logomargin = 10;
+var logoloopLimit = Math.floor((maxY - (margin*2)) / (boxSize + spacer));
 
 var svgLogoContainer = d3.select(".fixedHeader").append("svg")
-    .attr("width", maxX)
-    .attr("height", maxY);
+    .attr("width", logomaxX)
+    .attr("height", logomaxY);
 
 function drawBox(startX, startY, boxSize, margin){
     svgLogoContainer.append("rect")
-        .attr("x", startX + margin)
-        .attr("y", startY + margin)
-        .attr("width", boxSize)
-        .attr("height", boxSize);
+        .attr("x", logostartX + logomargin)
+        .attr("y", logostartY + logomargin)
+        .attr("width", logoboxSize)
+        .attr("height", logoboxSize);
 }
 
 function drawA(){
     //A
     for(h = 0; h < 5; h++) {
-        for(i = 0; i < loopLimit; i++) {
+        for(i = 0; i < logoloopLimit; i++) {
             if((h == 0 && i < 5) || (h == 4 && i < 5)){
                 //skip
             }
@@ -35,168 +35,168 @@ function drawA(){
                         //skip
                     }
                     else{
-                        drawBox(startX, startY, boxSize, margin);            
+                        drawBox(logostartX, logostartY, logoboxSize, logomargin);            
                     }
                 }
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer/2;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer/2;
     }
 }
 
 function drawE() {
     //E
     for(h = 0; h < 3; h++) {
-        for(i = 0; i < loopLimit; i++) {
+        for(i = 0; i < logoloopLimit; i++) {
             if(i == 0 || i == 4 || i == 8 || h == 0){
-                drawBox(startX, startY, boxSize, margin);
+                drawBox(logostartX, logostartY, logoboxSize, logomargin);
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer;
     }
 }
 
 function drawG() {
     //G
     for(h = 0; h < 4; h++) {
-        for(i = 0; i < loopLimit; i++) {
-            if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
+        for(i = 0; i < logoloopLimit; i++) {
+            if(i == 0 || i == (logoloopLimit-1) || h == 0 || h == 3){
                 if(h == 3 && i > 0 && i < 4){
                     //skip
                 }
                 else{
-                    drawBox(startX, startY, boxSize, margin);            
+                    drawBox(logostartX, logostartY, logoboxSize, logomargin);            
                 }
             }
             else{
                 if(h == 2 && i == 4){
-                    drawBox(startX, startY, boxSize, margin);
+                    drawBox(logostartX, logostartY, logoboxSize, logomargin);
                 }
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer;
     }
 }
 
 function drawI() {
     //I
     for(h = 0; h < 1; h++) {
-        for(i = 0; i < loopLimit; i++) {
-            drawBox(startX, startY, boxSize, margin);            
-            startY = startY + boxSize + spacer;
+        for(i = 0; i < logoloopLimit; i++) {
+            drawBox(logostartX, logostartY, logoboxSize, logomargin);            
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer;
     }
 }
 
 function drawN(){
     //O
     for(h = 0; h < 9; h++) {
-        for(i = 0; i < loopLimit; i++) {
+        for(i = 0; i < logoloopLimit; i++) {
             if(h == 0 || h == 8 || i == h){
-                drawBox(startX, startY, boxSize, margin);            
+                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize - spacer;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize - logospacer;
     }
 }
 
 function drawO(){
     //O
     for(h = 0; h < 4; h++) {
-        for(i = 0; i < loopLimit; i++) {
+        for(i = 0; i < logoloopLimit; i++) {
             if(i == 0 || i == (loopLimit-1) || h == 0 || h == 3){
-                drawBox(startX, startY, boxSize, margin);            
+                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer/2;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer/2;
     }
 }
 
 function drawS(){
     //S
     for(h = 0; h < 4; h++) {
-        for(i = 0; i < loopLimit; i++) {
+        for(i = 0; i < logoloopLimit; i++) {
             if(i == 0 || i == 4 || i == 8 || h == 0 || h == 3){
                 if((h == 0 && i > 4 && i < 8) || (h == 3 && i > 0 && i < 4)){
                     //skip
                 }
                 else{
-                    drawBox(startX, startY, boxSize, margin);            
+                    drawBox(logostartX, logostartY, logoboxSize, logomargin);            
                 }
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer;
     }
 }
 
 function drawT() {
     //T
     for(h = 0; h < 3; h++) {
-        for(i = 0; i < loopLimit; i++) {
+        for(i = 0; i < logoloopLimit; i++) {
             if(h == 1 || i == 0) {
-                drawBox(startX, startY, boxSize, margin);            
+                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer;
     }
 }
 
 function drawU(){
     //U
     for(h = 0; h < 4; h++) {
-        for(i = 0; i < loopLimit; i++) {
-            if(i == (loopLimit-1) || h == 0 || h == 3){
-                drawBox(startX, startY, boxSize, margin);            
+        for(i = 0; i < logoloopLimit; i++) {
+            if(i == (logoloopLimit-1) || h == 0 || h == 3){
+                drawBox(logostartX, logostartY, logoboxSize, logomargin);            
             }
-            startY = startY + boxSize + spacer;
+            logostartY = logostartY + logoboxSize + logospacer;
         }
-        startY = 0;
-        startX = startX + boxSize + spacer/2;
+        logostartY = 0;
+        logostartX = logostartX + logoboxSize + logospacer/2;
     }
 }
 
 function generateLogo(){
 
     drawE();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawA();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawT();
-    startX = startX + (spacer*2);
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawO();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawU();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawT();
-    startX = startX + (spacer*2);
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawS();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawA();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawI();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawG();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawO();
-    startX = startX + (spacer*2);
+    logostartX = logostartX + (logospacer*2);
     drawN();
 }
 
