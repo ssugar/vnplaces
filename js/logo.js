@@ -9,3 +9,5 @@ function generateLogo(){
         .attr("cy", 20)
         .attr("r", 10);
 }
+
+generateLogo();
