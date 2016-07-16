@@ -15,11 +15,15 @@ var svgLogoContainer = d3.select(".site-title").append("svg")
     });
 
 function drawBox(startX, startY, boxSize, margin){
-    svgLogoContainer.append("rect")
-        .attr("x", logostartX + logomargin)
-        .attr("y", logostartY + logomargin)
-        .attr("width", logoboxSize)
-        .attr("height", logoboxSize);
+    //svgLogoContainer.append("rect")
+    //    .attr("x", logostartX + logomargin)
+    //    .attr("y", logostartY + logomargin)
+    //    .attr("width", logoboxSize)
+    //    .attr("height", logoboxSize);
+    svgLogoContainer.append("circle")
+        .attr("cx", logostartX + logomargin)
+        .attr("cy", logostartY + logomargin)
+        .attr("r", logoboxSize);
 }
 
 function drawA(){
