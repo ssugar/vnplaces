@@ -1,4 +1,4 @@
-var maxX = 200;
+var maxX = 400;
 var maxY = 56;
 var spacer = 2;
 var boxSize = 5;
