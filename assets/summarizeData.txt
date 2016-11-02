@@ -13,7 +13,7 @@ _Nhuthanh_	6	2	3
 ♥Bababum Food♥Tokbokki online♥SHIP tận nhà♥	0	3	0
 0	0	1	0
 1102 Crab Pot - Beer And Seafood	4	1	4
-118/43 Bùi Văn Ba, Phường Tân Thuận Đông, Quận 7	0	2	0
+118/43 Bùi Văn Ba, Phường Tân Thuận Đông, Quận 7	0	3	0
 121 Quán - Phá Lấu Bò	12	3	4
 123 Dô Karaoke 	10	3	3.33
 123 VIP Karaoke 	5	3	1.67
@@ -28,7 +28,7 @@ _Nhuthanh_	6	2	3
 1986 The Coffee Shop	25	5	5
 1988 - Cafe & Fast food	5	1	5
 1st Garden Cafe	8	2	4
-1st. Garden - Cafe & Bistro	22	5	4.4
+1st. Garden - Cafe & Bistro	26	6	4.33
 2 Con Heo BBQ - Bình Thới	4	1	4
 2 Tòn Quán - Món ngon Phan Rang	13	3	4.33
 2,3... Dzô Quán	4	1	4
@@ -116,6 +116,7 @@ _Nhuthanh_	6	2	3
 90000	0	1	0
 A Bửu Quán - Barbecue	12	4	3
 A Bửu Sài Gòn - Barbecue	8	2	4
+Á Đông - Hải Thượng Lãn Ông	6	2	3
 A Đù Quán - Hưng Phú	12	3	4
 A Hòa - Mì Hoành Thánh	4	1	4
 A Hoà Hủ Tiếu Mì Gia	4	1	4
@@ -142,7 +143,7 @@ A6 Cafe	3	2	1.5
 AB Hotpot - Lẩu Nhúng Bò Mỹ	9	2	4.5
 ABC Bakery - CMT8	0	2	0
 ABC Bakery - Hậu Giang	8	2	4
-ABC Bakery - Lê Văn Sỹ	6	2	3
+ABC Bakery - Lê Văn Sỹ	6	3	2
 ABC Bakery - Nguyễn Trãi	32	8	4
 ABC Bakery - Phạm Ngũ Lão	13	3	4.33
 ABC Bakery - Quang Trung	4	1	4
@@ -205,7 +206,7 @@ Al Fresco's - Nguyễn Thị Nghĩa	29	7	4.14
 Al Fresco's - Trường Sơn	28	7	4
 Al Fresco's - Xuân Thủy	16	4	4
 Alan Coffee	6	2	3
-Ali Foodcorner	100	25	4
+Ali Foodcorner	104	26	4
 Alice Maid Coffee - Tú Xương	12	3	4
 Alice Tea & Dessert House	4	1	4
 Alifoodcorner - Chung Cư Ngô Gia Tự	45	13	3.46
@@ -363,7 +364,7 @@ An Tam Vegetarian Restaurant	4	1	4
 Ăn vặt sun 	107	23	4.65
 Ăn Vặt T Sweet	0	2	0
 Ăn vặt tại gia	60	12	5
-ĂN VẶT TEEN TEEN 	85	17	5
+ĂN VẶT TEEN TEEN 	90	18	5
 Ăn Vặt Thiên Ân - Bành Văn Trân	7	2	3.5
 Ăn vặt Thùyy Thùyy	10	2	5
 Ăn vặt Thy Thy	20	4	5
@@ -386,7 +387,7 @@ An Việt Thôn Restaurant	5	1	5
 Angel In Us - Lotte Mart Lê Đại Hành	3	1	3
 Angel In Us Coffee - Lotte Mart Lê Đại Hành	10	4	2.5
 Angel In Us Coffee - Lotte Mart Lê Đại Hành 	8	2	4
-Angel In Us Coffee - Lotte Mart Nguyễn Hữu Thọ	36	9	4
+Angel In Us Coffee - Lotte Mart Nguyễn Hữu Thọ	40	10	4
 Angel In Us Coffee - Nguyễn Đức Cảnh	45	10	4.5
 Angel In Us Coffee - Tôn Dật Tiên	16	6	2.67
 Angolo Caffe - Novare	53	11	4.82
@@ -411,7 +412,7 @@ Anh Tuk Restaurant	14	3	4.67
 Ảnh Viện Cưới Thu Thủy - Hồ Văn Huê	2	2	1
 Ann Quán	16	5	3.2
 Ann Quán - Ẩm Thực Việt Nam	8	2	4
-Anna Lan Shop	0	3	0
+Anna Lan Shop	0	4	0
 Anna Sanctuary Wellness Spa	9	3	3
 Anna Sanctuary Wellness Spa - Tajmasago	22	6	3.67
 Anna Sweet Bakery - Tiệm Bánh Online	4	1	4
@@ -481,7 +482,7 @@ Ba Chấm - Hủ Tiếu & Tàu Hũ	15	3	5
 Bà Chánh - Bún Bò, Bò Kho	4	1	4
 Bà Cô Lốc Cốc - Nhà Hàng Ốc Độc Lạ	20	5	4
 Ba Con Cừu - Cao Thắng	17	5	3.4
-Ba Con Cừu - Cao Thắng - Ẩm thực Mông Cổ	52	13	4
+Ba Con Cừu - Cao Thắng - Ẩm thực Mông Cổ	56	14	4
 Ba Con Cừu - Phan Xích Long	46	12	3.83
 Ba con cừu Nguyễn Chí Thanh	10	3	3.33
 Ba Con Sóc - BBQ & Sushi	103	27	3.81
@@ -500,7 +501,7 @@ Baan Mai - Vĩnh Hội	4	1	4
 Baba's Kitchen	2229	487	4.58
 Babo Cafe bò sát - Phạm Văn Hai	4	1	4
 Baby Spoon - Phan Chu Trinh	43	11	3.91
-Baby xinh xinh shop	0	1	0
+Baby xinh xinh shop	0	2	0
 Bắc Kâm - Bún Tôm Hạ Long	8	2	4
 Bắc Việt Cafe - Trần Quang Khải	5	1	5
 Bạch Dương shop	0	2	0
@@ -511,7 +512,7 @@ Bạch tuộc nướng - Tôn Đản	5	1	5
 Bạch Tuộc Nướng 115	4	2	2
 Bách Việt	8	2	4
 Bách Việt - Tiệc Cưới & Hội Nghị	4	1	4
-Bachutha - Bánh Chuối Kiểu Thái - Trần Quang Khải	11	3	3.67
+Bachutha - Bánh Chuối Kiểu Thái - Trần Quang Khải	15	4	3.75
 Baekseol Gongju - The Han Quoc Dessert Coffee	15	3	5
 Bahdja Couscous House	53	12	4.42
 Bahdja Restaurant	185	40	4.62
@@ -825,7 +826,7 @@ Bánh Mì Chảo 176	6	2	3
 Bánh Mì Chảo 211	15	3	5
 Bánh Mì Chảo 586	28	6	4.67
 Bánh Mì Chảo Hà Nội	4	1	4
-Bánh mì chảo Hạnh Thông Tây	8	2	4
+Bánh mì chảo Hạnh Thông Tây	12	3	4
 Bánh mì chảo, bò né - Phan Bội Châu	4	1	4
 Bánh Mì Chay 836 	4	1	4
 Bánh Mì Chè Lúa + Mía	0	6	0
@@ -1026,7 +1027,7 @@ Bánh Tráng Mix	0	3	0
 Bánh tráng muối bông	0	1	0
 Bánh Tráng Muối Cay 	0	1	0
 Bánh Tráng Muối Sa Tế Tỏi & Sa Tế Khô Bò	12	4	3
-Bánh tráng muối TOMMY	55	11	5
+Bánh tráng muối TOMMY	60	12	5
 Bánh tráng nhà làm	0	2	0
 Bánh tráng Nhật Quỳnh	15	3	5
 Bánh Tráng Nướng - 166 Ba Cu	5	1	5
@@ -1161,7 +1162,7 @@ Bảo Tàng Chứng Tích Chiến Tranh	29	7	4.14
 Bảo Tàng Lịch Sử Việt Nam - Nguyễn Bỉnh Khiêm	6	2	3
 Bảo Tàng Mĩ Thuật TP. HCM - Phó Đức Chính	8	2	4
 Bảo Tàng Phụ Nữ Nam Bộ - Võ Thị Sáu	8	2	4
-Bảo Tàng Thành Phố Hồ Chí Minh - Lý Tự Trọng	12	3	4
+Bảo Tàng Thành Phố Hồ Chí Minh - Lý Tự Trọng	16	4	4
 Bảo Trân	0	1	0
 Bảo Trân 2 - Phan Bội Châu	3	1	3
 Bảo Tu	5	3	1.67
@@ -1308,7 +1309,7 @@ Bellany Ice Cream	10	2	5
 Bellany Ice Cream - Vincom Mega Mall Thảo Điền	11	3	3.67
 Bellany Vincom Megamall Thảo Điền	12	3	4
 Ben Coffee House - Ngô Đức Kế	30	8	3.75
-Ben Coffee House - Tôn Thất Thiệp	4	1	4
+Ben Coffee House - Tôn Thất Thiệp	8	2	4
 Bên hông trường với parkson Hùng Vương	8	2	4
 Bến Nhà Rồng	12	3	4
 Bến Nhà Rồng 	8	2	4
@@ -1327,7 +1328,7 @@ Bento House	13	7	1.86
 Béo Bakery	15	5	3
 Beo Bakery - Bông Lan Trứng Muối & Su Que Phô Mai	0	1	0
 Beo Bakery - Giao Hàng Tận Nơi	0	1	0
-Béo Béo - Gà Cay Phô Mai	47	15	3.13
+Béo Béo - Gà Cay Phô Mai	51	17	3
 Béo Béo - Gà Lắc Phô Mai	6	2	3
 Béo Béo - Mê Phô Mai	4	1	4
 Béo Béo - Mê Phô Mai 	60	13	4.62
@@ -1341,13 +1342,13 @@ Bếp Của Bâu - Kem Mây Ni Tơ	20	6	3.33
 Bếp của Gạo	9	3	3
 Bếp Của Gấu	8	2	4
 Bếp của Gấu - 093 652 56 18	10	2	5
-Bếp Của Mẹ	78	22	3.55
+Bếp Của Mẹ	82	23	3.57
 Bếp Của Mẹ - Giao Hàng Tận Nơi	4	1	4
 BẾP CỦA MẸ KADO	0	4	0
 Bếp của Pảo	4	1	4
 Bếp của Thy 	0	8	0
 Bep Me In	93	19	4.89
-Bếp Mẹ Shin	0	1	0
+Bếp Mẹ Shin	4	2	2
 Bếp Nhà Gà - The Chicky Kitchen	25	10	2.5
 Bếp nhà Na	30	10	3
 BẾP NHÀ TÍT	3	2	1.5
@@ -1433,10 +1434,10 @@ Bingsu Tuyết Hoa II - Hàm Nghi	66	14	4.71
 Bingsu World	80	20	4
 Bingsu World - Bà Huyện Thanh Quan	21	6	3.5
 Bingsuya Coffee	62	14	4.43
-Bingsuya Coffee 	13	4	3.25
+Bingsuya Coffee 	17	5	3.4
 Bình 	15	5	3
 Bình An Village Đà Lạt	4	1	4
-Bình Bình store	0	1	0
+Bình Bình store	0	2	0
 Bình Khánh shop	0	2	0
 binh thanh	33	11	3
 Bình Thạnh Cá Viên Cheese	20	4	5
@@ -1471,7 +1472,7 @@ Blue eyes of swan	0	2	0
 Blue Jeans Coffee	23	6	3.83
 Blue Jeans Coffee - Nguyễn Tri Phương	4	1	4
 Blue Moon Spa - Đồng Khởi	13	3	4.33
-Bluebox Palace	0	1	0
+Bluebox Palace	0	2	0
 Blunicornn_	0	2	0
 Bò - Lế - Rồ	30	6	5
 Bơ Bấy Bì Shop 	0	7	0
@@ -1559,7 +1560,7 @@ Bò Tơ Tây Ninh Năm Sánh - Phạm Hùng	7	2	3.5
 Bò Tơ Xuân Đào - Củ Chi	20	4	5
 Bò Vàng Steakhouse	80	18	4.44
 Bò Vàng Steakhouse - 283 Phan Xích Long	8	2	4
-Bò Vàng Steakhouse - Phan Xích Long	48	13	3.69
+Bò Vàng Steakhouse - Phan Xích Long	56	15	3.73
 Bò Viên - Lý Chính Thắng	0	1	0
 Board Game Station Coffee	48	10	4.8
 Boat House - Nhà Hàng Bờ Sông	4	1	4
@@ -1574,6 +1575,7 @@ Body Fantasies Việt Nam	0	1	0
 Bodyfit - Phan Đình Phùng	8	2	4
 Boheme Pub - Bùi Viện	17	5	3.4
 Bohémiens Café	15	3	5
+Bội Trân Bakery	5	1	5
 Bolam nguyễn	6	2	3
 Bò-Lế-Rồ - Lê Văn Sỹ	43	10	4.3
 Bò-Lế-Rồ - Trần Khánh Dư	41	9	4.56
@@ -1597,7 +1599,7 @@ Bông Súng - Nhà Hàng Chay & Coffee	36	9	4
 Bông Ù - Phá Lấu Sạch	20	6	3.33
 Bỏng Unclejax - Thùy Vinh Nguyễn	10	2	5
 Bonjour Cafe - Nguyễn Thị Minh Khai	8	3	2.67
-Bonjour Resto - Beefsteak Hai Bà Trưng	32	8	4
+Bonjour Resto - Beefsteak Hai Bà Trưng	36	9	4
 Bonjour Resto - Beefsteak Nguyễn Huy Tưởng	55	11	5
 Bonjour Resto - Beefsteak Nguyễn Trãi	94	24	3.92
 Bonjour Resto - Beefsteak Pasteur	55	15	3.67
@@ -1610,7 +1612,7 @@ Boo Quán - Patbingsu - Doãn Kế Thiện	5	1	5
 Book & Juices Cafe	7	2	3.5
 Bookworm's Coffee	327	83	3.94
 Boom Dak	15	3	5
-Boom Dak - Nhà Hàng Ẩm Thực Gà Hàn Quốc	231	59	3.92
+Boom Dak - Nhà Hàng Ẩm Thực Gà Hàn Quốc	235	60	3.92
 Boom Station - Takeaway Coffee & Drinks	24	8	3
 Boomarang Bistro Saigon	16	4	4
 BOONG Cafe	4	2	2
@@ -1687,6 +1689,7 @@ B's Mart - Nguyễn Đức Cảnh	8	2	4
 B's Mart - Nguyễn Tất Thành	10	3	3.33
 B's mart - Nguyễn Thái Bình	8	2	4
 B's Mart - Nguyễn Trọng Tuyển	32	8	4
+B's Mart - Pasteur	10	2	5
 B's mart - Phạm Ngũ Lão	19	5	3.8
 B's Mart - Phan Xích Long	20	4	5
 B's Mart - Sư Vạn Hạnh	25	5	5
@@ -1742,7 +1745,7 @@ Buffet Victory - Món ăn 3 Miền	7	2	3.5
 Buffet Windsor - Cafe Central An Dong	16	4	4
 Buffet Windsor - Cafe Central An Dong - Windsor Plaza	23	6	3.83
 Bugis Singapore - Ẩm Thực Singapore - Vincom Center	7	4	1.75
-Bugis Singapore - Vincom Center	13	3	4.33
+Bugis Singapore - Vincom Center	17	4	4.25
 Bụi Sài Gòn Nhà Hàng & Cafe	7	2	3.5
 Bùi Văn Ngọ Coffee - Bình Phú	15	4	3.75
 Bùi Văn Ngọ Coffee - Bình Phú 	24	6	4
@@ -1751,6 +1754,7 @@ Buihaus Cafe 	60	15	4
 Buihaus Coffee & Workshop - Nguyễn Huệ	30	8	3.75
 Buk Buk - Quán Nhậu Hàn Quốc	15	4	3.75
 Buk Buk - Quán Nhậu Hàn Quốc - Nướng & Bia	8	2	4
+Bum Sushi	6	2	3
 BÚN - BBQ House	48	11	4.36
 Bún - Miến - Cháo Măng Vịt	7	2	3.5
 Bún bắp bò - Hà Huy Giáp	3	1	3
@@ -1863,7 +1867,7 @@ Bún Cô Chi	60	13	4.62
 Bún Cua Thúi - Đặc Sản Gia Lai	4	1	4
 Bún đậu 46   	4	1	4
 Bún Đậu 46 Cao Bá Nhạ	66	18	3.67
-Bún Đậu A Chảnh - Bạch Mã	4	1	4
+Bún Đậu A Chảnh - Bạch Mã	8	2	4
 Bún Đậu A Chảnh - Thành Thái	8	2	4
 Bún đậu A Vừng	24	6	4
 Bún Đậu A Vừng - Lương Hữu Khánh	31	9	3.44
@@ -1921,7 +1925,7 @@ Bún Mắm ABC	4	1	4
 Bún Mắm Ba Minh	17	4	4.25
 Bún Mắm Bạc Liêu - Vĩnh Viễn	6	2	3
 Bún Mắm Cô Ba - Lê Quang Định	12	4	3
-Bún Mắm Cô Ba - Phan Huy Ích	8	2	4
+Bún Mắm Cô Ba - Phan Huy Ích	12	3	4
 Bún Mắm Hai Chị Em	6	2	3
 Bún mắm Nam Bộ Nhân Trí	5	1	5
 Bún mắm nêm - An Dương Vương	5	1	5
@@ -2022,7 +2026,7 @@ Burger King - Hoàng Diệu	4	1	4
 Burger King - Tân Sơn Nhất	8	2	4
 Burger King - Trường Chinh	5	2	2.5
 Burger King - Vòng Xoay Lăng Cha Cả	3	1	3
-Burger King Trần Hưng Đạo	8	2	4
+Burger King Trần Hưng Đạo	11	3	3.67
 Burger Station	74	22	3.36
 Burger Sun	12	6	2
 Burger vỉa hè-Nguyễn Văn Tráng	3	1	3
@@ -2031,11 +2035,11 @@ Bus Station Streetfood - Aeon Mall Bình Tân	8	2	4
 Bus station streetfood - Nguyễn Trãi	127	32	3.97
 BUSAN KOREAN FOOD	44	11	4
 Busan Korean Food - Món Hàn Quốc	142	39	3.64
-ButterCup bakery	0	3	0
+ButterCup bakery	0	4	0
 Butterman - Tiệm Bánh Online	93	20	4.65
 Butterman House	4	1	4
 Butter's Bakery - Lê Văn Sỹ	9	2	4.5
-Bưu Điện Thành Phố Hồ Chí Minh	25	6	4.17
+Bưu Điện Thành Phố Hồ Chí Minh	30	7	4.29
 Buy & Eat	9	3	3
 Buzza Pizza	473	111	4.26
 Buzza Pizza - E Mart	170	34	5
@@ -2069,7 +2073,7 @@ Cà Na Ngâm Chua Ngọt - Phạm Văn Chiêu	8	2	4
 Cà Ná Quán - Hải Sản Gia Đình, Sân Vườn, Bờ Sông	5	2	2.5
 Cá Pha Trà Tea House	9	2	4.5
 Cà phê Chồn & Bạn	65	16	4.06
-Cà phê D2 - D2 Bình Thạnh	35	7	5
+Cà phê D2 - D2 Bình Thạnh	40	8	5
 Cà phê Phố - Lê Hồng Phong	2	1	2
 Cà phê Sài Gòn 1980	15	3	5
 Cà phê Sơn Thủy - Phong cảnh hữu tình giữa lòng thành phố	4	1	4
@@ -2143,7 +2147,7 @@ Cafe nhà sách Cá Chép 2	60	12	5
 Cafe Nhỏ - Lê Văn Sỹ	8	2	4
 Cafe Pháp Cổ 	15	3	5
 Cafe Quỳnh	8	2	4
-Cafe Rabbits Symphony	12	6	2
+Cafe Rabbits Symphony	16	7	2.29
 Cafe RuNam	147	34	4.32
 Cafe RuNam - Mạc Thị Bưởi	24	6	4
 Cafe SUN n' Restaurant	5	1	5
@@ -2282,12 +2286,12 @@ Central Restaurant - Liberty Central Saigon City Point - Pasteur	8	2	4
 CGV Cinemas - AEON Mall	123	33	3.73
 CGV Cinemas - Aeon Mall Bình Tân	28	8	3.5
 CGV Cinemas - Big C Đồng Nai	4	1	4
-CGV Cinemas - Crescent Mall	40	11	3.64
+CGV Cinemas - Crescent Mall	44	12	3.67
 CGV Cinemas - IMAX - SC Vivo City	9	3	3
 CGV Cinemas - Liberty Central Saigon City Point	80	20	4
 CGV Cinemas - Liberty Hoàng Văn Thụ	46	11	4.18
 CGV Cinemas - Pandora City	37	10	3.7
-CGV Cinemas - Parkson CT Plaza	89	23	3.87
+CGV Cinemas - Parkson CT Plaza	93	24	3.88
 CGV Cinemas - Parkson Hùng Vương	109	29	3.76
 CGV Cinemas - Parkson Paragon	12	3	4
 CGV Cinemas - Pearl Plaza	103	26	3.96
@@ -2298,7 +2302,7 @@ CGV Cinemas - Vincom Đồng Khởi	9	2	4.5
 CGV Cinemas - Vincom Gò Vấp	44	11	4
 CGV Cinemas - Vincom Thủ Đức	32	8	4
 CGV Hùng Vương 	32	8	4
-CGV Thảo Điền Pearl - Quốc Hương	108	29	3.72
+CGV Thảo Điền Pearl - Quốc Hương	111	30	3.7
 Chả Bò Tí Ông - Đặc Sản Đà Nẵng	5	1	5
 CHÀ BÔNG CÁ HỒI DẬU	5	1	5
 Chà bông thịt heo - Bàn Cờ	6	2	3
@@ -2588,7 +2592,7 @@ Chợ Đông Xuân	12	3	4
 Chợ Gò Vấp	40	14	2.86
 chợ Gò Vấp,Nguyễn Thái Sơn,Gò Vấp	20	5	4
 Chợ Hải Sản Giang Ghẹ 2	4	1	4
-Chợ Hàng Dương - Hải Sản Tươi Sống	100	25	4
+Chợ Hàng Dương - Hải Sản Tươi Sống	104	26	4
 Chợ Hạnh Thông Tây - Gò Vấp	52	13	4
 Chợ Hồ Thị Kỷ	60	13	4.62
 chợ Hoàng Hoa Thám	30	6	5
@@ -2717,7 +2721,7 @@ Circle K - Nguyễn Thái Học	9	2	4.5
 Circle K - Nguyễn Thị Thập	8	2	4
 Circle K - Nguyễn Trọng Tuyển	12	3	4
 Circle K - Nguyễn Trường Tộ	11	3	3.67
-Circle K - Nguyễn Văn Bảo	12	3	4
+Circle K - Nguyễn Văn Bảo	14	4	3.5
 Circle K - Nguyễn Văn Cừ	6	2	3
 Circle K - Pasteur	4	1	4
 Circle K - Phạm Ngũ Lão	36	9	4
@@ -2726,7 +2730,7 @@ Circle K - Phan Văn Hân	8	2	4
 Circle K - Phổ Quang	28	7	4
 Circle K - Phú Mỹ Hưng	36	9	4
 Circle K - Sư Vạn Hạnh	12	3	4
-Circle K - Thành Thái	22	6	3.67
+Circle K - Thành Thái	27	7	3.86
 Circle K - Thảo Điền	12	3	4
 Circle K - Tôn Đản	16	5	3.2
 Circle K - Tôn Dật Tiên	13	3	4.33
@@ -2734,7 +2738,7 @@ Circle K - Trần Bình Trọng	19	5	3.8
 Circle K - Trần Quốc Toản	8	2	4
 Circle K - Võ Văn Ngân	23	6	3.83
 Citi Plaza - Nguyễn Trãi	8	2	4
-Citizen coffee	17	6	2.83
+Citizen coffee	21	7	3
 Citizone Củ Chi	0	5	0
 Citizone Hóc Môn	8	10	0.8
 CJH Coffee - Bình Thới	3	1	3
@@ -2812,7 +2816,7 @@ Coco jJambo - Lẩu và nướng	5	1	5
 Coco Kem - Trần Đình Xu	20	5	4
 Coco lover - Bàu Cát	20	5	4
 Coco Sushi	46	16	2.88
-Coco Sushi - Trần Nhật Duật	12	4	3
+Coco Sushi - Trần Nhật Duật	15	5	3
 Coco5 - Đồng Nai	9	2	4.5
 Coco5 - Đồng Nai 	100	20	5
 Coco5 - Lý Chính Thắng	30	6	5
@@ -2824,7 +2828,7 @@ CoCo5 Món Ngon Đường Phố Bangkok - CN2 	26	7	3.71
 CoCo5 Món Ngon Đường Phố Bangkok - CN3	14	4	3.5
 CoCo5 Món Ngon Đường Phố Bangkok - CN5	12	4	3
 Cocochin Food Court	20	5	4
-Cocochín Food Court - Nguyễn Huệ	8	2	4
+Cocochín Food Court - Nguyễn Huệ	12	3	4
 Cocolala - Dừa Trái	32	8	4
 Coconut - Hùng Vương	7	2	3.5
 Coconut Coffee 	14	4	3.5
@@ -3062,7 +3066,7 @@ Con Gà Nướng - Thành Thái 	16	4	4
 Con Gà Trống - CMT8 - Ẩm Thực Khmer	18	6	3
 Con Gà Trống - Nguyễn Thị Minh Khai	4	5	0.8
 Con Gà Trống Garden 1 - Nguyễn Thị Minh Khai	13	4	3.25
-Con Hẻm Nhỏ Cafe	4	1	4
+Con Hẻm Nhỏ Cafe	8	2	4
 Con Hẻm Nhỏ Cafe - Nguyễn Thị Minh Khai	6	2	3
 Con Heo Cười - Da Heo Chiên Giòn - Giao Hàng Tận Nơi	17	5	3.4
 Con Mèo Milktea	10	3	3.33
@@ -3081,7 +3085,7 @@ Cộng Caphe - Trường Sa	73	17	4.29
 Công ty DDAU	3	1	3
 CÔNG TY TNHH TM-DV DU LỊCH KHANG HƯNG THỊNH	7	2	3.5
 Công viên 23/9	60	14	4.29
-Công viên Bàu Cát, Đồng Đen, Quận Tân Bình, TP.HCM	4	1	4
+Công viên Bàu Cát, Đồng Đen, Quận Tân Bình, TP.HCM	8	2	4
 Công Viên Bờ Sông Panorama	7	2	3.5
 Công Viên Cá Koi Rin Rin Park - Vườn Nhật Bản	82	24	3.42
 Công Viên Gia Định	14	4	3.5
@@ -3158,7 +3162,7 @@ Crystal Jade Palace - Lotte Legend Saigon Hotel	11	3	3.67
 Cứ Ăn Đi - Ăn Vặt Giao Hàng Tận Nơi	8	2	4
 Cụ bà bán muối - Đinh Tiên Hoàng	4	1	4
 Cũ Cafe - Ngô Quyền	8	2	4
-Củ Chuối Shop	0	12	0
+Củ Chuối Shop	0	13	0
 Cú Coffee	25	5	5
 Cư Xá Phú Lâm B	17	4	4.25
 Cua Cà Mau online - ship Tp HCM	3	1	3
@@ -3237,7 +3241,7 @@ Cyclo Coffee and Ice-Cream	4	1	4
 Cyclo Resto	1163	251	4.63
 Cyril Trần	0	2	0
 D.I.Y Acoustic coffee	20	5	4
-D2 Bình Thạnh 	20	5	4
+D2 Bình Thạnh 	24	6	4
 Đá Bào Hưng Trí	5	1	5
 Đá Bào Mật Trái Cây - Quang Trung	12	3	4
 Đá bào mật trái cây Pặc Pi	5	1	5
@@ -3302,7 +3306,7 @@ Daichan Ramen	44	11	4
 Dairy Queen - Đinh Tiên Hoàng	44	11	4
 Dairy Queen - Hai Bà Trưng	9	2	4.5
 Dairy Queen - Hoàng Diệu	33	8	4.12
-Dairy Queen - Nguyễn Thị Thập	12	3	4
+Dairy Queen - Nguyễn Thị Thập	16	4	4
 Dairy Queen - Nguyễn Trãi	21	6	3.5
 Dairy Queen - Nguyễn Tri Phương	43	9	4.78
 Dairy Queen - Võ Văn Ngân	24	6	4
@@ -3342,12 +3346,12 @@ Dáng Tiên Spa	3	2	1.5
 Đảo Thạnh An	63	16	3.94
 Daruma - Phan Xích Long	4	1	4
 Daruma - Quán Ăn Nhật Bản - IPH Xuân Thuỷ	4	1	4
-Daruma - Quán Ăn Nhật Bản - Nam Kỳ Khởi Nghĩa	81	17	4.76
+Daruma - Quán Ăn Nhật Bản - Nam Kỳ Khởi Nghĩa	86	18	4.78
 Daruma - Quán Ăn Nhật Bản - Phan Xích Long	12	4	3
 Daruma - Quán Ăn Nhật Bản - Vincom Quang Trung	11	3	3.67
 Daruma - Vincom Quang Trung	52	13	4
 Dasis Coffee & Tea House	5	1	5
-Dasis Coffee & Tea House - Phó Đức Chính	68	17	4
+Dasis Coffee & Tea House - Phó Đức Chính	72	18	4
 Dasis Tea & Coffee House - Nam Kỳ Khởi Nghĩa	16	4	4
 Dasis Tea & Coffee House - Phó Đức Chính	15	4	3.75
 Dasis Tea & Coffee House Vietnam - Nam Kỳ Khởi Nghĩa	24	6	4
@@ -3397,7 +3401,7 @@ Dear Joe Coffee - Pot Ice Cream Chậu Cây	10	2	5
 December.22 Shop	10	2	5
 DeChef	0	5	0
 DefAnh House	9	3	3
-Deja Vu Coffee	4	1	4
+Deja Vu Coffee	8	2	4
 Dele Kitty - 0933231064	23	6	3.83
 Delicious Sake	6	2	3
 Delight - The Ice Blended & Coffee Shop	44	11	4
@@ -3411,10 +3415,10 @@ Delta Spa	8	2	4
 Đen Đá Cafe - Hàm Nghi	5	1	5
 Đen Đá Cafe - Trà Sữa & Trà Đào - Hai Bà Trưng	18	5	3.6
 Đen Đá Cafe - Trà Sữa & Trà Đào - Hàm Nghi	124	33	3.76
-Đen Đá Cafe - Trà Sữa & Trà Đào - Lê Văn Sỹ	25	7	3.57
+Đen Đá Cafe - Trà Sữa & Trà Đào - Lê Văn Sỹ	33	9	3.67
 Đen Đá Cafe - Trà Sữa & Trà Đào - Pasteur	59	17	3.47
 Đen Đá Coffee - Hai Bà Trưng	92	23	4
-Đen Đá Coffee - Hàm Nghi	364	91	4
+Đen Đá Coffee - Hàm Nghi	368	92	4
 Đen Đá Coffee - Lê Văn Sỹ	120	30	4
 Đen Đá Coffee - Pasteur	32	8	4
 Đền Tưởng Niệm Các Vua Hùng	8	2	4
@@ -3505,9 +3509,9 @@ Do It Coffee	28	7	4
 Doanh Shop	0	2	0
 Dốc Coffee	10	2	5
 Doctor's Cafe & Restaurant HIRO	17	4	4.25
-DOHO Beer Garden	7	6	1.17
+DOHO Beer Garden	7	7	1
 Đồi - Coffee & Tea	16	4	4
-Đối diện trường THCS Tây Sơn - Quận Gò Vấp	15	3	5
+Đối diện trường THCS Tây Sơn - Quận Gò Vấp	20	4	5
 Đối diện Trường Tôn Đức Thắng quận 7	8	2	4
 Đổi Gió - Nhà Hàng & Cafe Sân Vườn	8	2	4
 Đôkit Food	4	1	4
@@ -3538,7 +3542,7 @@ Domino's Pizza - The Manor	4	1	4
 Domino's Pizza - Trần Hưng Đạo	20	5	4
 Domino's Pizza - Vườn Lài	22	6	3.67
 Don Chicken	8	2	4
-Don Chicken - Cách Mạng Tháng Tám	20	5	4
+Don Chicken - Cách Mạng Tháng Tám	24	6	4
 Don Chicken - Chicken & Pub	251	66	3.8
 Don Chicken - Chicken & Pub - Hồ Tùng Mậu	8	2	4
 Don Chicken - Hồ Tùng Mậu	4	1	4
@@ -3580,7 +3584,7 @@ Drink & Food Express	3	1	3
 drinkandtokbokki	0	3	0
 Du Lịch Sinh Thái Văn Hóa Dân Tộc Thiểu Số Củ Chi	23	7	3.29
 Du Miên Cafe - Hồ Biểu Chánh	41	11	3.73
-Du Miên Garden Cafe - Phan Văn Trị	83	26	3.19
+Du Miên Garden Cafe - Phan Văn Trị	87	27	3.22
 Du Ngọc	0	7	0
 Dưa Chuột Detox Water	45	9	5
 Dưa Chuột Detox Water - Shop Online	18	4	4.5
@@ -3588,7 +3592,7 @@ Dừa nắp khoen Cocolala	4	1	4
 Dừa Sáp Cầu Kè	6	2	3
 Dublin Gate Irish Pub	5	1	5
 Đức Bảo Gartenstadt - Ẩm Thực Đức	16	4	4
-Đức Đô Bakery	12	3	4
+Đức Đô Bakery	16	4	4
 Đức Dương - Ẩm Thực Sinh Thái	16	4	4
 Đức Phát Bakery - Bạch Đằng	8	2	4
 Duck Deli - Nguyễn Thái Bình	16	5	3.2
@@ -3658,13 +3662,13 @@ Edo Yakiniku - Thịt Bò Nướng Nhật Bản	6	2	3
 Effoc Cafe - 3 Tháng 2	20	5	4
 Effoc Cafe - 92 Đường số 7	16	4	4
 Effoc Cafe - Âu Cơ	125	29	4.31
-Effoc Cafe - Bàu Cát	52	13	4
+Effoc Cafe - Bàu Cát	56	14	4
 Effoc Cafe - Bình Tân	14	5	2.8
 Effoc Cafe - Đường 3 Tháng 2	13	4	3.25
 Effoc Cafe - Đường số 7	20	5	4
 Effoc Cafe - Hàm Nghi	165	43	3.84
 Effoc Cafe - Lê Đại Hành	12	3	4
-Effoc Cafe - Nguyễn Thượng Hiền	44	13	3.38
+Effoc Cafe - Nguyễn Thượng Hiền	48	14	3.43
 Effoc Cafe - Nguyễn Tri Phương	54	14	3.86
 Effoc Cafe - Nguyễn Văn Luông	24	6	4
 Effoc Cafe - Nguyễn Văn Tráng	7	2	3.5
@@ -3736,7 +3740,7 @@ Fabulous Coffee	24	6	4
 Fabulous Coffee - Phạm Ngũ Lão	8	2	4
 FAMILK - Mai Văn Ngọc	9	2	4.5
 Family Garden - Thảo Điền	14	4	3.5
-Family Korean Food	30	6	5
+Family Korean Food	35	7	5
 Family Mart	8	2	4
 Family Mart - 89 Đặng Văn Ngữ	15	4	3.75
 Family Mart - Bùi Thị Xuân	12	3	4
@@ -3773,7 +3777,7 @@ FamilyMart - 875 Cách Mạng Tháng 8	11	3	3.67
 FamilyMart - Bùi Hữu Nghĩa	7	2	3.5
 FamilyMart - Bùi Thị Xuân	21	6	3.5
 FamilyMart - Cô Bắc	24	6	4
-FamilyMart - D2	17	5	3.4
+FamilyMart - D2	21	6	3.5
 FamilyMart - Đường D1	30	6	5
 FamilyMart - Huỳnh Văn Bánh 	12	3	4
 FamilyMart - KTX ĐHQG	7	5	1.4
@@ -4020,7 +4024,7 @@ Gala Buffet - Nguyễn Trãi	4	1	4
 Gala Royale - Tiệc Cưới & Hội Nghị	19	5	3.8
 Galaxy Cinema - Kinh Dương Vương	72	18	4
 Galaxy Cinema - Nguyễn Du	136	34	4
-Galaxy Cinema - Nguyễn Hồng Đào	117	30	3.9
+Galaxy Cinema - Nguyễn Hồng Đào	121	31	3.9
 Galaxy Cinema - Nguyễn Trãi	69	18	3.83
 Galaxy Cinema - Quang Trung	39	10	3.9
 Galbi Brothers - Nhà Hàng Hàn Quốc	65	16	4.06
@@ -4054,7 +4058,7 @@ GAXEO - Chicken & BBQ	8	2	4
 GAXEO Chicken - Beer & BBQ	23	6	3.83
 Geek Hub - Workspace & Cafeteria	36	8	4.5
 Geisha Cafe	52	11	4.73
-GEM Center - Event Venue	48	12	4
+GEM Center - Event Venue	57	14	4.07
 Gem Coffee Hookah	7	2	3.5
 GEM Lounge - GEM Center	74	18	4.11
 Get 'n Go - Cà Phê Giao Hàng Tận Nơi Miễn Phí	23	6	3.83
@@ -4110,7 +4114,7 @@ Góc chợ Bến Thành	43	12	3.58
 Góc Coffee	4	1	4
 Góc Đà Lạt - Ăn Vặt & Bánh Tráng Nướng	22	6	3.67
 Góc Đà Lạt - Ăn Vặt & Bánh Tráng Nướng - Nguyễn Thái Sơn	23	6	3.83
-Góc Đà Lạt - Món Ăn Vặt	40	10	4
+Góc Đà Lạt - Món Ăn Vặt	44	11	4
 Góc Đà Lạt - Nguyễn Thái Sơn	33	8	4.12
 Góc Hà Nội Tea & Coffee - Tô Ký	17	4	4.25
 Gốc Nhà Lá - Cháo vịt Thanh Đa	12	3	4
@@ -4120,7 +4124,7 @@ Góc Thư Giãn - Tây Ninh	4	1	4
 goc.koala	9	3	3
 GoGi House - Aeon Mall Celadon Tân Phú	20	4	5
 GoGi House - Aeon Mall Tân Phú	25	5	5
-GoGi House - E-mart	78	16	4.88
+GoGi House - E-mart	82	17	4.82
 Gogi house - Nguyễn Thái Học	48	12	4
 Gogi House - Nướng Hàn Quốc - E Mart Gò Vấp	4	1	4
 GoGi House - Nướng Hàn Quốc - Nguyễn Thái Học	109	27	4.04
@@ -4213,7 +4217,7 @@ Gummy - Chicken Steak, Cake & Ice Cream	92	23	4
 Gummy - Chicken Steak, Cake & Ice Cream -  Pasteur 	92	23	4
 Gummy - Chicken Steak, Cake & Ice Cream - Nguyễn Trung Trực	42	11	3.82
 Gummy - Chicken Steak, Cake & Ice Cream - Pasteur	55	15	3.67
-Guru coffee	15	3	5
+Guru coffee	20	4	5
 Guru Sports Bar	9	3	3
 Guru Sports Bar 	7	2	3.5
 Gyoza No Teiou - Lê Thánh Tôn	15	3	5
@@ -4227,7 +4231,7 @@ Gyumaru Restaurant 牛丸 - Hamburg & Steak	8	2	4
 H&T Peach Tea	10	2	5
 H2O Yogurt & Cafe	8	2	4
 H2O Yogurt & Coffee	4	1	4
-H2T Trà Sữa & Pizza	41	10	4.1
+H2T Trà Sữa & Pizza	45	11	4.09
 H2T Trà Sữa & Pizza - Khánh Hội	9	3	3
 H2T Trà Sữa & Pizza - Võ Văn Ngân	10	3	3.33
 Hà 68 - Trà Sữa, Hotdog & Bánh Tráng	10	2	5
@@ -4267,7 +4271,7 @@ Hà Nội Phố Cafe - Rửa xe miễn phí	3	1	3
 Hà Thành Quán	4	1	4
 Haagen Dazs - Lê Thánh Tôn	50	10	5
 Hachi Hachi - Cửa Hàng Nhật Bản - Pasteur	17	5	3.4
-Hachiko Coffee - Cafe Thú Cưng	99	27	3.67
+Hachiko Coffee - Cafe Thú Cưng	103	28	3.68
 Hadu Nguyễn	3	1	3
 HaHa Sushi - Lê Lợi	32	8	4
 Hahana Spa	12	3	4
@@ -4461,7 +4465,7 @@ Hello Cô Hai! - Ăn Vặt & Trà Sữa	59	19	3.11
 Hello Kitty Cafe - Sư Vạn Hạnh	0	3	0
 Hello Kitty Cafe - Tạ Quyên	4	1	4
 Hello Street Food Market	48	10	4.8
-Hello Weekend Market	147	38	3.87
+Hello Weekend Market	151	39	3.87
 Hello Weekend Market - NVH Thanh Niên	16	4	4
 Hello Weekend Market - NVH Thanh Niên (chỉ mở t7-CN)	24	6	4
 Hello Weekend Market - Peal Plaza (chỉ mở t7-CN)	4	1	4
@@ -4486,7 +4490,7 @@ Hẻm Quán - Cá Viên Cà Ri	9	2	4.5
 Hèm Quán - Chuyên Gà & Hải Sản Tươi Sống	10	3	3.33
 Hẻm Spaghetti - Chi Nhánh 2	4	1	4
 Hẻm Spaghetti - Nguyễn Đình Chiểu	191	49	3.9
-Hẻm Spaghetti - Nguyễn Oanh	137	34	4.03
+Hẻm Spaghetti - Nguyễn Oanh	144	36	4
 Heng Heng - Hủ Tiếu Nam Vang	9	2	4.5
 Hen's Honey	15	3	5
 Heo Con	15	3	5
@@ -4533,7 +4537,7 @@ Highlands Coffee - An Đông Plaza	15	5	3
 Highlands Coffee - Big C Hoàng Văn Thụ	12	3	4
 Highlands Coffee - Bitexco	23	5	4.6
 Highlands Coffee - Cách Mạng Tháng 8	32	8	4
-Highlands Coffee - Cộng Hòa	56	15	3.73
+Highlands Coffee - Cộng Hòa	60	16	3.75
 Highlands Coffee - CT Plaza	60	15	4
 Highlands Coffee - Diamond Plaza	44	11	4
 Highlands Coffee - Food Court Lotte Mart Nguyễn Hữu Thọ	4	1	4
@@ -4549,7 +4553,7 @@ Highlands Coffee - Mạc Đĩnh Chi	39	11	3.55
 Highlands Coffee - Maximark 3 Tháng 2	44	11	4
 Highlands Coffee - Maximark Cộng Hòa	48	12	4
 Highlands Coffee - Mê Linh Point	33	8	4.12
-Highlands Coffee - Nam Kỳ Khởi Nghĩa	24	12	2
+Highlands Coffee - Nam Kỳ Khởi Nghĩa	28	13	2.15
 Highlands Coffee - Nguyễn Biểu	57	15	3.8
 Highlands Coffee - Nguyễn Đình Chiểu	20	5	4
 Highlands Coffee - Nguyễn Du	97	25	3.88
@@ -4658,10 +4662,10 @@ Hoàng Triều Karaoke	12	3	4
 Hoàng Ty - Đặc sản Trảng Bàng - 120 Thành Thái	8	2	4
 Hoàng Ty - Đặc sản Trảng Bàng - Cao Thắng	63	16	3.94
 Hoàng Ty - Đặc sản Trảng Bàng - Hoàng Văn Thụ	15	5	3
-Hoàng Ty - Đặc sản Trảng Bàng - Nguyễn Hữu Cầu	8	2	4
+Hoàng Ty - Đặc sản Trảng Bàng - Nguyễn Hữu Cầu	12	3	4
 Hoàng Ty - Đặc sản Trảng Bàng - Thành Thái	32	8	4
-Hoàng Ty - Đặc sản Trảng Bàng - Trương Quốc Dung	29	8	3.62
-Hoàng Ty - Đặc sản Trảng Bàng - Võ Văn Tần	56	14	4
+Hoàng Ty - Đặc sản Trảng Bàng - Trương Quốc Dung	33	9	3.67
+Hoàng Ty - Đặc sản Trảng Bàng - Võ Văn Tần	60	15	4
 Hoàng Ty - Nguyễn Thái Bình	5	1	5
 Hoàng Ty 1 - Đặc Sản Trảng Bàng	13	4	3.25
 Hoàng Yến Buffet - Bitexco Tower	4	2	2
@@ -4685,6 +4689,7 @@ Hội Ngộ Karaoke	9	2	4.5
 Hội Quán Bia Đen Vỉa Hè	6	2	3
 Hội Quán Chuồn Chuồn Giấy - Cafe Kịch	9	2	4.5
 Hội Quán Trà Sữa Gossip - Đường Số 7	7	2	3.5
+Hội Tôm Quán	0	1	0
 Hoka Hoka	70	14	5
 Hokkaido Ramen Japan	4	1	4
 Hokkaido Ramen Japan - Sakaiya	8	2	4
@@ -4980,7 +4985,7 @@ I Love Kem - Nguyễn Sơn	20	5	4
 I Love Kem - Nguyễn Thị Thập	22	5	4.4
 I Love Kem - Phạm Hùng	14	4	3.5
 I love kem - Phạm Văn Đồng	16	4	4
-I Love Kem - Thống Nhất	20	5	4
+I Love Kem - Thống Nhất	24	6	4
 I Love Kem - Trần Hưng Đạo	31	7	4.43
 I.d Cafe	326	77	4.23
 Ibis Dessert & Coffee	4	1	4
@@ -5127,6 +5132,7 @@ Kabin Restaurant - Renaissance Riverside Hotel	7	2	3.5
 Kacyo - Khách sạn New World	5	1	5
 Kacyo Restaurant 花蝶 - New World Saigon Hotel	19	5	3.8
 Kafe Phố 	6	2	3
+Kafein House	5	1	5
 Kaffa Coffee - Hồ Bá Kiện	8	2	4
 Kaffe & Trips	5	1	5
 Kaffe & Trips 	0	1	0
@@ -5168,7 +5174,7 @@ Kem Baskin Robbins - Bitexco 	16	4	4
 Kem Baskin Robbins - Bùi Viện	4	1	4
 Kem Baskin Robbins - Cách Mạng Tháng 8	32	8	4
 Kem Baskin Robbins - Diamond	24	6	4
-Kem Baskin Robbins - Đồng Đen	100	22	4.55
+Kem Baskin Robbins - Đồng Đen	105	23	4.57
 Kem Baskin Robbins - Food Court Bitexco Tower	8	2	4
 Kem Baskin Robbins - Hai Bà Trưng	48	12	4
 Kem Baskin Robbins - Hậu Giang	14	4	3.5
@@ -5280,13 +5286,13 @@ Kem Tự Chọn Tank - Võ Văn Ngân	8	2	4
 Kem Tuk Tuk	106	29	3.66
 Kem Tuk Tuk - Cô Bắc	8	2	4
 Kem Tươi - Kem Xôi 71	1	1	1
-Kem Tươi Nhiệt Đới - Sâm Lạnh	28	7	4
+Kem Tươi Nhiệt Đới - Sâm Lạnh	32	8	4
 Kem tươi Nhiệt Đới - Trần Đình Xu	8	2	4
-Kem Tươi Sơn Ca	32	8	4
+Kem Tươi Sơn Ca	36	9	4
 Kem Xào Bếp của Bâu	45	12	3.75
 Kem xôi dừa	19	5	3.8
 Kem Xôi Dừa - Bùi Viện	22	6	3.67
-Kem xôi dừa - Cô Giang	15	4	3.75
+Kem xôi dừa - Cô Giang	18	5	3.6
 Kem Xôi Dừa & Trà Sữa	10	2	5
 Kem Xôi Dừa Bu Bu	45	12	3.75
 Kem xôi dừa BuBu	4	1	4
@@ -5329,7 +5335,7 @@ KFC - Lê Văn Việt	9	3	3
 KFC - Lotte Mart Gò Vấp	8	2	4
 KFC - Lotte Mart Him Lam	8	2	4
 KFC - Lotte Mart Lê Đại Hành	6	2	3
-KFC - Maxi Mart Cộng Hòa	12	4	3
+KFC - Maxi Mart Cộng Hòa	15	5	3
 KFC - Maximark Cộng Hòa	8	2	4
 KFC - Nam Kỳ Khởi Nghĩa	12	3	4
 KFC - Ngô Quyền	12	3	4
@@ -5378,7 +5384,7 @@ KHAN trà sữa Bingsu	12	8	1.5
 Khang Dim Sum Bar	8	2	4
 Khanh Casa Garden - Lê Lợi	28	9	3.11
 Khanh Casa Tea House - Đồng Khởi	114	30	3.8
-Khánh Hương Spa	11	5	2.2
+Khánh Hương Spa	14	6	2.33
 Khánh Linh	3	1	3
 Khanh Nguyễn	9	3	3
 Khánh Vân Hotel	11	3	3.67
@@ -5479,7 +5485,7 @@ Khu Du Lịch Sinh Thái Vàm Sát	61	16	3.81
 Khu Du Lịch Tân Cảng - Ung Văn Khiêm	11	3	3.67
 Khu Du Lịch Thác Dray Nur	4	1	4
 Khu du lịch The BCR	8	2	4
-Khu Du Lịch Văn Hóa Suối Tiên	90	22	4.09
+Khu Du Lịch Văn Hóa Suối Tiên	95	23	4.13
 Khu Du Lịch Văn Thánh - Nhà hàng	4	1	4
 Khu Du Lịch Vườn Cò Tư Đê - Ẩm Thực Dân Dã	7	2	3.5
 Khu Nghỉ Dưỡng Villa H2O - Hóc Môn	13	4	3.25
@@ -5562,7 +5568,7 @@ Kimono Coffee	20	5	4
 Kimpap - Quán ăn Hàn Quốc	3	1	3
 Kim's House	48	14	3.43
 Kim's Milktea - Trần Quý	10	2	5
-King BBQ - Cao Thắng	69	19	3.63
+King BBQ - Cao Thắng	73	20	3.65
 King BBQ - Lê Văn Sỹ	12	4	3
 King BBQ - Mạc Đĩnh Chi	10	2	5
 King BBQ - Phan Văn Trị	7	2	3.5
@@ -5633,7 +5639,7 @@ KOI Thé Café Việt Nam - Vincom Mega Mall Thảo Điền	58	14	4.14
 KOI Thé Saigon Garden - Hồ Tùng Mậu	5	1	5
 KOI Thé Vietnam	13	3	4.33
 KOI Thé Vietnam - AEON MALL Bình Tân	58	12	4.83
-KOI Thé Vietnam - Ngô Đức Kế	116	26	4.46
+KOI Thé Vietnam - Ngô Đức Kế	121	27	4.48
 KOI Thé Vietnam - Sc Vivo City 	168	42	4
 KOI Thé Vietnam - Vincom Thảo Điền 	91	20	4.55
 KOIBITO Chocolate	35	7	5
@@ -5727,7 +5733,7 @@ La Villa French Restaurant	626	135	4.64
 La Vita Garden - Nguyễn Huệ	12	3	4
 Lab Bing	36	9	4
 Labbing - Kem Bingsu Hàn Quốc	8	2	4
-Lạc Đình House	132	33	4
+Lạc Đình House	136	34	4
 Lạc Đình House - Công Trường Quốc Tế	16	4	4
 Lạc Đình Tea House	20	5	4
 Lạc Thái 1	88	20	4.4
@@ -5776,7 +5782,7 @@ Lang Thang Quán - Xiên Que Nướng & Lẩu Tự Chọn	16	4	4
 L'angfarm - Đặc Sản Đà Lạt - Trần Hưng Đạo	66	17	3.88
 L'angfarm - Đặc sản Đà Lạt - UnionSquare	17	4	4.25
 L'angfarm Buffet - Đặc Sản Đà Lạt	458	117	3.91
-L'angfarm Buffet - Trần Hưng Đạo	34	9	3.78
+L'angfarm Buffet - Trần Hưng Đạo	38	10	3.8
 L'annam Seafood Buffet	4	1	4
 Lão Hạc quán	4	1	4
 Lão Hạc Quán - Beer & Cafe	20	5	4
@@ -5803,7 +5809,7 @@ Lẩu 1 Người Bảo Nghi	8	2	4
 Lẩu 168 - Hùng Vương	6	2	3
 Lẩu 2 Người - CoopMart Lý Thường Kiệt	12	3	4
 Lẩu 38 - Đường Số 11	38	8	4.75
-Lầu 5 - Parkson Cantavil	9	3	3
+Lầu 5 - Parkson Cantavil	12	4	3
 Lầu 5 Toà Nhà ZEN Plaza, 54 - 56 Nguyễn Trãi, Quận 1, TPHCM	5	1	5
 Lẩu Băng Chuyền Kichi Kichi - AEON Mall	24	6	4
 Lẩu Băng Chuyền Kichi Kichi - Cao Thắng	28	7	4
@@ -5841,6 +5847,7 @@ Lẩu Bò Thiên Tân - Đường 22	5	1	5
 Lẩu Bò Tí Chuột	86	24	3.58
 Lẩu Bò Trung Em	15	4	3.75
 Lẩu Cá 80 - Dương Tử Giang	8	2	4
+Lẩu Cá Cô Huệ	8	2	4
 Lẩu Cá Cô Thư	10	3	3.33
 Lẩu Cá Cô Thư - Lý Nam Đế	7	2	3.5
 Lẩu Cá Cường - Dương Tử Giang	4	1	4
@@ -6058,7 +6065,7 @@ Lion City - Lê Anh Xuân	32	8	4
 Lion City - Phú Mỹ Hưng	12	3	4
 Lion Coffee - Linh Đàm 	5	1	5
 Lion's Flavor	162	34	4.76
-Liri Store	0	7	0
+Liri Store	0	8	0
 Lít Cafe - Bắc Hải	42	11	3.82
 Lít Juice & Cafe - Bắc Hải	96	24	4
 Lít Juice And Cafe - Bắc Hải	4	1	4
@@ -6173,7 +6180,7 @@ Lotteria - Hoàng Sa	12	4	3
 Lotteria - Lotte Mart Lê Đại Hành	6	2	3
 Lotteria - Lotte Mart Nam Sài Gòn	8	2	4
 Lotteria - Lotte Mart Nguyễn Hữu Thọ	6	3	2
-Lotteria - Lý Chính Thắng	9	3	3
+Lotteria - Lý Chính Thắng	13	4	3.25
 Lotteria - Lý Thái Tổ	0	2	0
 Lotteria - Lý Thường Kiệt	4	1	4
 Lotteria - Maximart 3 Tháng 2	7	2	3.5
@@ -6353,7 +6360,7 @@ Marukame Udon - Saigon Mall	32	8	4
 Marukame Udon - SC VivoCity	118	31	3.81
 Marukame Udon - Udon & Tempura - AEON Mall Bình Tân	8	2	4
 Marukame Udon - Udon & Tempura - Hai Bà Trưng	54	14	3.86
-Marukame Udon - Udon & Tempura - Lý Tự Trọng	252	64	3.94
+Marukame Udon - Udon & Tempura - Lý Tự Trọng	264	67	3.94
 Mary Jane's The Bar	50	13	3.85
 Maryline Coffee - Pearl Plaza	15	3	5
 Masstige Coffee & Dessert	28	7	4
@@ -6685,7 +6692,7 @@ Min Coffee	27	7	3.86
 MiN Coffee - Nguyễn Tri Phương	24	6	4
 MiN Coffee - Võ Văn Tần 	28	7	4
 Min Food - 42 Đống Đa	75	15	5
-Min Food - Đống Đa	15	3	5
+Min Food - Đống Đa	20	4	5
 Min Pizza - Bác Ái	2	2	1
 Mineral Spa - Nguyễn Thái Bình	8	2	4
 Ming Dynasty - Ẩm Thực Trung Hoa	20	5	4
@@ -6801,6 +6808,7 @@ Mộc Quán - Lam Sơn	5	1	5
 Mộc Riêu Nướng	9	2	4.5
 Mộc Trà - Tú Xương	8	2	4
 Mộc Trà Quán - Tô Hiến Thành	8	2	4
+Mocca Cafe	4	1	4
 Mochi Sweets - Bitexco Tower	12	6	2
 Mochi Sweets - Crescent	20	4	5
 Mochi Sweets - Diamond Plaza	12	3	4
@@ -6929,7 +6937,7 @@ Mr. Park Vũng Tàu	10	2	5
 Mr. Pig - Xiên Nướng Đồng Giá	11	3	3.67
 Mr. Potato - Hùng Vương Square	36	9	4
 Mr. Potato - Lê Lai	190	50	3.8
-Mr. Potato - Sư Vạn Hạnh	192	49	3.92
+Mr. Potato - Sư Vạn Hạnh	196	50	3.92
 Mr. Tí Đô - Nguyễn Ảnh Thủ	44	11	4
 Mr. Tí Đô Coffee	56	14	4
 Mr.8 Coffee - Cách Mạng Tháng 8	22	7	3.14
@@ -7202,7 +7210,7 @@ Nhà Ấm Cafe	5	1	5
 Nhà Của Béo	0	7	0
 Nhà của Cáo	0	1	0
 Nhà của kitty	6	2	3
-Nhà Ga 3A - Station 3A	76	19	4
+Nhà Ga 3A - Station 3A	80	20	4
 Nhà Hàng - Hầm Rượu Vang Hàng Dương Quán	5	1	5
 Nhà Hàng - Khách Sạn Thi Thảo	5	1	5
 Nhà Hàng - Phòng Trà Ân Nam	21	6	3.5
@@ -7420,10 +7428,10 @@ Nhà thi đấu Nguyễn Du	0	1	0
 Nhà thi đấu Phan Đình Phùng	8	2	4
 Nhà Thi Đấu Phú Thọ	9	2	4.5
 Nhà Thi Đấu Rạch Miễu - Sport Club	7	2	3.5
-Nhà thiếu nhi quận 11	0	2	0
+Nhà thiếu nhi quận 11	0	3	0
 Nhà thiếu nhi quận 9 	12	3	4
 Nhà Thờ Camly	5	1	5
-Nhà Thờ Đức Bà - Saigon Notre - Dame Basilica	71	17	4.18
+Nhà Thờ Đức Bà - Saigon Notre - Dame Basilica	76	18	4.22
 Nhà thờ Đức Bà Sài	28	7	4
 nhà thờ xóm chiếu	35	7	5
 Nhà Thuốc Eco Pharmacy - 397 Hai Bà Trưng	6	2	3
@@ -7456,7 +7464,7 @@ Nhi Em	0	1	0
 Nhi Fast Food	0	2	0
 Nhi Linh Yeung	0	1	0
 Nhi Ngoc Ngech	15	5	3
-Nhi Nhi	21	7	3
+Nhi Nhi	24	8	3
 Nhi Nhi Quán	4	7	0.57
 Nhi Nhi Quán - Đặc Sản Phan Rang	43	12	3.58
 Nhi Nhi Quán - Lê Đức Thọ	4	1	4
@@ -7500,7 +7508,7 @@ Nina's Mama Pizza - Shop Online	30	7	4.29
 Nineteen Buffet - Caravelle Hotel	12	3	4
 NiNi Bakery - Bánh Kem Bắp Kiểu Pháp	12	3	4
 NiNi Bakery - Bánh Kem Pháp	0	1	0
-NiNi Bakery - Bánh Kem Pháp - Đường D2	26	9	2.89
+NiNi Bakery - Bánh Kem Pháp - Đường D2	34	11	3.09
 Nini Pet-shop	20	4	5
 Nini Snacks Delivery	0	3	0
 ninisnackcorner	0	1	0
@@ -7638,7 +7646,7 @@ O'Brien's Factory	61	16	3.81
 Ốc 3128 - Ốc Tô	14	4	3.5
 Ốc 379 - Vĩnh Viễn	4	1	4
 Ốc 68 - Tuy Lý Vương	14	3	4.67
-Ốc 88	12	3	4
+Ốc 88	16	4	4
 Ốc 88 - Ốc Bình Dân	8	2	4
 Ốc Anh - 39/34 Dạ Nam	4	1	4
 Ốc Anh - Dạ Nam	4	1	4
@@ -7713,7 +7721,7 @@ O'Brien's Factory	61	16	3.81
 Ốc Phượng - Công Chúa Ngọc Hân	5	1	5
 Ốc Phương - Thiên Phước	12	3	4
 Ốc Phương 2 - Cao Ốc Thuận Việt	11	4	2.75
-Ốc Phương 2 - Lý Thường Kiệt	9	2	4.5
+Ốc Phương 2 - Lý Thường Kiệt	19	4	4.75
 Ốc Quang Anh	40	10	4
 Ốc Quang Anh - Tô Hiến Thành	8	2	4
 Ốc Quỳnh	130	26	5
@@ -7754,7 +7762,7 @@ O'Brien's Factory	61	16	3.81
 Ốc Tuyết	48	12	4
 Ốc Út Trang	3	1	3
 Ốc Uyên	8	2	4
-Ốc Vui - Phạm Thế Hiển	5	1	5
+Ốc Vui - Phạm Thế Hiển	10	2	5
 Ốc Vui Vẻ	8	2	4
 Ốc Vui Vẻ - Công viên Làng Hoa	4	1	4
 Ốc Xe Đẩy 20K	5	2	2.5
@@ -7843,11 +7851,11 @@ Our Matcha & Cafe - Hồ Tùng Mậu	8	2	4
 Our matcha & cafe - Huỳnh Thúc Kháng	4	1	4
 Our Matcha & Cafe Takeaway - Nguyễn Huệ	40	10	4
 Our Matcha & Coffee	4	1	4
-OWL Drink- Cú Ú Homemade	74	15	4.93
+OWL Drink- Cú Ú Homemade	79	16	4.94
 OY CAFE	0	2	0
 OYA Gyros	200	52	3.85
 OYA Gyros - Bánh Mì Cuộn Hy Lạp	35	7	5
-Oz Coffee House	56	14	4
+Oz Coffee House	60	15	4
 OZ Coffee House - Huỳnh Tịnh Của	90	19	4.74
 OZ Coffee House - Lê Văn Sỹ	24	7	3.43
 Oz Coffee House 2	69	18	3.83
@@ -7894,11 +7902,11 @@ Papagayo Saigon	112	26	4.31
 Papa's Chicken - AEON MALL Bình Tân	17	4	4.25
 Papa's Chicken - An Phú	71	18	3.94
 Papa's Chicken - Cách Mạng Tháng 8	91	26	3.5
-Papas' Chicken - Cách Mạng Tháng Tám	20	5	4
+Papas' Chicken - Cách Mạng Tháng Tám	24	6	4
 Papa's Chicken - Cách Mạng Tháng Tám	25	6	4.17
 Papa's Chicken - Phú Mỹ Hưng	234	63	3.71
 Papa's Chicken - Trường Sa	91	24	3.79
-Papas' Chicken - Xô Viết Nghệ Tĩnh	4	1	4
+Papas' Chicken - Xô Viết Nghệ Tĩnh	8	2	4
 Papa's Chicken - Xô Viết Nghệ Tĩnh	6	2	3
 Papa's Chicken & Beer Thủ Đức	76	20	3.8
 Papa's Chicken Xô Viết Nghệ Tĩnh	0	1	0
@@ -7921,7 +7929,7 @@ Paris Deli Cafe - Lê Lợi	16	4	4
 Parista The Cafe - Yersin	3	1	3
 Parivar Restaurant	24	6	4
 Park Hyatt Saigon Hotel	36	8	4.5
-Parkson Hùng Vương	20	6	3.33
+Parkson Hùng Vương	24	7	3.43
 Parkson Hùng Vương Shopping Center	8	2	4
 Parkson Lê Thánh Tôn	15	6	2.5
 Parkview Buffet - New World Hotel	4	1	4
@@ -7934,7 +7942,7 @@ Passio Coffee - 15F Nguyễn Thị Minh Khai	16	4	4
 Passio Coffee - 250 Điện Biên Phủ	8	2	4
 Passio Coffee - Điện Biên Phủ	12	3	4
 Passio Coffee - Đinh Tiên Hoàng	31	8	3.88
-Passio Coffee - Hồ Tùng Mậu	73	19	3.84
+Passio Coffee - Hồ Tùng Mậu	77	20	3.85
 Passio Coffee - Khánh Hội	6	2	3
 Passio Coffee - Lê Hồng Phong	20	6	3.33
 Passio Coffee - Nguyễn Cư Trinh	32	8	4
@@ -7955,7 +7963,7 @@ Pasteur Street Brewing Company	1136	246	4.62
 Pasteur Street Brewing Company - Pasteur	20	5	4
 Pat'a'Chou	5	1	5
 Peace Of Mind Coffee	9	2	4.5
-Peach Truong	40	8	5
+Peach Truong	45	9	5
 Pearl Cafe - 92 Nguyễn Hữu Cảnh	0	1	0
 Pearl Cafe - Nguyễn Hữu Cảnh	0	4	0
 Peek A Boo Café	9	2	4.5
@@ -8010,7 +8018,7 @@ Phá lấu bò A Chảy	32	8	4
 Phá Lấu Bò Lạc Quang - Tân Thới Nhất 2	8	2	4
 Phá lấu bò xào - Huỳnh Đình Hai	4	1	4
 Phá Lấu Châu Ù - Bùi Thị Xuân	39	11	3.55
-Phá lấu chiên - Vũ Tùng	20	5	4
+Phá lấu chiên - Vũ Tùng	25	6	4.17
 Phá Lấu Chú Ba - Dương Đình Nghệ	16	4	4
 Phá lấu Chung Cư Mỹ Đức	8	2	4
 Phá Lấu Cô Ba Vân	24	7	3.43
@@ -8040,7 +8048,7 @@ Phạm Gia - Hòa Bình	4	5	0.8
 Phạm Hạnh	4	1	4
 Phạm Thanh Hải	35	13	2.69
 Phạm Thị Ngọc Thuỳ Thuỳ	0	1	0
-Phạm văn hai	51	16	3.19
+Phạm văn hai	54	17	3.18
 Pham's Bakery & Coffee	8	2	4
 Phan Gia - Điểm Tâm, Xiên Que, Đá Xay	64	16	4
 Phan Gia - Sư Vạn Hạnh	24	6	4
@@ -8112,7 +8120,7 @@ Phở Gà, Bò - Vĩnh Khánh	5	1	5
 Phở gân bò chợ Đầm - Phạm Hồng Thái	3	1	3
 Phở Gia Bảo Hà Nội	4	1	4
 Pho Hai Thien	24	9	2.67
-Phở Hai Thiền	49	12	4.08
+Phở Hai Thiền	54	13	4.15
 Phở Hai Thiền 	16	4	4
 Phở Hai Thiền - Nguyễn Tri Phương	25	8	3.12
 Phở Hân	8	2	4
@@ -8296,7 +8304,7 @@ Pizza 4P’s - Pizza Kiểu Nhật	99	20	4.95
 Pizza 4P’s - Pizza Kiểu Nhật - Lê Thánh Tôn	83	21	3.95
 Pizza 4P’s - Pizza Kiểu Nhật - Nguyễn Văn Linh	46	12	3.83
 Pizza 4P's	1421	307	4.63
-Pizza 4P's - Nguyễn Văn Linh	44	11	4
+Pizza 4P's - Nguyễn Văn Linh	48	12	4
 Pizza 4P's - Pizza Kiểu Nhật - Nguyễn Văn Linh	4	1	4
 Pizza Chay Cat Tuong	1	1	1
 Pizza Cones Sài Gòn	16	4	4
@@ -8424,6 +8432,7 @@ Puppy & Cesar - Thảo Điền	5	1	5
 Puro Gusto Coffee	7	2	3.5
 Puss Coffee	19	4	4.75
 Py Nguyễn	6	2	3
+Q Cafe -  Quận 11	5	1	5
 Q Cafe - Quận 3	5	1	5
 Q Cafe & Studio	37	10	3.7
 Q Cakes	8	2	4
@@ -8624,7 +8633,7 @@ Quán Cơm Số 1 - Lê Đức Thọ	9	2	4.5
 Quán Cơm Số 7	4	1	4
 Quán cua Hoa	95	19	5
 Quán Cua Một - Món Ngon Từ Cua	4	1	4
-Quán Đặc Sản Hào Sữa - Nguyễn Thượng Hiền	35	7	5
+Quán Đặc Sản Hào Sữa - Nguyễn Thượng Hiền	40	8	5
 Quán Đại Dương - Ẩm Thực Trung Hoa	32	8	4
 Quán Đạt - Đặc Sản Phan Rang	13	4	3.25
 Quán dê Thúy Ninh Quảng Ngãi - Nguyễn Thông	5	1	5
@@ -8676,7 +8685,7 @@ Quán Khói Việt - Nhậu Bình Dân	8	2	4
 Quán Không Tên - Bà Triệu	6	2	3
 Quán khuya - Âu Dương Lân	4	1	4
 Quán Kim - Mì Cay & Ăn Vặt Hàn Quốc	53	14	3.79
-Quán Kim Liên - Bún đậu mắm tôm	28	7	4
+Quán Kim Liên - Bún đậu mắm tôm	32	8	4
 Quán Kim's House Kem _ Trái Cây	5	1	5
 Quán Lạ - Chả Giò Cá Bà Rịa	13	4	3.25
 Quán Lạ Mà Quen 	20	5	4
@@ -8712,7 +8721,7 @@ Quán Nem Nướng 77	7	2	3.5
 Quán Nga - Bún Mắm & Hủ Tiếu	4	1	4
 Quán Ngã Ba Sông - Ẩm Thực 3 Miền	8	2	4
 Quán Nghĩa Hàu	4	1	4
-Quán Ngói - Nguyễn Trãi	40	8	5
+Quán Ngói - Nguyễn Trãi	45	9	5
 Quán Ngói 2	9	2	4.5
 Quán Ngói 2 - Trung Sơn	88	22	4
 Quán Ngon - 31 Nguyễn Công Trứ	5	1	5
@@ -8842,7 +8851,7 @@ Quán trứng cút phô mai - Nguyễn Du	5	1	5
 Quán Tú - Nhậu Bình Dân	7	2	3.5
 Quán Tư Mập - Cá Lóc Nướng	8	2	4
 Quán Tui - Các Món Ăn Vặt	8	2	4
-Quán Ù Pa - Kem Cá Phô Mai	27	7	3.86
+Quán Ù Pa - Kem Cá Phô Mai	31	8	3.88
 Quan Ut Ut	481	111	4.33
 Quán Ụt Ụt - Barbecue & Beer	92	23	4
 Quán Ụt Ụt - Trường Sa	12	3	4
@@ -8888,7 +8897,7 @@ Quỳnh Như	16	6	2.67
 Quỳnh Như Foot Massage - 137 Hàm Nghi	23	7	3.29
 Quỳnh Như Foot Massage - Trần Quốc Hoàn	7	2	3.5
 QuynhAnh Sweet	0	7	0
-R&B Tea - Ngô Đức Kế	38	9	4.22
+R&B Tea - Ngô Đức Kế	42	10	4.2
 R&J Italian Lounge & Restaurant	201	44	4.57
 RADAR Tea & Coffee	9	2	4.5
 Radar Tea & Coffee Station	40	10	4
@@ -8960,14 +8969,14 @@ Ricci Leon Coffee - Bình Chánh	24	6	4
 Rich Coffee	6	2	3
 Rico Taco	99	24	4.12
 Rico Taco - Mexican Restaurant	7	2	3.5
-Rico Taco - Ngô Thời Nhiệm	12	3	4
+Rico Taco - Ngô Thời Nhiệm	16	4	4
 Rico Taco (Khoi Thom)	21	5	4.2
 Riêng Một Góc Trời Cafe - Đường Số 11	3	1	3
 Riêu Cá Garden - Nhà Hàng Sân Vườn	6	2	3
 Riêu Cua Tôm	6	2	3
 Rin Food Corner - Món Hàn Online	9	2	4.5
 rinfoodconer	24	6	4
-Rio cafe shop	8	2	4
+Rio cafe shop	12	3	4
 Rio Coffee - Lê Đức Thọ	5	1	5
 Rio Coffee Shop - Sư Vạn Hạnh	7	2	3.5
 Rise BBQ - Xiên Que 8K	27	6	4.5
@@ -8980,7 +8989,7 @@ Ro22 - Cà Phê và Bánh Mì Phở	45	9	5
 Roast Beast	163	35	4.66
 Roaster - Calmette 	16	4	4
 Rock House Pizza	4	1	4
-Rocks - Nguyễn Thông	19	4	4.75
+Rocks - Nguyễn Thông	23	5	4.6
 Roll IceReam - Bờ Bao Tân Thắng	8	2	4
 Rơm BBQ	36	9	4
 Rơm BBQ - Rooftop Barbecue	7	2	3.5
@@ -8996,7 +9005,7 @@ Rosemary Garden - Steak & Cafe	16	4	4
 Rosemary Kitchen & Sandwicherie HCM	133	30	4.43
 Rosie 	0	2	0
 ROU Vegetarian	42	14	3
-ROU Vegetarian Restaurant - Cô Bắc	8	2	4
+ROU Vegetarian Restaurant - Cô Bắc	12	3	4
 ROU Vegetarian Restaurant - Quán Chay	12	3	4
 Rove - Bánh Cá Nướng Taiyaki	101	26	3.88
 Royal - Nhà Hàng & Cafe	4	1	4
@@ -9016,7 +9025,7 @@ RuNam Bistro - Mạc Đĩnh Chi	12	3	4
 RuNam Bistro - Paster	4	1	4
 Runam Bistro - Trần Phú	4	1	4
 RuNam Cafe - Mạc Thị Bưởi	8	2	4
-RuNam Cafe - Saigon Centre	11	3	3.67
+RuNam Cafe - Saigon Centre	15	4	3.75
 Rừng Hoang Bảy Mẫu	12	3	4
 Rượu Bàu Đá Hiền	0	1	0
 Rượu Vang Khang Minh	8	2	4
@@ -9066,6 +9075,7 @@ Saigon café - Nguyễn Thái Học	0	1	0
 Saigon Café - Saigon Coffee Club - Nguyễn Du	7	2	3.5
 Saigon Cafe - Thành Thái	39	10	3.9
 Saigon Cafe Club	8	2	4
+Saigon Central Market	8	2	4
 SaiGon Chic Cafe	27	8	3.38
 SaiGon Chic Cafe - đường 27	60	15	4
 SaiGon Coffee & Tea Express	4	1	4
@@ -9401,7 +9411,7 @@ Soju Lounge - Ẩm Thực Hàn Quốc	16	4	4
 Sol 9 Cafe	8	2	4
 Somtum Der - Món Ăn Thái	48	13	3.69
 Somtum Der HCMC	72	16	4.5
-Sơn Ca - Gà Ta Đi Bộ - Hồ Bá Kiện	4	1	4
+Sơn Ca - Gà Ta Đi Bộ - Hồ Bá Kiện	9	2	4.5
 Sơn Già - Ốc & Hải Sản	30	7	4.29
 Sơn Nga Phở Gà - Tô Hiến Thành	6	2	3
 Song - River Side - Món Hoa	13	3	4.33
@@ -9435,7 +9445,7 @@ Spice Càphê	0	4	0
 Spice India - Nhà Hàng Ấn Độ - Bùi Viện	8	2	4
 Spice India - Quan An An Do	130	43	3.02
 Spice India Restaurant - Ẩm Thực Ấn Độ	6	2	3
-Spongeee	30	6	5
+Spongeee	35	7	5
 Spuds	141	35	4.03
 Square One	190	42	4.52
 Star Hair - Korean Salon	16	4	4
@@ -9574,7 +9584,7 @@ Sunway Tea & Coffee 	3	1	3
 Suối Mơ - Karaoke & Coffee	8	2	4
 Suối Mơ 2 - Vĩnh Lộc	24	6	4
 Suối Mơ Karaoke - Cafe	6	2	3
-Suối Mơ Park	6	2	3
+Suối Mơ Park	9	3	3
 Sườn Cây - Cộng Hoà	44	11	4
 Sườn Cây - Hồ Biểu Chánh	8	2	4
 Sườn cây - Kinh Dương Vương	20	4	5
@@ -9696,7 +9706,7 @@ Sushi REI	204	44	4.64
 Sushi Rei - By Masuda	9	2	4.5
 Sushi Sakura - Sư Vạn Hạnh	60	15	4
 Sushi Shin - Sushi Vỉa Hè	4	1	4
-Sushi Sun	33	7	4.71
+Sushi Sun	38	8	4.75
 Sushi Tân Quang Thủ Đức - Miya Sushi & BBQ	0	12	0
 Sushi Tei - Lý Tự Trọng	31	8	3.88
 Sushi Tei Vietnam - Lý Tự Trọng	80	20	4
@@ -9827,13 +9837,13 @@ Taro Milk Tea	9	2	4.5
 Tasaki BBQ - Món Nướng Nhật Bản	93	19	4.89
 Tasaki BBQ - VinCom Quang Trung	5	1	5
 Taste of India	2	1	2
-Tasty food - Sên Dừa	0	9	0
+Tasty food - Sên Dừa	0	10	0
 Tattoo 1 - Oak Ink	7	2	3.5
 Tattoo Long Nguyễn	5	1	5
 Tàu Bến Nghé	8	2	4
 Tàu hũ Bùi Viện	5	1	5
 Tàu Hủ Đá - Bò Bía Trương Định	18	5	3.6
-Tàu Hủ HAT	8	2	4
+Tàu Hủ HAT	12	3	4
 Tàu Hũ HAT - Quang Trung	33	11	3
 Tàu Hũ HAT - Thống Nhất	18	6	3
 Tàu Hũ Ky	0	1	0
@@ -9850,7 +9860,7 @@ Tàu Hủ Xe Lam	9	2	4.5
 Tàu Hủ Xe Lam - Phùng Văn Cung	146	38	3.84
 Tàu Sài Gòn	22	6	3.67
 Tây Hồ	8	2	4
-T-Bingsu - Cư Xá Rađa	16	4	4
+T-Bingsu - Cư Xá Rađa	20	5	4
 TCB Station	5	1	5
 T'Colours Coffee - Đường 3 Tháng 2	8	2	4
 Tê Giác Húc	4	1	4
@@ -10015,9 +10025,9 @@ The Chai Cafe - Trần Hưng Đạo	90	23	3.91
 The Chateau - Tiệc Cưới Hội Nghị	8	2	4
 The Coffee Bean & Tea Leaf - Bitexco Tower	55	14	3.93
 The Coffee Bean & Tea Leaf - Cách Mạng Tháng 8	14	4	3.5
-The Coffee Bean & Tea Leaf - CMT8	29	9	3.22
+The Coffee Bean & Tea Leaf - CMT8	33	10	3.3
 The Coffee Bean & Tea Leaf - Crescent Mall	40	9	4.44
-The Coffee Bean & Tea Leaf - Hàn Thuyên	59	15	3.93
+The Coffee Bean & Tea Leaf - Hàn Thuyên	63	16	3.94
 The Coffee Bean & Tea Leaf - Kumho	24	7	3.43
 The Coffee Bean & Tea Leaf - Metropolitan	55	13	4.23
 The Coffee Bean & Tea Leaf - Nguyễn Du	12	3	4
@@ -10038,7 +10048,7 @@ The Coffee Factory - Phạm Ngọc Thạch	4	1	4
 The Coffee Factory - Trương Định	30	8	3.75
 The Coffee House - AEON Mall Bình Tân	8	2	4
 The Coffee House - Bàu Cát	128	33	3.88
-The Coffee House - Bitexco Tower	4	1	4
+The Coffee House - Bitexco Tower	8	2	4
 The Coffee House - Cách Mạng Tháng 8	101	26	3.88
 The Coffee House - Cao Thắng	135	34	3.97
 The Coffee House - Điện Biên Phủ	52	13	4
@@ -10190,7 +10200,7 @@ The Pizza Company	14	3	4.67
 The Pizza Company  - Phan Xích Long	52	13	4
 The Pizza Company - Bàu Cát	18	5	3.6
 The Pizza Company - Bùi Bằng Đoàn	20	5	4
-The Pizza Company - Lê Đại Hành	104	24	4.33
+The Pizza Company - Lê Đại Hành	108	25	4.32
 The Pizza Company - Lê Văn Sỹ	64	16	4
 The Pizza Company - Nguyễn Thái Học	112	26	4.31
 The Pizza Company - Nguyễn Thị Minh Khai	107	27	3.96
@@ -10226,7 +10236,7 @@ The Sushi Bar - Phú Mỹ Hưng	10	2	5
 The Sushi Bar - Saigon Court	12	3	4
 The Sushi Bar - Thiên Quế	60	12	5
 The Sushi Bar - Thiên Quế - Lê Thánh Tôn	25	7	3.57
-The Sushi Bar - Thiên Sơn Plaza	4	1	4
+The Sushi Bar - Thiên Sơn Plaza	8	2	4
 The Sushi Bar - Zen Plaza	57	14	4.07
 The Terminal Coffee - Cao Thắng	12	3	4
 The Terminal Coffee - Cộng Hoà	16	4	4
@@ -10470,7 +10480,7 @@ TiNiWorld - Vincom Mega Mall Thảo Điền	8	2	4
 TiNiWorld - Vincom Thủ Đức	20	5	4
 tinnyfood	0	3	0
 Tino Cafe - Trương Công Định	9	2	4.5
-Tinô House Coffee	0	2	0
+Tinô House Coffee	0	3	0
 Tiny Garden - Cafe Sách	8	2	4
 Tiny Garden Coffee Shop	35	7	5
 Tiny Nguyễn	0	3	0
@@ -10529,7 +10539,7 @@ Tokyo Deli - Lê Thánh Tôn	146	37	3.95
 Tokyo Deli - Ngô Đức Kế	44	11	4
 Tokyo Deli - Ngô Đức Kế 	7	2	3.5
 Tokyo Deli - Nguyễn Thị Thập	67	16	4.19
-Tokyo Deli - Park View Phú Mỹ Hưng	63	15	4.2
+Tokyo Deli - Park View Phú Mỹ Hưng	67	16	4.19
 Tokyo Deli - Phan Xích Long	103	26	3.96
 Tokyo Deli - Song Hành	4	8	0.5
 Tokyo Deli - Trần Hưng Đạo	88	19	4.63
@@ -10689,7 +10699,7 @@ Trà Sữa Bobapop - Nguyễn Văn Linh	3	1	3
 Trà sữa Bobapop - Phan Xích Long	44	12	3.67
 Trà Sữa Bobapop - Quang Trung	82	25	3.28
 Trà Sữa Bobapop - Sư Vạn Hạnh	121	32	3.78
-Trà Sữa Bobapop - Trần Hưng Đạo	23	5	4.6
+Trà Sữa Bobapop - Trần Hưng Đạo	27	6	4.5
 Trà Sữa Bobapop - Trần Quốc Hoàn	43	11	3.91
 Trà Sữa Bobapop - Võ Văn Ngân	69	17	4.06
 Trà Sữa Bobapop - Võ Văn Ngân 	3	1	3
@@ -10801,7 +10811,7 @@ Trà Sữa Luân Mập Chi Lăng - Lê Quang Sung	7	2	3.5
 Trà Sữa Machiatto Koy	4	1	4
 Trà Sữa Made By Me	8	2	4
 Trà Sữa Marie Curie	33	8	4.12
-Trà Sữa Mèo Meo	46	13	3.54
+Trà Sữa Mèo Meo	50	14	3.57
 Trà Sữa Milk Tea Land - Lê Đức Thọ	20	5	4
 Trà Sữa Milk Tea Land - Quang Trung	25	6	4.17
 Trà sữa Mix & Mix 	60	15	4
@@ -10911,7 +10921,7 @@ Trà Sữa Văn Lang Và Nướng Ngói	6	2	3
 Trà Sữa Vương Lâm - Lê Lợi	8	2	4
 Trà sữa Wind	4	1	4
 Trà Sữa X - Tea 	8	2	4
-Trà sữa X-Cute	5	5	1
+Trà sữa X-Cute	10	6	1.67
 Trà Sữa X-Cute - Âu Dương Lân	4	1	4
 Trà Sữa X-Cute - Nguyễn Thị Nhỏ	3	1	3
 Trà Sữa X-Cute - Trần Hưng Đạo	8	2	4
@@ -10936,7 +10946,7 @@ Tra Tien Huong	8	2	4
 Trà Tiên Hưởng - 3 Tháng 2	16	4	4
 Trà Tiên Hưởng - Bàu Cát	77	20	3.85
 Trà Tiên Hưởng - Cống Quỳnh	24	6	4
-Trà Tiên Hưởng - Điện Biên Phủ	52	13	4
+Trà Tiên Hưởng - Điện Biên Phủ	56	14	4
 Trà Tiên Hưởng - Đinh Tiên Hoàng	13	3	4.33
 Trà Tiên Hưởng - Hoàng Diệu	8	2	4
 Trà Tiên Hưởng - Huyền Trân Công Chúa	32	8	4
@@ -11057,7 +11067,7 @@ Tròn - Gốm & Cà Phê	24	6	4
 Trốn Cafe	9	2	4.5
 Tròn's Kitchen - trons.kitchen	55	11	5
 Trop B - Nguyễn Thị Minh Khai	15	4	3.75
-Trop B - Xôi Đá, Xôi Kem, Xôi kem Xoài	47	12	3.92
+Trop B - Xôi Đá, Xôi Kem, Xôi kem Xoài	50	13	3.85
 Trop B Dessert - Nguyễn Thị Minh Khai	5	2	2.5
 Tropical Juice - Smoothies Bar	8	2	4
 Tropical Smoothies	157	33	4.76
@@ -11112,7 +11122,7 @@ Trường Sinh Quán - Từ Hoa	4	1	4
 Trương Thanh Phong	0	1	0
 Trường THCS Bàn Cờ	20	5	4
 Trường THCS Đồng Khởi	21	7	3
-Trường THCS Lê Lợi - Đường S11	12	4	3
+Trường THCS Lê Lợi - Đường S11	15	5	3
 Trường THCS Ngô Sĩ Liên - Phạm Văn Hai	8	3	2.67
 Trường THPT Hiệp Bình - Hiệp Bình	33	11	3
 Trường THPT Hùng Vương	18	6	3
@@ -11120,7 +11130,7 @@ Trường THPT Lương Thế Vinh	8	2	4
 Trường THPT Ngô Quyền	4	1	4
 Trường THPT Nguyễn Hữu Huân	9	3	3
 Trường THPT Trần Phú	16	4	4
-Trường THPT Võ Trường Toản	45	9	5
+Trường THPT Võ Trường Toản	50	10	5
 Trương Thủy Tiên	0	10	0
 Trường Tiểu Học Nguyễn Bá Ngọc - Nguyễn Văn Đậu	7	2	3.5
 Trường Tiểu Học Thanh Đa - Thanh Đa	4	1	4
@@ -11158,7 +11168,7 @@ Tường Vy 3 Karaoke 	12	4	3
 Turin Coffee	4	1	4
 Turin coffee - Lê Đại Hành	28	7	4
 Turin Coffee - Nguyễn Biểu	11	6	1.83
-Tú's Nabie	0	2	0
+Tú's Nabie	0	3	0
 Tutti Frutti Yogurt - Trần Hưng Đạo	7	2	3.5
 Tuxedo - JapanCurry	0	3	0
 Tuyết Hoa 2	8	2	4
@@ -11196,7 +11206,7 @@ Unclosed Coffee - Hồ Tùng Mậu	24	6	4
 Une Journee a Paris	509	117	4.35
 Uni coffee	4	1	4
 Uni Coffee - Phạm Văn Hai	0	1	0
-Uni House Coffee - Đường D2	78	21	3.71
+Uni House Coffee - Đường D2	82	22	3.73
 Union Square - Vincom	20	5	4
 Unique Wedding - Phạm Văn Hai	11	3	3.67
 Uno Quán 	55	11	5
@@ -11220,7 +11230,7 @@ Urban Station - Nguyễn Thị Thập	4	1	4
 Urban Station 33 - Trần Quốc Toản	14	3	4.67
 Urban Station Coffee Take Away - Bình Thới	25	8	3.12
 Urban Station Coffee Takeaway -  Hàm Nghi	32	8	4
-Urban Station Coffee Takeaway - 745 CMT8	72	18	4
+Urban Station Coffee Takeaway - 745 CMT8	76	19	4
 Urban Station Coffee Takeaway - 90 Cách Mạng Tháng 8	15	4	3.75
 Urban Station Coffee Takeaway - Bàu Cát	67	17	3.94
 Urban Station Coffee Takeaway - Bình Thới	4	1	4
@@ -11299,8 +11309,8 @@ Văn's Coffee Acoustic - Trần Huy Liệu	16	5	3.2
 Vân's Unforgettable - Bar & Cafe	8	2	4
 VAS Coffeetalk	25	5	5
 VC's Store	0	2	0
-Vee Ayy Food	54	11	4.91
-Vee Ayy Food - Gà Nướng Phô Mai 49K	93	26	3.58
+Vee Ayy Food	59	12	4.92
+Vee Ayy Food - Gà Nướng Phô Mai 49K	97	27	3.59
 Vee Ayy Food - Trần Hưng Đạo	31	8	3.88
 Vegan Drink And Food	4	1	4
 Velvet Garden	40	8	5
@@ -11378,7 +11388,7 @@ Vịt Quay - Quốc Lộ 1A	8	2	4
 Vịt Quay Mỹ Phụng	18	4	4.5
 Vitamin Bar I - Sinh Tố & Ăn Vặt	7	2	3.5
 Vitamin Bar II	12	4	3
-Vitamin House	36	8	4.5
+Vitamin House	40	9	4.44
 Vitamin House - Tiệm Bánh	16	4	4
 Vitamine E	40	10	4
 VITAMINEE - Sinh tố & Nước Ép	23	5	4.6
@@ -11557,7 +11567,7 @@ Xiên nướng Xêkô	20	7	2.86
 Xiên nướng Xin Chào Chó Nâu	4	1	4
 Xiên Que - Nguyễn Tri Phương	10	5	2
 Xiên Que - Nguyễn Văn Trỗi	24	6	4
-Xiên Que - Sư Vạn Hạnh	142	38	3.74
+Xiên Que - Sư Vạn Hạnh	150	40	3.75
 Xiên Que & Lẩu Nướng - KDC Trung Sơn	6	2	3
 Xiên Que 136	8	2	4
 Xiên Que Đường Song Hành QL22	5	1	5
@@ -11745,7 +11755,7 @@ Yum Yum 	56	14	4
 Yumi Handmade - Phạm Thế Hiển	5	1	5
 Yumi Handmade - Trà Sữa Thái - Phạm Thế Hiển	8	2	4
 Yumi Handmade - Trà Sữa Thái - Tôn Thất Thuyết	8	2	4
-yumishouse	0	5	0
+yumishouse	0	6	0
 Yummi Yummi - Bánh Bao Kim Sa	5	1	5
 Yummi Yummi - Dimsum Hà Nội	10	2	5
 Yummy - T - Phan Xích Long	5	1	5
@@ -11776,7 +11786,7 @@ Zero Cafe	8	2	4
 Zest Bistro & Cafe - Ẩm Thực Á & Âu	16	4	4
 Zest Café - Hoà Bình	4	1	4
 Zest Coffee - Hòa Bình	44	11	4
-Zeus	217	61	3.56
+Zeus	221	62	3.56
 Zino baker	24	6	4
 Zion Korea Food	5	1	5
 Zipang Shop	27	7	3.86
